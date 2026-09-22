@@ -255,6 +255,7 @@
       correct: "Rätt", wrong: "Fel. Rätt svar är {letter}",
       next: "Nästa uppgift", restart: "Börja om",
       rulesLabel: "Regler i uppgiften:",
+      optionsLabel: "Vilken figur passar i den tomma rutan?",
       optionLabel: "Alternativ {letter}",
       doneTitle: "Det var smakprovet",
       doneBody: "{correct} av {total} rätt. I appen tar uppgifterna aldrig slut, och nivån följer dig.",
@@ -265,6 +266,7 @@
       correct: "Correct", wrong: "Wrong. The correct answer is {letter}",
       next: "Next task", restart: "Start over",
       rulesLabel: "Rules in this task:",
+      optionsLabel: "Which figure fits the empty cell?",
       optionLabel: "Option {letter}",
       doneTitle: "That was the sample",
       doneBody: "{correct} of {total} correct. In the app the tasks never run out, and the level follows you.",
@@ -318,6 +320,7 @@
       html += '<div class="cell" data-cell="' + i + '">' + (puzzle.cells[i] ? renderCell(puzzle.cells[i]) : renderMissing()) + "</div>";
     }
     html += "</div>";
+    html += '<p class="options-label">' + t(this.lang, "optionsLabel") + "</p>";
     html += '<ul class="options">';
     for (var o = 0; o < puzzle.options.length; o++) {
       html += '<li><button type="button" class="option" data-option="' + o + '" aria-label="' + t(this.lang, "optionLabel", { letter: letters[o] }) + '">' +
