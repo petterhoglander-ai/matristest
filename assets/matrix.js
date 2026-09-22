@@ -392,6 +392,16 @@
     for (var d = 0; d < decor.length; d++) {
       decor[d].innerHTML = renderCell(JSON.parse(decor[d].getAttribute("data-cell-json")));
     }
+    /* En länk till "Om matristest" öppnar första frågan, så att texten
+       syns utan ett klick till. */
+    function openFromHash() {
+      var target = location.hash && document.querySelector(location.hash);
+      if (!target) return;
+      var first = target.matches("details") ? target : target.querySelector("details");
+      if (first) first.open = true;
+    }
+    window.addEventListener("hashchange", openFromHash);
+    openFromHash();
   }
 
   window.MatrixRender = { renderCell: renderCell, renderMissing: renderMissing };

@@ -15,8 +15,8 @@
 <meta property="og:site_name" content="Matristräning">
 <meta property="og:locale" content="sv_SE">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="Öva inför jobbtestet: matristest med facit">
-<meta property="og:description" content="Matrisuppgifter av samma typ som i logiktest vid rekrytering. Lös 20 uppgifter gratis, med facit som förklarar varje regel.">
+<meta property="og:title" content="Gå in förberedd. Öva inför logiktestet i rekryteringen.">
+<meta property="og:description" content="Matrisuppgifter av samma typ som i logiktest vid rekrytering. Facit som förklarar exakt vad du missade. Lös 20 uppgifter gratis.">
 <meta property="og:url" content="https://matristest.se/">
 <meta property="og:image" content="https://matristest.se/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -25,18 +25,13 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/img/sv_puzzle.jpg">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://matristest.se/#website",
-      "url": "https://matristest.se/",
-      "name": "Matristräning",
-      "inLanguage": "sv"
-    },
+    { "@type": "WebSite", "@id": "https://matristest.se/#website", "url": "https://matristest.se/", "name": "Matristräning", "inLanguage": "sv" },
     {
       "@type": "SoftwareApplication",
       "name": "Matristräning",
@@ -52,31 +47,11 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Hur lång tid tar det att öva inför ett logiktest?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Formatet sitter efter några dagar. Det viktiga är att ha sett alla regeltyper och att ha gjort några uppgifter på tid. Några fokuserade pass ger mer än veckor av spridd övning." }
-        },
-        {
-          "@type": "Question",
-          "name": "Går det att förbättra sitt resultat på ett begåvningstest genom att öva?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Övning gör skillnad på den här typen av uppgifter. Den som känner formatet slipper lära sig det under testet, gör färre slarvfel och använder tiden bättre. Ingen kan lova ett resultat, och nivån i appen är appens egen skala." }
-        },
-        {
-          "@type": "Question",
-          "name": "Vad är skillnaden mellan matristest, logiktest och begåvningstest?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Orden används om vartannat. Begåvningstest är det breda ordet för test som mäter tänkande. Logiktest är den del som handlar om mönster och slutledning. Matristest är formatet: ett rutnät med tre gånger tre figurer där en ruta saknas." }
-        },
-        {
-          "@type": "Question",
-          "name": "Passar övningen inför Alva Labs logiktest?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Alva Labs logiktest bygger på matrisuppgifter av samma slag: tre gånger tre figurer, en ruta saknas, stigande svårighet. Matristräning är fristående och har ingen koppling till Alva Labs." }
-        },
-        {
-          "@type": "Question",
-          "name": "Vad kostar appen?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Fem träningsuppgifter är gratis. Resten låses upp med ett engångsköp, utan prenumeration. Priset visas i App Store." }
-        }
+        { "@type": "Question", "name": "Vad är ett matristest?", "acceptedAnswer": { "@type": "Answer", "text": "Ett matristest, ofta kallat logiktest eller begåvningstest, mäter förmågan att se mönster i figurer. Varje uppgift är ett rutnät med tre gånger tre rutor där den nionde saknas. Uppgiften är att hitta reglerna och välja det alternativ som passar." } },
+        { "@type": "Question", "name": "Hur lång tid tar det att öva inför ett logiktest?", "acceptedAnswer": { "@type": "Answer", "text": "Formatet sitter efter några dagar. Det viktiga är att ha sett alla regeltyper och att ha gjort några uppgifter på tid. Några fokuserade pass ger mer än veckor av spridd övning." } },
+        { "@type": "Question", "name": "Går det att förbättra sitt resultat på ett begåvningstest genom att öva?", "acceptedAnswer": { "@type": "Answer", "text": "Övning gör skillnad på den här typen av uppgifter. Den som känner formatet slipper lära sig det under testet, gör färre slarvfel och använder tiden bättre. Ingen kan lova ett resultat, och nivån i appen är appens egen skala." } },
+        { "@type": "Question", "name": "Passar övningen inför Alva Labs logiktest?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Alva Labs logiktest bygger på matrisuppgifter av samma slag: tre gånger tre figurer, en ruta saknas, stigande svårighet. Matristräning är fristående och har ingen koppling till Alva Labs." } },
+        { "@type": "Question", "name": "Vad kostar appen?", "acceptedAnswer": { "@type": "Answer", "text": "Fem träningsuppgifter är gratis. Resten låses upp med ett engångsköp, utan prenumeration. Priset visas i App Store." } }
       ]
     }
   ]
@@ -86,86 +61,134 @@
 <body>
 <div class="page">
 
-<header class="topbar">
-  <a class="wordmark" href="/">Matristräning</a>
-  <nav class="lang" aria-label="Språk"><span lang="sv">Svenska</span><a href="/en/" lang="en" hreflang="en">English</a></nav>
-</header>
+<nav class="nav" aria-label="Huvudmeny">
+  <a class="wordmark" href="/"><img src="/icon-192.png" width="28" height="28" alt=""><span>Matristräning</span></a>
+  <div class="links"><a href="#prova">Prova en uppgift</a><a href="#om">Om matristest</a></div>
+  <div class="spacer"></div>
+  <div class="lang" aria-label="Språk"><span lang="sv">SV</span><a href="/en/" lang="en" hreflang="en">EN</a></div>
+  <a class="cta" href="https://apps.apple.com/se/app/id6814397251">Hämta appen</a>
+</nav>
 
 <main>
-  <section class="hero">
-    <h1>Öva inför jobbtestet</h1>
-    <p class="lead">Matrisresonemang är den vanligaste uppgiftstypen i logiktest vid rekrytering. Lös några uppgifter här, med samma facit som i appen.</p>
+  <header class="hero">
+    <p class="eyebrow">För iPhone · Svenska och engelska</p>
+    <h1>Gå in förberedd.<span class="soft">Öva inför logiktestet.</span></h1>
+    <p class="lead">Matrisuppgifter av samma typ som i rekryteringens logiktest, med facit som förklarar exakt vad du missade.</p>
     <div class="actions">
-      <a class="button primary" href="#prova">Prova en uppgift</a>
-      <a class="button secondary" href="https://apps.apple.com/se/app/id6814397251">Hämta appen</a>
+      <a class="button light" href="https://apps.apple.com/se/app/id6814397251">Hämta i App Store <span class="arrow" aria-hidden="true">→</span></a>
+      <p class="note">Fem uppgifter gratis. Engångsköp, ingen prenumeration.</p>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone side left"><img src="/assets/img/sv_answer.jpg" width="600" height="1304" alt=""></div>
+      <div class="phone center"><img src="/assets/img/sv_puzzle.jpg" width="600" height="1304" alt=""></div>
+      <div class="phone side right"><img src="/assets/img/sv_stats.jpg" width="600" height="1304" alt=""></div>
+    </div>
+  </header>
+
+  <section class="block" id="varde">
+    <div class="block-head">
+      <h2>Tre saker du får.</h2>
+      <p>Formatet sitter efter några dagar. Det som gör skillnad är att förstå varje miss.</p>
+    </div>
+    <div class="value">
+      <article class="card">
+        <div class="glyph" data-cell-json='{"shape":"hexagon","fill":"striped","lines":17}'></div>
+        <h3>Facit som förklarar</h3>
+        <p>Inte "antalet ändras", utan "antalet ökar med 1 åt höger och minskar med 1 nedåt". Efter varje svar ser du exakt vilka regler som gällde, och ett exempel på den du missade.</p>
+      </article>
+      <article class="card">
+        <div class="glyph" data-cell-json='{"shape":"pentagon","fill":"solid","count":3,"lines":0}'></div>
+        <h3>Ett test som det riktiga</h3>
+        <p>Tolv uppgifter på tid med adaptiv svårighet, precis som i rekryteringen. Efteråt en nivå 1–10, antal rätt och en genomgång av varje uppgift.</p>
+      </article>
+      <article class="card">
+        <div class="glyph" data-cell-json='{"shape":"star","fill":"dotted","position":2,"lines":0}'></div>
+        <h3>Uppgifter som aldrig tar slut</h3>
+        <p>Varje uppgift genereras i telefonen och kontrolleras så att exakt ett alternativ är rätt. Fjorton regeltyper, tio nivåer, ingen lista som tar slut.</p>
+      </article>
     </div>
   </section>
 
-  <section class="section" id="format">
-    <h2 class="section-title">Formatet</h2>
-    <div class="card">
-      <h2>Vad är ett matristest?</h2>
-      <p>Ett matristest, ofta kallat logiktest eller begåvningstest, mäter förmågan att se mönster i figurer. Varje uppgift är ett rutnät med tre gånger tre rutor. Åtta av dem innehåller figurer som följer en eller flera regler, och den nionde saknas. Uppgiften är att hitta reglerna och välja det alternativ som passar i den tomma rutan.</p>
-      <p>Reglerna gäller i både rader och kolumner och styr olika delar av figuren: form, antal, storlek, fyllnad, riktning, linjer i kanten eller en prick som flyttar sig. På de lättaste uppgifterna gäller en regel. På de svåraste gäller tre eller fyra samtidigt, och alternativen skiljer sig bara i en detalj.</p>
-      <p>Formatet är vanligt vid rekrytering, som en del av urvalet före intervju, och det går att öva på. Den som har sett formatet förut tappar ingen tid på att förstå uppgiften och går in lugnare.</p>
+  <section class="block" id="appen">
+    <div class="block-head">
+      <h2>Så ser det ut.</h2>
+      <p>Lugnt, nästan monokromt. Uppgiften är det enda som tar uppmärksamhet.</p>
+    </div>
+    <div class="shots">
+      <figure>
+        <div class="phone"><img src="/assets/img/sv_puzzle.jpg" width="600" height="1304" alt="Uppgiftsskärmen: en matris med tre gånger tre figurer, en ruta saknas, sex alternativ under." loading="lazy"></div>
+        <figcaption><strong>Hitta regeln.</strong>Välj figuren som passar.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="/assets/img/sv_answer.jpg" width="600" height="1304" alt="Facit efter ett fel svar: rätt alternativ markerat och varje regel förklarad i text." loading="lazy"></div>
+        <figcaption><strong>Facit direkt.</strong>Varje regel förklarad.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="/assets/img/sv_example.jpg" width="600" height="1304" alt="Ett löst exempel på regeln linjer som tar ut varandra." loading="lazy"></div>
+        <figcaption><strong>Ett exempel per regel.</strong>Se den du missade.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="/assets/img/sv_stats.jpg" width="600" height="1304" alt="Statistikskärmen: nivån över tid och andel fel per regeltyp." loading="lazy"></div>
+        <figcaption><strong>Följ nivån.</strong>Se vad du ska träna på.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="section" id="alva-labs">
-    <h2 class="section-title">Inför testet</h2>
-    <div class="card">
-      <h2>Bra inför Alva Labs logiktest</h2>
-      <p>Alva Labs logiktest är ett av de vanligaste i svenska rekryteringar. Det bygger på matrisuppgifter av det här slaget, med stigande svårighet, och kandidaten har ofta bara några dagar på sig från kallelse till test.</p>
-      <p>Matristräning övar just det formatet: tre gånger tre figurer, en ruta saknas, sex alternativ. Träningsläget ger facit som förklarar varje regel, och testläget ger tolv uppgifter på tid med adaptiv svårighet, så att du hinner vänja dig vid både uppgifterna och klockan.</p>
-      <p class="caption">Matristräning är fristående och har ingen koppling till Alva Labs. Uppgifterna är våra egna, och nivån i appen är appens egen skala, inte en förutsägelse av resultatet på något annat test.</p>
+  <section class="block" id="prova">
+    <div class="block-head">
+      <h2>Prova en uppgift.</h2>
+      <p>Tjugo uppgifter i stigande svårighet, direkt här. Samma facit som i appen.</p>
     </div>
-  </section>
-
-  <section class="section" id="arbetsordning">
-    <h2 class="section-title">Arbetsordning som hjälper</h2>
-    <div class="card">
-      <ol class="rows">
-        <li><span class="num">1</span><span>Dela upp rutan i delar: form, antal, storlek, fyllnad, riktning, linjer, prick.</span></li>
-        <li><span class="num">2</span><span>Hitta regeln för varje del i rad 1 och 2. Kontrollera att den håller i kolumnerna.</span></li>
-        <li><span class="num">3</span><span>Bygg svaret i huvudet innan du tittar på alternativen.</span></li>
-        <li><span class="num">4</span><span>Stryk alternativ som bryter mot en regel. Flera skiljer sig bara i en detalj.</span></li>
-        <li><span class="num">5</span><span>Använd tiden. Ett förhastat fel kostar mer än några extra sekunder.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section" id="prova">
-    <h2 class="section-title">Prova själv</h2>
-    <div class="card" data-sample="/assets/puzzles.json">
-      <p class="caption">Tjugo uppgifter i stigande svårighet, nivå 1 till 8 på appens skala. Välj det alternativ som passar i den tomma rutan, så visas facit direkt.</p>
+    <div class="card sample" data-sample="/assets/puzzles.json">
       <div class="sample-body"><p class="caption">Läser in uppgifterna …</p></div>
     </div>
   </section>
 
-  <section class="section" id="appen">
-    <h2 class="section-title">Appen</h2>
-    <div class="card">
-      <h2>Matristräning för iPhone</h2>
-      <div class="shots">
-        <img src="/assets/img/sv_2_uppgift.jpg" width="720" height="1564" alt="Uppgiftsskärmen i appen: en matris med tre gånger tre figurer, en ruta saknas, och sex alternativ under." loading="lazy">
-        <img src="/assets/img/sv_3_facit.jpg" width="720" height="1564" alt="Facit i appen efter ett fel svar: rätt alternativ markerat och varje regel förklarad i text." loading="lazy">
-        <img src="/assets/img/sv_6_statistik.jpg" width="720" height="1564" alt="Statistikskärmen i appen: nivån över tid och andel fel per regeltyp." loading="lazy">
+  <section class="block" id="alva-labs">
+    <div class="dark-card">
+      <div>
+        <p class="kicker">Inför testet</p>
+        <h2>Bra inför Alva Labs logiktest.</h2>
       </div>
-      <p>Uppgifterna genereras i telefonen och tar aldrig slut. Varje uppgift kontrolleras så att exakt ett alternativ är rätt.</p>
-      <ul>
-        <li><strong>Träna.</strong> En uppgift i taget, facit direkt, nivå som följer dig eller som du väljer.</li>
-        <li><strong>Test.</strong> Tolv uppgifter på tid med adaptiv svårighet. Efteråt en nivå 1–10 och en genomgång av varje uppgift.</li>
-        <li><strong>Facit.</strong> Inte "antalet ändras", utan "antalet ökar med 1 åt höger och minskar med 1 nedåt". Ett exempel på varje regel du missar.</li>
-        <li><strong>Statistik.</strong> Hur nivån utvecklas och vilka regeltyper du oftast missar.</li>
-      </ul>
-      <p class="caption">Fem träningsuppgifter är gratis. Resten låses upp med ett engångsköp, utan prenumeration. Ingen inloggning, inga annonser. Dina resultat stannar i telefonen. Svenska och engelska.</p>
-      <p><a class="button secondary wide" href="https://apps.apple.com/se/app/id6814397251">Hämta i App Store</a></p>
+      <div>
+        <p>Alva Labs logiktest är ett av de vanligaste i svenska rekryteringar och bygger på matrisuppgifter av det här slaget, med stigande svårighet. Kandidaten har ofta bara några dagar på sig från kallelse till test.</p>
+        <p>Matristräning övar just det formatet, med facit i träningsläget och klocka i testläget.</p>
+        <p class="caption">Matristräning är fristående och har ingen koppling till Alva Labs. Uppgifterna är våra egna, och nivån i appen är appens egen skala, inte en förutsägelse av resultatet på något annat test.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="fragor">
-    <h2 class="section-title">Frågor och svar</h2>
+  <section class="block" id="hamta">
+    <div class="cta-panel">
+      <h2>Hämta Matristräning.</h2>
+      <p>Fem träningsuppgifter med facit är gratis. Resten låses upp med ett engångsköp, utan prenumeration. Ingen inloggning, inga annonser. Dina resultat stannar i telefonen.</p>
+      <a class="button light" href="https://apps.apple.com/se/app/id6814397251">Hämta i App Store <span class="arrow" aria-hidden="true">→</span></a>
+      <p class="note">Kräver iPhone med iOS 17 eller senare.</p>
+    </div>
+  </section>
+
+  <section class="block narrow more" id="om">
+    <div class="block-head">
+      <h2>Om matristest.</h2>
+      <p>Vad formatet är, hur man angriper en uppgift, och svar på det folk brukar undra.</p>
+    </div>
     <div class="card">
+      <details id="vad-ar-ett-matristest">
+        <summary>Vad är ett matristest?</summary>
+        <p>Ett matristest, ofta kallat logiktest eller begåvningstest, mäter förmågan att se mönster i figurer. Varje uppgift är ett rutnät med tre gånger tre rutor. Åtta av dem innehåller figurer som följer en eller flera regler, och den nionde saknas. Uppgiften är att hitta reglerna och välja det alternativ som passar i den tomma rutan.</p>
+        <p>Reglerna gäller i både rader och kolumner och styr olika delar av figuren: form, antal, storlek, fyllnad, riktning, linjer i kanten eller en prick som flyttar sig. På de lättaste uppgifterna gäller en regel. På de svåraste gäller tre eller fyra samtidigt, och alternativen skiljer sig bara i en detalj.</p>
+        <p>Formatet är vanligt vid rekrytering, som en del av urvalet före intervju, och det går att öva på. Den som har sett formatet förut tappar ingen tid på att förstå uppgiften och går in lugnare.</p>
+      </details>
+      <details>
+        <summary>Arbetsordning som hjälper</summary>
+        <ol>
+          <li>Dela upp rutan i delar: form, antal, storlek, fyllnad, riktning, linjer, prick.</li>
+          <li>Hitta regeln för varje del i rad 1 och 2. Kontrollera att den håller i kolumnerna.</li>
+          <li>Bygg svaret i huvudet innan du tittar på alternativen.</li>
+          <li>Stryk alternativ som bryter mot en regel. Flera skiljer sig bara i en detalj.</li>
+          <li>Använd tiden. Ett förhastat fel kostar mer än några extra sekunder.</li>
+        </ol>
+      </details>
       <details>
         <summary>Hur lång tid tar det att öva inför ett logiktest?</summary>
         <p>Formatet sitter efter några dagar. Det viktiga är att ha sett alla regeltyper och att ha gjort några uppgifter på tid. Några fokuserade pass ger mer än veckor av spridd övning.</p>
@@ -177,10 +200,6 @@
       <details>
         <summary>Vad är skillnaden mellan matristest, logiktest och begåvningstest?</summary>
         <p>Orden används om vartannat. Begåvningstest är det breda ordet för test som mäter tänkande. Logiktest är den del som handlar om mönster och slutledning. Matristest är formatet: ett rutnät med tre gånger tre figurer där en ruta saknas.</p>
-      </details>
-      <details>
-        <summary>Passar övningen inför Alva Labs logiktest?</summary>
-        <p>Ja. Alva Labs logiktest bygger på matrisuppgifter av samma slag: tre gånger tre figurer, en ruta saknas, stigande svårighet. Matristräning är fristående och har ingen koppling till Alva Labs.</p>
       </details>
       <details>
         <summary>Vilka regler kan förekomma?</summary>
