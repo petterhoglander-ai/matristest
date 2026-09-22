@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://matristest.se/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/"/>
+  </url>
+  <url><loc>https://matristest.se/integritetspolicy.html</loc></url>
+  <url><loc>https://matristest.se/en/privacy.html</loc></url>
+  <url><loc>https://matristest.se/support.html</loc></url>
+  <url><loc>https://matristest.se/en/support.html</loc></url>
+</urlset>
