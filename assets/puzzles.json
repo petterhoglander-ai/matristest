@@ -135,336 +135,349 @@
       "seed" : 20260922001
     },
     {
-      "answer" : 5,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 5
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 2
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The size increases by 1 step to the right and decreases by 1 step downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Storleken ökar 1 steg åt höger och minskar 1 steg nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 2,
-      "level" : 1,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heart",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 3
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Step by step change"
-        ],
-        "sv" : [
-          "Stegvis förändring"
-        ]
-      },
-      "rules" : [
-        "progression"
-      ],
-      "seed" : 20260922002
-    },
-    {
       "answer" : 2,
       "cells" : [
         {
           "count" : 1,
-          "fill" : "striped",
-          "lines" : 117,
-          "position" : 0,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 180,
-          "position" : 3,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 181,
-          "position" : 2,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 68,
-          "position" : 1,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 25,
-          "position" : 7,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 132,
-          "position" : 1,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 205,
-          "position" : 6,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 35,
-          "position" : 3,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The third cell in every row is the first one mirrored in a vertical axis: left and right swap.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Tredje rutan i varje rad är den första speglad i en lodrät axel: vänster och höger byter plats.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 3,
-      "level" : 2,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 197,
+          "fill" : "dotted",
+          "lines" : 0,
           "position" : 5,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 195,
-          "position" : 3,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 199,
-          "position" : 4,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 197,
-          "position" : 4,
-          "shape" : "hexagon",
+          "shape" : "heart",
           "size" : 3
         },
         {
           "count" : 1,
           "fill" : "dotted",
-          "lines" : 199,
-          "position" : 3,
-          "shape" : "hexagon",
+          "lines" : 0,
+          "position" : 1,
+          "shape" : "heart",
           "size" : 3
         },
         {
           "count" : 1,
-          "fill" : "empty",
-          "lines" : 199,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 6,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
           "position" : 1,
-          "shape" : "hexagon",
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 6,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 5,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 6,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 5,
+          "shape" : "heart",
+          "size" : 3
+        },
+        null
+      ],
+      "explanations" : {
+        "en" : [
+          "The dot sits in the top middle, the bottom middle and the bottom left corner, once in every row and every column.",
+          "Everything else is the same in every cell."
+        ],
+        "sv" : [
+          "Pricken står i mitt upptill, mitt nedtill och nedre vänstra hörnet, en gång i varje rad och varje kolumn.",
+          "Allt annat är lika i alla rutor."
+        ]
+      },
+      "id" : 2,
+      "level" : 2,
+      "options" : [
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 5,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "striped",
+          "lines" : 0,
+          "position" : 1,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 1,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 6,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 6,
+          "shape" : "octagon",
+          "size" : 3
+        },
+        {
+          "count" : 5,
+          "fill" : "dotted",
+          "lines" : 0,
+          "position" : 6,
+          "shape" : "heart",
           "size" : 3
         }
       ],
       "ruleNames" : {
         "en" : [
-          "Mirroring"
+          "Three values distributed"
         ],
         "sv" : [
-          "Spegling"
+          "Fördelning av tre"
         ]
       },
       "rules" : [
-        "mirror"
+        "distributionOfThree"
       ],
-      "seed" : 20260922003
+      "seed" : 20260922002
     },
     {
       "answer" : 0,
       "cells" : [
         {
+          "count" : 1,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "star",
+          "size" : 3
+        },
+        {
+          "count" : 2,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "cross",
+          "size" : 3
+        },
+        {
+          "count" : 2,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "cross",
+          "size" : 3
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "star",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "cross",
+          "size" : 3
+        },
+        null
+      ],
+      "explanations" : {
+        "en" : [
+          "The number of figures increases by 1 to the right and 1 downwards.",
+          "Star, cross and heart each appear once in every row and every column.",
+          "Everything else is the same in every cell."
+        ],
+        "sv" : [
+          "Antalet figurer ökar med 1 åt höger och 1 nedåt.",
+          "Stjärna, kors och hjärta förekommer en gång i varje rad och varje kolumn.",
+          "Allt annat är lika i alla rutor."
+        ]
+      },
+      "id" : 3,
+      "level" : 3,
+      "options" : [
+        {
+          "count" : 5,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "star",
+          "size" : 3
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 2,
+          "shape" : "star",
+          "size" : 3
+        },
+        {
           "count" : 3,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "shape" : "star",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "star",
+          "size" : 5
+        },
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "star",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "shape" : "cross",
+          "size" : 3
+        }
+      ],
+      "ruleNames" : {
+        "en" : [
+          "Step by step change",
+          "Three values distributed"
+        ],
+        "sv" : [
+          "Stegvis förändring",
+          "Fördelning av tre"
+        ]
+      },
+      "rules" : [
+        "progression",
+        "distributionOfThree"
+      ],
+      "seed" : 20260922003
+    },
+    {
+      "answer" : 1,
+      "cells" : [
+        {
+          "count" : 3,
+          "fill" : "solid",
+          "lines" : 0,
+          "rotation" : 315,
+          "shape" : "heart",
           "size" : 3
         },
         {
           "count" : 2,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 225,
+          "shape" : "heart",
           "size" : 4
         },
         {
           "count" : 1,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 90,
+          "shape" : "heart",
           "size" : 5
         },
         {
           "count" : 4,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 90,
+          "shape" : "heart",
           "size" : 2
         },
         {
           "count" : 3,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 315,
+          "shape" : "heart",
           "size" : 3
         },
         {
           "count" : 2,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 225,
+          "shape" : "heart",
           "size" : 4
         },
         {
           "count" : 5,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 225,
+          "shape" : "heart",
           "size" : 1
         },
         {
           "count" : 4,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
+          "rotation" : 90,
+          "shape" : "heart",
           "size" : 2
         },
         null
@@ -472,69 +485,80 @@
       "explanations" : {
         "en" : [
           "The number of figures and their size are linked: the more figures, the smaller they are.",
+          "The direction is 90°, 225° and 315°, once in every row and every column.",
           "Everything else is the same in every cell."
         ],
         "sv" : [
           "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
+          "Riktningen är 90°, 225° och 315°, en gång i varje rad och varje kolumn.",
           "Allt annat är lika i alla rutor."
         ]
       },
       "id" : 4,
-      "level" : 2,
+      "level" : 4,
       "options" : [
         {
-          "count" : 3,
+          "count" : 2,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "solid",
-          "lines" : 16,
-          "shape" : "heptagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "solid",
-          "lines" : 1,
-          "shape" : "heptagon",
-          "size" : 3
+          "rotation" : 225,
+          "shape" : "heart",
+          "size" : 4
         },
         {
           "count" : 3,
           "fill" : "solid",
-          "lines" : 1,
-          "shape" : "heptagon",
-          "size" : 5
+          "lines" : 0,
+          "rotation" : 315,
+          "shape" : "heart",
+          "size" : 3
         },
         {
-          "count" : 1,
+          "count" : 4,
           "fill" : "solid",
           "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 1
+          "rotation" : 315,
+          "shape" : "heart",
+          "size" : 3
         },
         {
-          "count" : 5,
+          "count" : 3,
           "fill" : "solid",
-          "lines" : 4,
-          "shape" : "heptagon",
+          "lines" : 0,
+          "rotation" : 315,
+          "shape" : "hexagon",
           "size" : 3
+        },
+        {
+          "count" : 3,
+          "fill" : "solid",
+          "lines" : 0,
+          "rotation" : 90,
+          "shape" : "heart",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "solid",
+          "lines" : 0,
+          "rotation" : 90,
+          "shape" : "heart",
+          "size" : 2
         }
       ],
       "ruleNames" : {
         "en" : [
-          "Covariation"
+          "Covariation",
+          "Three values distributed"
         ],
         "sv" : [
-          "Samvariation"
+          "Samvariation",
+          "Fördelning av tre"
         ]
       },
       "rules" : [
-        "covariation"
+        "covariation",
+        "distributionOfThree"
       ],
       "seed" : 20260922004
     },
@@ -543,2433 +567,149 @@
       "cells" : [
         {
           "count" : 1,
-          "fill" : "striped",
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "diamond",
+          "rotation" : 180,
+          "shape" : "heart",
+          "size" : 5
+        },
+        {
+          "count" : 2,
+          "fill" : "dotted",
+          "lines" : 0,
+          "rotation" : 270,
+          "shape" : "heart",
+          "size" : 4
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "rotation" : 0,
+          "shape" : "heart",
           "size" : 3
         },
         {
-          "count" : 1,
-          "fill" : "empty",
+          "count" : 2,
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "pentagon",
+          "rotation" : 225,
+          "shape" : "heart",
+          "size" : 4
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "rotation" : 315,
+          "shape" : "heart",
           "size" : 3
         },
         {
-          "count" : 1,
-          "fill" : "solid",
+          "count" : 4,
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "trapezoid",
+          "rotation" : 45,
+          "shape" : "heart",
+          "size" : 2
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "rotation" : 270,
+          "shape" : "heart",
           "size" : 3
         },
         {
-          "count" : 1,
-          "fill" : "empty",
+          "count" : 4,
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "pentagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "shape" : "trapezoid",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "shape" : "trapezoid",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "diamond",
-          "size" : 3
+          "rotation" : 0,
+          "shape" : "heart",
+          "size" : 2
         },
         null
       ],
       "explanations" : {
         "en" : [
-          "Diamond, pentagon and trapezoid each appear once in every row and every column.",
-          "Unfilled, filled and striped each appear once in every row and every column.",
+          "The number of figures and their size are linked: the more figures, the smaller they are.",
+          "The direction rotates 90° clockwise to the right and 45° downwards.",
           "Everything else is the same in every cell."
         ],
         "sv" : [
-          "Romb, femhörning och parallelltrapets förekommer en gång i varje rad och varje kolumn.",
-          "Ofylld, fylld och streckad förekommer en gång i varje rad och varje kolumn.",
+          "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
+          "Riktningen vrids 90° medurs åt höger och 45° nedåt.",
           "Allt annat är lika i alla rutor."
         ]
       },
       "id" : 5,
-      "level" : 3,
+      "level" : 5,
       "options" : [
         {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 2,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
+          "count" : 2,
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "pentagon",
-          "size" : 3
+          "rotation" : 90,
+          "shape" : "heart",
+          "size" : 1
         },
         {
           "count" : 5,
-          "fill" : "empty",
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "diamond",
-          "size" : 3
+          "rotation" : 90,
+          "shape" : "heart",
+          "size" : 5
         },
         {
-          "count" : 1,
-          "fill" : "striped",
+          "count" : 5,
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "pentagon",
-          "size" : 4
+          "rotation" : 90,
+          "shape" : "heart",
+          "size" : 1
         },
         {
-          "count" : 1,
-          "fill" : "empty",
+          "count" : 5,
+          "fill" : "dotted",
           "lines" : 0,
-          "shape" : "trapezoid",
-          "size" : 4
+          "rotation" : 0,
+          "shape" : "heart",
+          "size" : 1
+        },
+        {
+          "count" : 3,
+          "fill" : "dotted",
+          "lines" : 0,
+          "rotation" : 90,
+          "shape" : "heart",
+          "size" : 1
+        },
+        {
+          "count" : 4,
+          "fill" : "dotted",
+          "lines" : 0,
+          "rotation" : 0,
+          "shape" : "heart",
+          "size" : 2
         }
       ],
       "ruleNames" : {
         "en" : [
-          "Three values distributed",
-          "Three values distributed"
+          "Covariation",
+          "Step by step change"
         ],
         "sv" : [
-          "Fördelning av tre",
-          "Fördelning av tre"
+          "Samvariation",
+          "Stegvis förändring"
         ]
       },
       "rules" : [
-        "distributionOfThree",
-        "distributionOfThree"
+        "covariation",
+        "progression"
       ],
       "seed" : 20260922005
-    },
-    {
-      "answer" : 1,
-      "cells" : [
-        {
-          "count" : 5,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 2,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 2,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 7,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "star",
-          "size" : 3
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The dot moves 1 step clockwise to the right and 1 step counterclockwise downwards.",
-          "The number of figures decreases by 1 to the right and 1 downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Pricken flyttar 1 steg medurs åt höger och 1 steg moturs nedåt.",
-          "Antalet figurer minskar med 1 åt höger och 1 nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 6,
-      "level" : 3,
-      "options" : [
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "triangle",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "solid",
-          "lines" : 2,
-          "position" : 1,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "star",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 7,
-          "shape" : "star",
-          "size" : 2
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Movement along a path",
-          "Step by step change"
-        ],
-        "sv" : [
-          "Rörelse längs bana",
-          "Stegvis förändring"
-        ]
-      },
-      "rules" : [
-        "pathMovement",
-        "progression"
-      ],
-      "seed" : 20260922006
-    },
-    {
-      "answer" : 1,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 5
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "trapezoid",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "trapezoid",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "trapezoid",
-          "size" : 2
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The size decreases by 1 step to the right and 1 step downwards.",
-          "Hexagon, trapezoid and heptagon each appear once in every row and every column.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Storleken minskar 1 steg åt höger och 1 steg nedåt.",
-          "Sexhörning, parallelltrapets och sjuhörning förekommer en gång i varje rad och varje kolumn.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 7,
-      "level" : 3,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 1
-        },
-        {
-          "count" : 4,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "striped",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 1
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Step by step change",
-          "Three values distributed"
-        ],
-        "sv" : [
-          "Stegvis förändring",
-          "Fördelning av tre"
-        ]
-      },
-      "rules" : [
-        "progression",
-        "distributionOfThree"
-      ],
-      "seed" : 20260922007
-    },
-    {
-      "answer" : 2,
-      "cells" : [
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 225,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 180,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 135,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 135,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 90,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The number of figures decreases by 1 to the right and increases by 1 downwards.",
-          "The direction rotates 45° counterclockwise to the right and 90° downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Antalet figurer minskar med 1 åt höger och ökar med 1 nedåt.",
-          "Riktningen vrids 45° moturs åt höger och 90° nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 8,
-      "level" : 4,
-      "options" : [
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 315,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 315,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 225,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "solid",
-          "lines" : 0,
-          "rotation" : 315,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Step by step change",
-          "Step by step change"
-        ],
-        "sv" : [
-          "Stegvis förändring",
-          "Stegvis förändring"
-        ]
-      },
-      "rules" : [
-        "progression",
-        "progression"
-      ],
-      "seed" : 20260922008
-    },
-    {
-      "answer" : 0,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 74,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 196,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 206,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 210,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 133,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 215,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 218,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 197,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
-          "The filled share increases by 25 percentage points to the right and 25 percentage points downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
-          "Fyllnadsgraden ökar med 25 procentenheter åt höger och 25 procentenheter nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 9,
-      "level" : 4,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 223,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 223,
-          "shape" : "triangle",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 215,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 31,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 221,
-          "shape" : "triangle",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 197,
-          "shape" : "triangle",
-          "size" : 4
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Lines combined",
-          "Degree of fill"
-        ],
-        "sv" : [
-          "Linjer som slås ihop",
-          "Fyllnadsgrad"
-        ]
-      },
-      "rules" : [
-        "lineUnion",
-        "fillDegree"
-      ],
-      "seed" : 20260922009
-    },
-    {
-      "answer" : 3,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 10,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 64,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 74,
-          "rotation" : 180,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 89,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 192,
-          "rotation" : 180,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 217,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 91,
-          "rotation" : 180,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 192,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 3
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The fill determines the direction: filled means 270°, unfilled means 0° and dotted means 180°.",
-          "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Fyllnaden styr riktningen: fylld ger 270°, ofylld ger 0° och prickig ger 180°.",
-          "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 10,
-      "level" : 4,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 219,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 192,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 155,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 219,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 217,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 218,
-          "rotation" : 0,
-          "shape" : "heart",
-          "size" : 3
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Conditional rule",
-          "Lines combined"
-        ],
-        "sv" : [
-          "Villkorad regel",
-          "Linjer som slås ihop"
-        ]
-      },
-      "rules" : [
-        "conditional",
-        "lineUnion"
-      ],
-      "seed" : 20260922010
-    },
-    {
-      "answer" : 5,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 6,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 6,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The size is small, medium and large, once in every row and every column.",
-          "The dot sits in the top middle, the middle right and the bottom left corner, once in every row and every column.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Storleken är liten, mellan och stor, en gång i varje rad och varje kolumn.",
-          "Pricken står i mitt upptill, mitt till höger och nedre vänstra hörnet, en gång i varje rad och varje kolumn.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 11,
-      "level" : 5,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 6,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 5,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 6,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 6,
-          "shape" : "octagon",
-          "size" : 4
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Three values distributed",
-          "Three values distributed"
-        ],
-        "sv" : [
-          "Fördelning av tre",
-          "Fördelning av tre"
-        ]
-      },
-      "rules" : [
-        "distributionOfThree",
-        "distributionOfThree"
-      ],
-      "seed" : 20260922011
-    },
-    {
-      "answer" : 1,
-      "cells" : [
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 5,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 1
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 5,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 5
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 5,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The dot sits in the top left corner, the top middle and the bottom middle, once in every row and every column.",
-          "The number of figures and their size are linked: the more figures, the smaller they are.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Pricken står i övre vänstra hörnet, mitt upptill och mitt nedtill, en gång i varje rad och varje kolumn.",
-          "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 12,
-      "level" : 5,
-      "options" : [
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 5,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 5
-        },
-        {
-          "count" : 3,
-          "fill" : "solid",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 5,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 3
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Three values distributed",
-          "Covariation"
-        ],
-        "sv" : [
-          "Fördelning av tre",
-          "Samvariation"
-        ]
-      },
-      "rules" : [
-        "distributionOfThree",
-        "covariation"
-      ],
-      "seed" : 20260922012
-    },
-    {
-      "answer" : 3,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "rotation" : 0,
-          "shape" : "arrow",
-          "size" : 5
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "rotation" : 0,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 5
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 5
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "rotation" : 0,
-          "shape" : "arrow",
-          "size" : 1
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The fill determines the direction: dotted means 0°, filled means 90° and unfilled means 180°.",
-          "The size is very small, large and very large, once in every row and every column.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Fyllnaden styr riktningen: prickig ger 0°, fylld ger 90° och ofylld ger 180°.",
-          "Storleken är mycket liten, stor och mycket stor, en gång i varje rad och varje kolumn.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 13,
-      "level" : 5,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 5
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 0,
-          "rotation" : 0,
-          "shape" : "arrow",
-          "size" : 1
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 0,
-          "rotation" : 270,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 1
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Conditional rule",
-          "Three values distributed"
-        ],
-        "sv" : [
-          "Villkorad regel",
-          "Fördelning av tre"
-        ]
-      },
-      "rules" : [
-        "conditional",
-        "distributionOfThree"
-      ],
-      "seed" : 20260922013
-    },
-    {
-      "answer" : 5,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 112,
-          "rotation" : 270,
-          "shape" : "arrow",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 89,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 121,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 53,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 10,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 63,
-          "rotation" : 270,
-          "shape" : "arrow",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "dotted",
-          "lines" : 117,
-          "rotation" : 180,
-          "shape" : "arrow",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 91,
-          "rotation" : 270,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The fill determines the direction: filled means 90°, dotted means 180° and striped means 270°.",
-          "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
-          "The size is small, medium and large, once in every row and every column.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Fyllnaden styr riktningen: fylld ger 90°, prickig ger 180° och streckad ger 270°.",
-          "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
-          "Storleken är liten, mellan och stor, en gång i varje rad och varje kolumn.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 14,
-      "level" : 6,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 127,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 127,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 91,
-          "rotation" : 270,
-          "shape" : "arrow",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 127,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 46,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "solid",
-          "lines" : 127,
-          "rotation" : 90,
-          "shape" : "arrow",
-          "size" : 2
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Conditional rule",
-          "Lines combined",
-          "Three values distributed"
-        ],
-        "sv" : [
-          "Villkorad regel",
-          "Linjer som slås ihop",
-          "Fördelning av tre"
-        ]
-      },
-      "rules" : [
-        "conditional",
-        "lineUnion",
-        "distributionOfThree"
-      ],
-      "seed" : 20260922014
-    },
-    {
-      "answer" : 1,
-      "cells" : [
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 38,
-          "position" : 3,
-          "rotation" : 45,
-          "shape" : "crescent",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 137,
-          "position" : 7,
-          "rotation" : 225,
-          "shape" : "crescent",
-          "size" : 2
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 38,
-          "position" : 3,
-          "rotation" : 45,
-          "shape" : "crescent",
-          "size" : 1
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 76,
-          "position" : 5,
-          "rotation" : 135,
-          "shape" : "crescent",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 19,
-          "position" : 1,
-          "rotation" : 315,
-          "shape" : "crescent",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 76,
-          "position" : 5,
-          "rotation" : 135,
-          "shape" : "crescent",
-          "size" : 2
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 137,
-          "position" : 7,
-          "rotation" : 225,
-          "shape" : "crescent",
-          "size" : 5
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 38,
-          "position" : 3,
-          "rotation" : 45,
-          "shape" : "crescent",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The size decreases by 1 step to the right and increases by 1 step downwards.",
-          "The whole content of the cell rotates 180 degrees clockwise to the right and 90 degrees downwards.",
-          "Unfilled, striped and dotted each appear once in every row and every column.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Storleken minskar 1 steg åt höger och ökar 1 steg nedåt.",
-          "Hela rutans innehåll vrids 180 grader medurs åt höger och 90 grader nedåt.",
-          "Ofylld, streckad och prickig förekommer en gång i varje rad och varje kolumn.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 15,
-      "level" : 6,
-      "options" : [
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 38,
-          "position" : 3,
-          "rotation" : 45,
-          "shape" : "crescent",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 137,
-          "position" : 7,
-          "rotation" : 225,
-          "shape" : "crescent",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 137,
-          "position" : 4,
-          "rotation" : 225,
-          "shape" : "crescent",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 76,
-          "position" : 5,
-          "rotation" : 135,
-          "shape" : "crescent",
-          "size" : 2
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 137,
-          "position" : 7,
-          "rotation" : 225,
-          "shape" : "crescent",
-          "size" : 1
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 137,
-          "position" : 2,
-          "rotation" : 225,
-          "shape" : "crescent",
-          "size" : 3
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Step by step change",
-          "Rotation of the whole cell",
-          "Three values distributed"
-        ],
-        "sv" : [
-          "Stegvis förändring",
-          "Rotation av hela rutan",
-          "Fördelning av tre"
-        ]
-      },
-      "rules" : [
-        "progression",
-        "rotationOfCell",
-        "distributionOfThree"
-      ],
-      "seed" : 20260922015
-    },
-    {
-      "answer" : 0,
-      "cells" : [
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "square",
-          "size" : 2
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 7,
-          "shape" : "circle",
-          "size" : 1
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 2,
-          "shape" : "circle",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "square",
-          "size" : 2
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 3,
-          "shape" : "square",
-          "size" : 5
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 2,
-          "shape" : "circle",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The dot moves 1 step counterclockwise to the right and 1 step clockwise downwards.",
-          "The size decreases by 1 step to the right and increases by 1 step downwards.",
-          "Circle, square and octagon each appear once in every row and every column.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Pricken flyttar 1 steg moturs åt höger och 1 steg medurs nedåt.",
-          "Storleken minskar 1 steg åt höger och ökar 1 steg nedåt.",
-          "Cirkel, kvadrat och åttahörning förekommer en gång i varje rad och varje kolumn.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 16,
-      "level" : 6,
-      "options" : [
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 0,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 2,
-          "shape" : "octagon",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 2
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 2,
-          "shape" : "circle",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "dotted",
-          "lines" : 0,
-          "position" : 1,
-          "shape" : "octagon",
-          "size" : 1
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Movement along a path",
-          "Step by step change",
-          "Three values distributed"
-        ],
-        "sv" : [
-          "Rörelse längs bana",
-          "Stegvis förändring",
-          "Fördelning av tre"
-        ]
-      },
-      "rules" : [
-        "pathMovement",
-        "progression",
-        "distributionOfThree"
-      ],
-      "seed" : 20260922016
-    },
-    {
-      "answer" : 3,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 77,
-          "position" : 6,
-          "rotation" : 0,
-          "shape" : "trapezoid",
-          "size" : 5
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 139,
-          "position" : 0,
-          "rotation" : 90,
-          "shape" : "trapezoid",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 23,
-          "position" : 2,
-          "rotation" : 180,
-          "shape" : "trapezoid",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 23,
-          "position" : 2,
-          "rotation" : 180,
-          "shape" : "trapezoid",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 46,
-          "position" : 4,
-          "rotation" : 270,
-          "shape" : "trapezoid",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 77,
-          "position" : 6,
-          "rotation" : 0,
-          "shape" : "trapezoid",
-          "size" : 2
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 77,
-          "position" : 6,
-          "rotation" : 0,
-          "shape" : "trapezoid",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 139,
-          "position" : 0,
-          "rotation" : 90,
-          "shape" : "trapezoid",
-          "size" : 2
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The whole content of the cell rotates 90 degrees clockwise to the right and 180 degrees downwards.",
-          "The number of figures and their size are linked: the more figures, the smaller they are.",
-          "The filled share decreases by 25 percentage points to the right and 25 downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Hela rutans innehåll vrids 90 grader medurs åt höger och 180 grader nedåt.",
-          "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
-          "Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 17,
-      "level" : 7,
-      "options" : [
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 151,
-          "position" : 2,
-          "rotation" : 180,
-          "shape" : "trapezoid",
-          "size" : 1
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 23,
-          "position" : 2,
-          "rotation" : 180,
-          "shape" : "trapezoid",
-          "size" : 4
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 23,
-          "position" : 2,
-          "rotation" : 270,
-          "shape" : "trapezoid",
-          "size" : 1
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 23,
-          "position" : 2,
-          "rotation" : 180,
-          "shape" : "trapezoid",
-          "size" : 1
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 77,
-          "position" : 6,
-          "rotation" : 0,
-          "shape" : "trapezoid",
-          "size" : 2
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 139,
-          "position" : 0,
-          "rotation" : 90,
-          "shape" : "trapezoid",
-          "size" : 2
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Rotation of the whole cell",
-          "Covariation",
-          "Degree of fill"
-        ],
-        "sv" : [
-          "Rotation av hela rutan",
-          "Samvariation",
-          "Fyllnadsgrad"
-        ]
-      },
-      "rules" : [
-        "rotationOfCell",
-        "covariation",
-        "fillDegree"
-      ],
-      "seed" : 20260922017
-    },
-    {
-      "answer" : 4,
-      "cells" : [
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 16,
-          "rotation" : 90,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 16,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 16,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 16,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 16,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 16,
-          "rotation" : 90,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 16,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 16,
-          "rotation" : 90,
-          "shape" : "heart",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The number in the third cell is the difference between the first two: 5 − 3 = 2. This holds in every row.",
-          "The direction is 45°, 90° and 270°, once in every row and every column.",
-          "The filled share increases by 25 percentage points to the right and 25 downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Antalet i tredje rutan är skillnaden mellan de två första: 5 − 3 = 2. Gäller i varje rad.",
-          "Riktningen är 45°, 90° och 270°, en gång i varje rad och varje kolumn.",
-          "Fyllnadsgraden ökar med 25 procentenheter åt höger och 25 nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 18,
-      "level" : 7,
-      "options" : [
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 16,
-          "rotation" : 45,
-          "shape" : "octagon",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 16,
-          "rotation" : 90,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 16,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 16,
-          "rotation" : 90,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 16,
-          "rotation" : 45,
-          "shape" : "heart",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 16,
-          "rotation" : 270,
-          "shape" : "heart",
-          "size" : 4
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Arithmetic on the number",
-          "Three values distributed",
-          "Degree of fill"
-        ],
-        "sv" : [
-          "Aritmetik på antal",
-          "Fördelning av tre",
-          "Fyllnadsgrad"
-        ]
-      },
-      "rules" : [
-        "countArithmetic",
-        "distributionOfThree",
-        "fillDegree"
-      ],
-      "seed" : 20260922018
-    },
-    {
-      "answer" : 2,
-      "cells" : [
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 185,
-          "shape" : "pentagon",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "striped",
-          "lines" : 85,
-          "shape" : "hexagon",
-          "size" : 2
-        },
-        {
-          "count" : 5,
-          "fill" : "striped",
-          "lines" : 236,
-          "shape" : "heptagon",
-          "size" : 1
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 243,
-          "shape" : "square",
-          "size" : 4
-        },
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 64,
-          "shape" : "pentagon",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "striped",
-          "lines" : 179,
-          "shape" : "hexagon",
-          "size" : 2
-        },
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 74,
-          "shape" : "triangle",
-          "size" : 5
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 21,
-          "shape" : "square",
-          "size" : 4
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The number of corners increases by 1 to the right and decreases by 1 downwards.",
-          "The number of figures and their size are linked: the more figures, the smaller they are.",
-          "The third cell is the first two laid on top of each other, but lines present in both disappear. This holds in rows and columns.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Antalet hörn ökar med 1 åt höger och minskar med 1 nedåt.",
-          "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
-          "Tredje rutan är de två första lagda ovanpå varandra, men linjer som finns i båda försvinner. Gäller i rader och kolumner.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 19,
-      "level" : 8,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "striped",
-          "lines" : 95,
-          "shape" : "pentagon",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 95,
-          "shape" : "hexagon",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 95,
-          "shape" : "pentagon",
-          "size" : 3
-        },
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 95,
-          "shape" : "pentagon",
-          "size" : 5
-        },
-        {
-          "count" : 3,
-          "fill" : "striped",
-          "lines" : 95,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 2,
-          "fill" : "striped",
-          "lines" : 21,
-          "shape" : "square",
-          "size" : 4
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Number of sides",
-          "Covariation",
-          "Lines cancelling out"
-        ],
-        "sv" : [
-          "Antal sidor",
-          "Samvariation",
-          "Linjer som tar ut varandra"
-        ]
-      },
-      "rules" : [
-        "sideCount",
-        "covariation",
-        "lineXor"
-      ],
-      "seed" : 20260922019
-    },
-    {
-      "answer" : 1,
-      "cells" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 177,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 172,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 189,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 28,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 134,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 25,
-          "lines" : 158,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 5,
-          "fill" : "empty",
-          "fillRatio" : 100,
-          "lines" : 189,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 174,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The filled share decreases by 25 percentage points to the right and 25 percentage points downwards.",
-          "The number of figures is 1, 4 and 5, once in every row and every column.",
-          "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 procentenheter nedåt.",
-          "Antalet figurer är 1, 4 och 5, en gång i varje rad och varje kolumn.",
-          "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 20,
-      "level" : 8,
-      "options" : [
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 75,
-          "lines" : 174,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 191,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 0,
-          "lines" : 191,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 255,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 4,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 19,
-          "shape" : "diamond",
-          "size" : 3
-        },
-        {
-          "count" : 1,
-          "fill" : "empty",
-          "fillRatio" : 50,
-          "lines" : 191,
-          "shape" : "diamond",
-          "size" : 3
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Degree of fill",
-          "Three values distributed",
-          "Lines combined"
-        ],
-        "sv" : [
-          "Fyllnadsgrad",
-          "Fördelning av tre",
-          "Linjer som slås ihop"
-        ]
-      },
-      "rules" : [
-        "fillDegree",
-        "distributionOfThree",
-        "lineUnion"
-      ],
-      "seed" : 20260922020
     }
   ],
   "version" : 1

@@ -259,6 +259,7 @@
       optionLabel: "Alternativ {letter}",
       doneTitle: "Det var smakprovet",
       doneBody: "{correct} av {total} rätt. I appen tar uppgifterna aldrig slut, och nivån följer dig.",
+      getApp: "Hämta i App Store",
       loadError: "Uppgifterna kunde inte läsas in."
     },
     en: {
@@ -270,6 +271,7 @@
       optionLabel: "Option {letter}",
       doneTitle: "That was the sample",
       doneBody: "{correct} of {total} correct. In the app the tasks never run out, and the level follows you.",
+      getApp: "Get it on the App Store",
       loadError: "The tasks could not be loaded."
     }
   };
@@ -303,10 +305,16 @@
     var self = this;
     var body = this.root.querySelector(".sample-body");
     if (this.index >= this.puzzles.length) {
+      var appUrl = this.root.getAttribute("data-sample-app");
+      var getApp = appUrl
+        ? '<a class="button primary wide" href="' + escapeHtml(appUrl) + '">' + t(this.lang, "getApp") +
+          ' <span class="arrow" aria-hidden="true">\u2192</span></a>'
+        : "";
       body.innerHTML =
         '<div class="verdict"><h3>' + t(this.lang, "doneTitle") + "</h3><p>" +
         t(this.lang, "doneBody", { correct: this.score, total: this.puzzles.length }) + "</p></div>" +
-        '<div class="sample-actions"><button type="button" class="button secondary wide" data-action="restart">' + t(this.lang, "restart") + "</button></div>";
+        '<div class="sample-actions">' + getApp +
+        '<button type="button" class="button secondary wide" data-action="restart">' + t(this.lang, "restart") + "</button></div>";
       body.querySelector("[data-action=restart]").addEventListener("click", function () {
         self.index = 0; self.score = 0; self.render();
       });
