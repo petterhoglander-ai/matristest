@@ -151,13 +151,34 @@
 
   var clipCounter = 0;
 
-  function paint(d, fill) {
-    switch (fill) {
-      case "solid": return '<path d="' + d + '" class="ink"/>';
-      case "striped": return '<path d="' + d + '" class="paper"/><path d="' + d + '" fill="url(#mx-stripes)"/>';
-      case "dotted": return '<path d="' + d + '" class="paper"/><path d="' + d + '" fill="url(#mx-dots)"/>';
-      default: return '<path d="' + d + '" class="paper"/>';
+  /* Speglar FigureGeometry.outlineWidth och patternPitch. */
+  function outlineWidth(radius) { return Math.min(1.8, Math.max(1.2, radius * 0.11)); }
+  function patternPitch(radius) { return Math.min(5, Math.max(2.8, radius * 0.36)); }
+
+  /* Mönstret utgår från figurens mitt och skalas med radien, som i CellView.paint. */
+  function paint(d, fill, center, radius) {
+    if (fill === "solid") return '<path d="' + d + '" class="ink"/>';
+    var out = '<path d="' + d + '" class="paper"/>';
+    if (fill !== "striped" && fill !== "dotted") return out;
+    var pitch = patternPitch(radius), reach = radius * 1.4, cx = center[0], cy = center[1];
+    var id = "mx-clip-" + (++clipCounter);
+    out += '<clipPath id="' + id + '"><path d="' + d + '"/></clipPath><g clip-path="url(#' + id + ')">';
+    if (fill === "striped") {
+      var step = pitch * 1.25, lines = "";
+      for (var o = -Math.ceil(reach * 2); o <= reach * 2; o += step) {
+        lines += "M" + f(cx + o - reach) + "," + f(cy - reach) + "L" + f(cx + o + reach) + "," + f(cy + reach);
+      }
+      out += '<path d="' + lines + '" class="stroke" stroke-width="' + f(step * 0.28) + '"/>';
+    } else {
+      var dot = pitch * 0.25, steps = Math.ceil(reach / pitch);
+      for (var row = -steps; row <= steps; row++) {
+        var shift = row % 2 === 0 ? 0 : pitch / 2;
+        for (var col = -steps; col <= steps; col++) {
+          out += '<circle cx="' + f(cx + col * pitch + shift) + '" cy="' + f(cy + row * pitch) + '" r="' + f(dot) + '" class="ink"/>';
+        }
+      }
     }
+    return out + "</g>";
   }
 
   function paintPartially(d, box, percent) {
@@ -179,7 +200,7 @@
           d += "M" + segments[i][0].join(",") + "L" + segments[i][1].join(",");
         }
       }
-      out += '<path d="' + d + '" class="stroke" stroke-width="2.4" stroke-linecap="round"/>';
+      out += '<path d="' + d + '" class="stroke" stroke-width="1.8" stroke-linecap="round"/>';
     }
     if (cell.shape) {
       var count = cell.count || 1;
@@ -199,13 +220,14 @@
         var d2 = pathData(figure);
         var box = [figure.box[0] + centers[c][0], figure.box[1] + centers[c][1], figure.box[2] + centers[c][0], figure.box[3] + centers[c][1]];
         if (typeof cell.fillRatio === "number") out += paintPartially(d2, box, cell.fillRatio);
-        else out += paint(d2, fill);
-        out += '<path d="' + d2 + '" class="stroke" stroke-width="2.2" stroke-linejoin="round"/>';
+        else out += paint(d2, fill, centers[c], radius);
+        out += '<path d="' + d2 + '" class="stroke" stroke-width="' + f(outlineWidth(radius)) + '" stroke-linejoin="round"/>';
         if (cell.innerShape) {
-          var inner = place(cell.innerShape, centers[c], radius * 0.44, 0);
+          var innerRadius = radius * 0.44;
+          var inner = place(cell.innerShape, centers[c], innerRadius, 0);
           var d3 = pathData(inner);
-          out += paint(d3, cell.innerFill || "solid");
-          out += '<path d="' + d3 + '" class="stroke" stroke-width="1.8" stroke-linejoin="round"/>';
+          out += paint(d3, cell.innerFill || "solid", centers[c], innerRadius);
+          out += '<path d="' + d3 + '" class="stroke" stroke-width="' + f(outlineWidth(innerRadius)) + '" stroke-linejoin="round"/>';
         }
       }
     }
@@ -224,7 +246,7 @@
       '<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="30" font-weight="500" fill="currentColor" opacity="0.45" font-family="inherit">?</text></svg>';
   }
 
-  /* Mönstren som fyllnaderna refererar till. Ett defs-block per dokument räcker. */
+  /* Stilarna ritaren använder. Ett defs-block per dokument räcker. */
   function installDefs() {
     if (document.getElementById("mx-defs")) return;
     var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -234,12 +256,6 @@
     svg.setAttribute("aria-hidden", "true");
     svg.innerHTML =
       '<defs>' +
-      '<pattern id="mx-stripes" patternUnits="userSpaceOnUse" width="6" height="6">' +
-      '<path d="M-1,7L7,-1M-1,1L1,-1M5,7L7,5" stroke="currentColor" stroke-width="1.6" fill="none"/></pattern>' +
-      '<pattern id="mx-dots" patternUnits="userSpaceOnUse" width="6" height="12">' +
-      '<circle cx="0" cy="0" r="1.1" fill="currentColor"/><circle cx="6" cy="0" r="1.1" fill="currentColor"/>' +
-      '<circle cx="3" cy="6" r="1.1" fill="currentColor"/>' +
-      '<circle cx="0" cy="12" r="1.1" fill="currentColor"/><circle cx="6" cy="12" r="1.1" fill="currentColor"/></pattern>' +
       '</defs>';
     document.body.insertBefore(svg, document.body.firstChild);
     var style = document.createElement("style");
