@@ -547,6 +547,19 @@
     for (var d = 0; d < decor.length; d++) {
       decor[d].innerHTML = renderCell(JSON.parse(decor[d].getAttribute("data-cell-json")));
     }
+    /* Ett löst exempel på regelsidorna: nio rutor, svaret på plats och
+       markerat. Ingenting att trycka på. */
+    var solved = document.querySelectorAll("[data-matrix-json]");
+    for (var m = 0; m < solved.length; m++) {
+      var given = JSON.parse(solved[m].getAttribute("data-matrix-json"));
+      var label = solved[m].getAttribute("data-matrix-label") || "";
+      var grid = '<div class="matrix static" role="img" aria-label="' + escapeHtml(label) + '">';
+      for (var c = 0; c < 9; c++) {
+        var cell = given.cells[c];
+        grid += '<div class="cell' + (c === given.revealed ? " revealed" : "") + '">' + (cell ? renderCell(cell) : renderMissing()) + "</div>";
+      }
+      solved[m].innerHTML = grid + "</div>";
+    }
     /* En länk till "Om matristest" öppnar första frågan, så att texten
        syns utan ett klick till. */
     function openFromHash() {

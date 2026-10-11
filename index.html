@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matristest och logiktest: öva inför jobbtestet med facit</title>
+<title>Matristest, logiktest och begåvningstest: öva med facit</title>
 <meta name="description" content="Öva på matrisuppgifter av samma typ som i logiktest och begåvningstest vid rekrytering, till exempel Alva Labs. Lös fem uppgifter gratis här, med facit som förklarar varje regel.">
 <link rel="canonical" href="https://matristest.se/">
 <link rel="alternate" hreflang="sv" href="https://matristest.se/">
@@ -22,11 +22,12 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6814397251">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" as="image" href="/assets/img/sv_puzzle.jpg">
-<link rel="stylesheet" href="/assets/site.css?v=3">
+<link rel="preload" as="image" href="/assets/img/sv_puzzle.webp" fetchpriority="high">
+<link rel="stylesheet" href="/assets/site.css?v=4">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,7 +64,7 @@
 
 <nav class="nav" aria-label="Huvudmeny">
   <a class="wordmark" href="/"><img src="/icon-192.png" width="28" height="28" alt=""><span>Matristräning</span></a>
-  <div class="links"><a href="#prova">Prova en uppgift</a><a href="#om">Om matristest</a></div>
+  <div class="links"><a href="#prova">Prova en uppgift</a><a href="/regler/">Reglerna</a><a href="/vad-ar-ett-matristest.html">Om matristest</a></div>
   <div class="spacer"></div>
   <div class="lang" aria-label="Språk"><span lang="sv">SV</span><a href="/en/" lang="en" hreflang="en">EN</a></div>
   <a class="cta" href="https://apps.apple.com/se/app/id6814397251">Hämta appen</a>
@@ -72,16 +73,16 @@
 <main>
   <header class="hero">
     <p class="eyebrow">För iPhone · Svenska och engelska</p>
-    <h1>Gå in förberedd.<span class="soft">Öva inför logiktestet.</span></h1>
+    <h1>Gå in förberedd.<span class="soft">Öva inför matristestet.</span></h1>
     <p class="lead">Matrisuppgifter av samma typ som i rekryteringens logiktest, med facit som förklarar exakt vad du missade.</p>
     <div class="actions">
       <a class="button light" href="https://apps.apple.com/se/app/id6814397251">Hämta i App Store <span class="arrow" aria-hidden="true">→</span></a>
       <p class="note">Fem uppgifter gratis. Engångsköp, ingen prenumeration.</p>
     </div>
     <div class="phones" aria-hidden="true">
-      <div class="phone side left"><img src="/assets/img/sv_answer.jpg" width="600" height="1304" alt=""></div>
-      <div class="phone center"><img src="/assets/img/sv_puzzle.jpg" width="600" height="1304" alt=""></div>
-      <div class="phone side right"><img src="/assets/img/sv_stats.jpg" width="600" height="1304" alt=""></div>
+      <div class="phone side left"><img src="/assets/img/sv_answer.webp" width="600" height="1304" alt=""></div>
+      <div class="phone center"><img src="/assets/img/sv_puzzle.webp" width="600" height="1304" alt="" fetchpriority="high"></div>
+      <div class="phone side right"><img src="/assets/img/sv_stats.webp" width="600" height="1304" alt=""></div>
     </div>
   </header>
 
@@ -116,19 +117,19 @@
     </div>
     <div class="shots">
       <figure>
-        <div class="phone"><img src="/assets/img/sv_puzzle.jpg" width="600" height="1304" alt="Uppgiftsskärmen: en matris med tre gånger tre figurer, en ruta saknas, sex alternativ under." loading="lazy"></div>
+        <div class="phone"><img src="/assets/img/sv_puzzle.webp" width="600" height="1304" alt="Uppgiftsskärmen: en matris med tre gånger tre figurer, en ruta saknas, sex alternativ under." loading="lazy"></div>
         <figcaption><strong>Hitta regeln.</strong>Välj figuren som passar.</figcaption>
       </figure>
       <figure>
-        <div class="phone"><img src="/assets/img/sv_answer.jpg" width="600" height="1304" alt="Facit efter ett fel svar: rätt alternativ markerat och varje regel förklarad i text." loading="lazy"></div>
+        <div class="phone"><img src="/assets/img/sv_answer.webp" width="600" height="1304" alt="Facit efter ett fel svar: rätt alternativ markerat och varje regel förklarad i text." loading="lazy"></div>
         <figcaption><strong>Facit direkt.</strong>Varje regel förklarad.</figcaption>
       </figure>
       <figure>
-        <div class="phone"><img src="/assets/img/sv_example.jpg" width="600" height="1304" alt="Ett löst exempel på regeln linjer som tar ut varandra." loading="lazy"></div>
+        <div class="phone"><img src="/assets/img/sv_example.webp" width="600" height="1304" alt="Ett löst exempel på regeln linjer som tar ut varandra." loading="lazy"></div>
         <figcaption><strong>Ett exempel per regel.</strong>Se den du missade.</figcaption>
       </figure>
       <figure>
-        <div class="phone"><img src="/assets/img/sv_stats.jpg" width="600" height="1304" alt="Statistikskärmen: nivån över tid och andel fel per regeltyp." loading="lazy"></div>
+        <div class="phone"><img src="/assets/img/sv_stats.webp" width="600" height="1304" alt="Statistikskärmen: nivån över tid och andel fel per regeltyp." loading="lazy"></div>
         <figcaption><strong>Följ nivån.</strong>Se vad du ska träna på.</figcaption>
       </figure>
     </div>
@@ -177,7 +178,7 @@
         <summary>Vad är ett matristest?</summary>
         <p>Ett matristest, ofta kallat logiktest eller begåvningstest, mäter förmågan att se mönster i figurer. Varje uppgift är ett rutnät med tre gånger tre rutor. Åtta av dem innehåller figurer som följer en eller flera regler, och den nionde saknas. Uppgiften är att hitta reglerna och välja det alternativ som passar i den tomma rutan.</p>
         <p>Reglerna gäller i både rader och kolumner och styr olika delar av figuren: form, antal, storlek, fyllnad, riktning, linjer i kanten eller en prick som flyttar sig. På de lättaste uppgifterna gäller en regel. På de svåraste gäller tre eller fyra samtidigt, och alternativen skiljer sig bara i en detalj.</p>
-        <p>Formatet är vanligt vid rekrytering, som en del av urvalet före intervju, och det går att öva på. Den som har sett formatet förut tappar ingen tid på att förstå uppgiften och går in lugnare.</p>
+        <p>Formatet är vanligt vid rekrytering, som en del av urvalet före intervju, och det går att öva på. Den som har sett formatet förut tappar ingen tid på att förstå uppgiften och går in lugnare. Mer står på sidorna <a href="/vad-ar-ett-matristest.html">Vad är ett matristest</a> och <a href="/begavningstest.html">Begåvningstest vid rekrytering</a>.</p>
       </details>
       <details>
         <summary>Arbetsordning som hjälper</summary>
@@ -203,7 +204,7 @@
       </details>
       <details>
         <summary>Vilka regler kan förekomma?</summary>
-        <p>Appen har fjorton regeltyper: stegvis förändring, fördelning av tre, konstant, linjer som slås ihop, linjer som tar ut varandra, aritmetik på antal, rörelse längs bana, spegling, rotation av hela rutan, nästlade figurer, antal sidor, fyllnadsgrad, villkorad regel och samvariation. Facit säger vilka som gällde i varje uppgift.</p>
+        <p>Appen har fjorton regeltyper: stegvis förändring, fördelning av tre, konstant, mönster som slås ihop, mönster som tar ut varandra, aritmetik på antal, rörelse längs bana, spegling, rotation av hela rutan, nästlade figurer, antal sidor, fyllnadsgrad, villkorad regel och samvariation. Facit säger vilka som gällde i varje uppgift. <a href="/regler/">Varje regel har en egen sida med ett löst exempel.</a></p>
       </details>
       <details id="alva-labs-fragan">
         <summary>Passar övningen inför Alva Labs logiktest?</summary>
@@ -231,6 +232,6 @@
 </footer>
 
 </div>
-<script src="/assets/matrix.js?v=3" defer></script>
+<script src="/assets/matrix.js?v=4" defer></script>
 </body>
 </html>

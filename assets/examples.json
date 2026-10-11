@@ -1,0 +1,1677 @@
+{
+  "examples" : [
+    {
+      "kind" : "progression",
+      "name" : {
+        "en" : "Step by step change",
+        "sv" : "Stegvis förändring"
+      },
+      "puzzle" : {
+        "answer" : 0,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 1
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 2
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 2
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 4
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The size increases by 1 step to the right and 1 step downwards.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Storleken ökar 1 steg åt höger och 1 steg nedåt.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 1,
+        "level" : 1,
+        "options" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 128,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 129,
+            "shape" : "star",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 4,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 16,
+            "shape" : "star",
+            "size" : 4
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Step by step change"
+          ],
+          "sv" : [
+            "Stegvis förändring"
+          ]
+        },
+        "rules" : [
+          "progression"
+        ],
+        "seed" : 7100000,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "distributionOfThree",
+      "name" : {
+        "en" : "Three values distributed",
+        "sv" : "Fördelning av tre"
+      },
+      "puzzle" : {
+        "answer" : 0,
+        "cells" : [
+          {
+            "sectors" : 38
+          },
+          {
+            "sectors" : 133
+          },
+          {
+            "sectors" : 23
+          },
+          {
+            "sectors" : 133
+          },
+          {
+            "sectors" : 23
+          },
+          {
+            "sectors" : 38
+          },
+          {
+            "sectors" : 23
+          },
+          {
+            "sectors" : 38
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "Three patterns of filled sectors each appear once in every row and every column.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Tre mönster av fyllda sektorer förekommer en gång i varje rad och varje kolumn.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 2,
+        "level" : 1,
+        "options" : [
+          {
+            "sectors" : 133
+          },
+          {
+            "sectors" : 34
+          },
+          {
+            "sectors" : 31
+          },
+          {
+            "sectors" : 23
+          },
+          {
+            "sectors" : 19
+          },
+          {
+            "sectors" : 55
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Three values distributed"
+          ],
+          "sv" : [
+            "Fördelning av tre"
+          ]
+        },
+        "rules" : [
+          "distributionOfThree"
+        ],
+        "seed" : 7100002,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "lineUnion",
+      "name" : {
+        "en" : "Patterns combined",
+        "sv" : "Mönster som slås ihop"
+      },
+      "puzzle" : {
+        "answer" : 2,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 228,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 189,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 253,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 45,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 102,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 111,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 237,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 255,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 3,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 191,
+            "shape" : "diamond",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 19,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 255,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 3,
+            "fill" : "striped",
+            "lines" : 247,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 18,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 247,
+            "shape" : "diamond",
+            "size" : 3
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Patterns combined"
+          ],
+          "sv" : [
+            "Mönster som slås ihop"
+          ]
+        },
+        "rules" : [
+          "lineUnion"
+        ],
+        "seed" : 7200001,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "lineXor",
+      "name" : {
+        "en" : "Patterns cancelling out",
+        "sv" : "Mönster som tar ut varandra"
+      },
+      "puzzle" : {
+        "answer" : 4,
+        "cells" : [
+          {
+            "spokes" : 8
+          },
+          {
+            "spokes" : 10
+          },
+          {
+            "spokes" : 2
+          },
+          {
+            "spokes" : 160
+          },
+          {
+            "spokes" : 128
+          },
+          {
+            "spokes" : 32
+          },
+          {
+            "spokes" : 168
+          },
+          {
+            "spokes" : 138
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The third cell is the first two laid on top of each other, but arrows present in both disappear. This holds in rows and columns.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Tredje rutan är de två första lagda ovanpå varandra, men pilar som finns i båda försvinner. Gäller i rader och kolumner.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 4,
+        "level" : 2,
+        "options" : [
+          {
+            "spokes" : 4
+          },
+          {
+            "spokes" : 136
+          },
+          {
+            "spokes" : 170
+          },
+          {
+            "spokes" : 84
+          },
+          {
+            "spokes" : 34
+          },
+          {
+            "spokes" : 21
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Patterns cancelling out"
+          ],
+          "sv" : [
+            "Mönster som tar ut varandra"
+          ]
+        },
+        "rules" : [
+          "lineXor"
+        ],
+        "seed" : 7200002,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "countArithmetic",
+      "name" : {
+        "en" : "Arithmetic on the number",
+        "sv" : "Aritmetik på antal"
+      },
+      "puzzle" : {
+        "answer" : 0,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 4,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 5,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 3,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 5,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The number in the third cell is the first two added: 2 + 2 = 4. This holds in every row.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Antalet i tredje rutan är de två första lagda ihop: 2 + 2 = 4. Gäller i varje rad.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 5,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 4,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 3,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 4
+          },
+          {
+            "count" : 5,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 4,
+            "fill" : "empty",
+            "lines" : 128,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 8,
+            "shape" : "octagon",
+            "size" : 4
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Arithmetic on the number"
+          ],
+          "sv" : [
+            "Aritmetik på antal"
+          ]
+        },
+        "rules" : [
+          "countArithmetic"
+        ],
+        "seed" : 7200017,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "pathMovement",
+      "name" : {
+        "en" : "Movement along a path",
+        "sv" : "Rörelse längs bana"
+      },
+      "puzzle" : {
+        "answer" : 3,
+        "cells" : [
+          {
+            "spokes" : 36
+          },
+          {
+            "spokes" : 9
+          },
+          {
+            "spokes" : 66
+          },
+          {
+            "spokes" : 144
+          },
+          {
+            "spokes" : 36
+          },
+          {
+            "spokes" : 9
+          },
+          {
+            "spokes" : 66
+          },
+          {
+            "spokes" : 144
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The arrows rotate 90° counterclockwise to the right and 90° clockwise downwards.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Pilarna vrids 90° moturs åt höger och 90° medurs nedåt.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 6,
+        "level" : 1,
+        "options" : [
+          {
+            "spokes" : 33
+          },
+          {
+            "spokes" : 66
+          },
+          {
+            "spokes" : 41
+          },
+          {
+            "spokes" : 36
+          },
+          {
+            "spokes" : 132
+          },
+          {
+            "spokes" : 72
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Movement along a path"
+          ],
+          "sv" : [
+            "Rörelse längs bana"
+          ]
+        },
+        "rules" : [
+          "pathMovement"
+        ],
+        "seed" : 7100001,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "mirror",
+      "name" : {
+        "en" : "Mirroring",
+        "sv" : "Spegling"
+      },
+      "puzzle" : {
+        "answer" : 3,
+        "cells" : [
+          {
+            "glyphA" : "ring",
+            "glyphB" : "diamond",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "plus",
+            "glyphB" : "ring",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "ring",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "ring",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "plus",
+            "glyphB" : "triangle",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "dot",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The third cell in every row is the first one with the symbols in reverse order.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Tredje rutan i varje rad är den första med symbolerna i omvänd ordning.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 7,
+        "level" : 2,
+        "options" : [
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "dot",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "dot",
+            "lines" : 32,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "dot",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "plus",
+            "glyphB" : "dot",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "plus",
+            "glyphB" : "triangle",
+            "lines" : 4,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "plus",
+            "glyphB" : "diamond",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Mirroring"
+          ],
+          "sv" : [
+            "Spegling"
+          ]
+        },
+        "rules" : [
+          "mirror"
+        ],
+        "seed" : 7200009,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "rotationOfCell",
+      "name" : {
+        "en" : "Rotation of the whole cell",
+        "sv" : "Rotation av hela rutan"
+      },
+      "puzzle" : {
+        "answer" : 4,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 49,
+            "position" : 6,
+            "rotation" : 225,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 49,
+            "position" : 6,
+            "rotation" : 225,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 49,
+            "position" : 6,
+            "rotation" : 225,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 49,
+            "position" : 6,
+            "rotation" : 225,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The whole content of the cell rotates 180 degrees clockwise to the right and 180 degrees downwards.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Hela rutans innehåll vrids 180 grader medurs åt höger och 180 grader nedåt.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 8,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 4,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 2,
+            "rotation" : 270,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 68,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 6,
+            "rotation" : 315,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 4,
+            "fill" : "striped",
+            "lines" : 212,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 196,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "crescent",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 212,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "hexagon",
+            "size" : 4
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Rotation of the whole cell"
+          ],
+          "sv" : [
+            "Rotation av hela rutan"
+          ]
+        },
+        "rules" : [
+          "rotationOfCell"
+        ],
+        "seed" : 7200027,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "nestedFigures",
+      "name" : {
+        "en" : "Nested figures",
+        "sv" : "Nästlade figurer"
+      },
+      "puzzle" : {
+        "answer" : 3,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "circle",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "square",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "octagon",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "square",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "octagon",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "circle",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "octagon",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "circle",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The inner figure is circle, square and octagon, once in every row and every column.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Den inre figuren är cirkel, kvadrat och åttahörning, en gång i varje rad och varje kolumn.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 9,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 5,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "circle",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "striped",
+            "innerShape" : "square",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "dotted",
+            "innerFill" : "solid",
+            "innerShape" : "cross",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "square",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "innerFill" : "dotted",
+            "innerShape" : "square",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "pentagon",
+            "lines" : 0,
+            "shape" : "circle",
+            "size" : 5
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Nested figures"
+          ],
+          "sv" : [
+            "Nästlade figurer"
+          ]
+        },
+        "rules" : [
+          "nestedFigures"
+        ],
+        "seed" : 7200004,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "sideCount",
+      "name" : {
+        "en" : "Number of sides",
+        "sv" : "Antal sidor"
+      },
+      "puzzle" : {
+        "answer" : 4,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "pentagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "hexagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "pentagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "hexagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "hexagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 3
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The number of corners increases by 1 to the right and 1 downwards.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Antalet hörn ökar med 1 åt höger och 1 nedåt.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 10,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "hexagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "pentagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "trapezoid",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Number of sides"
+          ],
+          "sv" : [
+            "Antal sidor"
+          ]
+        },
+        "rules" : [
+          "sideCount"
+        ],
+        "seed" : 7200042,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "fillDegree",
+      "name" : {
+        "en" : "Degree of fill",
+        "sv" : "Fyllnadsgrad"
+      },
+      "puzzle" : {
+        "answer" : 2,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 100,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 25,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 25,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The filled share decreases by 25 percentage points to the right and 25 downwards.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 nedåt.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 11,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 100,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 0,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "shape" : "octagon",
+            "size" : 4
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 0,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 3
+          },
+          {
+            "count" : 5,
+            "fill" : "striped",
+            "fillRatio" : 0,
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 4
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Degree of fill"
+          ],
+          "sv" : [
+            "Fyllnadsgrad"
+          ]
+        },
+        "rules" : [
+          "fillDegree"
+        ],
+        "seed" : 7200012,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "conditional",
+      "name" : {
+        "en" : "Conditional rule",
+        "sv" : "Villkorad regel"
+      },
+      "puzzle" : {
+        "answer" : 0,
+        "cells" : [
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "ring",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "ring",
+            "glyphB" : "diamond",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "ring",
+            "glyphB" : "diamond",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "ring",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "ring",
+            "glyphB" : "diamond",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "ring",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The first symbol determines the second symbol: ring means diamond, diamond means ring and triangle means plus.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Första symbolen styr andra symbolen: ring ger romb, romb ger ring och triangel ger plus.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 12,
+        "level" : 2,
+        "options" : [
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "diamond",
+            "glyphB" : "triangle",
+            "lines" : 0,
+            "orientation" : "vertical"
+          },
+          {
+            "glyphA" : "ring",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "dot",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "triangle",
+            "lines" : 0,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "dot",
+            "glyphB" : "plus",
+            "lines" : 0,
+            "orientation" : "vertical"
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Conditional rule"
+          ],
+          "sv" : [
+            "Villkorad regel"
+          ]
+        },
+        "rules" : [
+          "conditional"
+        ],
+        "seed" : 7200008,
+        "version" : 2
+      }
+    },
+    {
+      "kind" : "covariation",
+      "name" : {
+        "en" : "Covariation",
+        "sv" : "Samvariation"
+      },
+      "puzzle" : {
+        "answer" : 0,
+        "cells" : [
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 4
+          },
+          {
+            "count" : 3,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 3
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 4
+          },
+          {
+            "count" : 3,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 3
+          },
+          {
+            "count" : 4,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 2
+          },
+          {
+            "count" : 3,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 3
+          },
+          {
+            "count" : 4,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 2
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The number of figures and their size are linked: the more figures, the smaller they are.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 13,
+        "level" : 2,
+        "options" : [
+          {
+            "count" : 5,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 1
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 16,
+            "shape" : "heptagon",
+            "size" : 1
+          },
+          {
+            "count" : 4,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 4
+          },
+          {
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 1
+          },
+          {
+            "count" : 5,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 1
+          },
+          {
+            "count" : 5,
+            "fill" : "solid",
+            "lines" : 1,
+            "shape" : "heptagon",
+            "size" : 3
+          }
+        ],
+        "ruleNames" : {
+          "en" : [
+            "Covariation"
+          ],
+          "sv" : [
+            "Samvariation"
+          ]
+        },
+        "rules" : [
+          "covariation"
+        ],
+        "seed" : 7200025,
+        "version" : 2
+      }
+    }
+  ],
+  "languages" : [
+    "sv",
+    "en"
+  ],
+  "version" : 2
+}
