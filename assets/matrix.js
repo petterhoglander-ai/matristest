@@ -20,6 +20,28 @@
     5: [[36, 36], [64, 36], [50, 50], [36, 64], [64, 64]]
   };
   var slots = [[19, 19], [50, 15], [81, 19], [85, 50], [81, 81], [50, 85], [19, 81], [15, 50]];
+  /* Ringen, rastret och behållaren, speglar samma namn i FigureGeometry. */
+  var ringRadius = 24;
+  var ringScale_ = [0.60, 0.72, 0.84, 0.96, 1.08];
+  var gridPlaces = [[25, 25], [50, 25], [75, 25], [25, 50], [50, 50], [75, 50], [25, 75], [50, 75], [75, 75]];
+  var gridRadius = 13;
+  var containerLength = 56, containerWidth = 26, glyphOffset = 15, glyphRadius = 6.5;
+  function ringAngle(index) { return (-90 + 45 * index) * Math.PI / 180; }
+  var dividerHalfLength = 30, dividerOffset = 13, dividerDotRadius = 4;
+  var dividerSpacing = [[], [0], [-9, 9], [-17, 0, 17], [-21, -7, 7, 21]];
+  var pathStep = 22, pathDotRadius = 4.5;
+  /* Banornas punkter i rastret, speglar PathGeometry.points. */
+  var pathShapes = {
+    corner: [[-1, -1], [-1, 1], [1, 1]],
+    zigzag: [[-1, 0], [0, 0], [0, 1], [1, 1]],
+    zigzagMirrored: [[1, 0], [0, 0], [0, 1], [-1, 1]],
+    cup: [[-1, -1], [-1, 1], [1, 1], [1, -1]]
+  };
+  function pathPoints(shape, turn) {
+    var points = pathShapes[shape] || pathShapes.corner;
+    for (var t = 0; t < ((turn % 4) + 4) % 4; t++) points = points.map(function (p) { return [-p[1], p[0]]; });
+    return points;
+  }
   var segments = [
     [[10, 10], [90, 10]], [[90, 10], [90, 90]], [[90, 90], [10, 90]], [[10, 90], [10, 10]],
     [[10, 10], [26, 26]], [[90, 10], [74, 26]], [[90, 90], [74, 74]], [[10, 90], [26, 74]]
@@ -153,7 +175,7 @@
 
   /* Speglar FigureGeometry.outlineWidth och patternPitch. */
   function outlineWidth(radius) { return Math.min(1.8, Math.max(1.2, radius * 0.11)); }
-  function patternPitch(radius) { return Math.min(5, Math.max(2.8, radius * 0.36)); }
+  function patternPitch(radius) { return Math.min(5, Math.max(3.6, radius * 0.36)); }
 
   /* Mönstret utgår från figurens mitt och skalas med radien, som i CellView.paint. */
   function paint(d, fill, center, radius) {
@@ -191,6 +213,93 @@
     return out;
   }
 
+  /* Symbolen i behållaren: bana och om den fylls, speglar FigureGeometry.glyphPath. */
+  function glyph(kind, cx, cy, r) {
+    switch (kind) {
+      case "dot": return '<circle cx="' + cx + '" cy="' + cy + '" r="' + f(r * 0.8) + '" class="ink"/>';
+      case "ring": return '<circle cx="' + cx + '" cy="' + cy + '" r="' + f(r * 0.85) + '" class="stroke" stroke-width="2"/>';
+      case "plus": return '<path d="M' + f(cx - r) + "," + cy + "L" + f(cx + r) + "," + cy + "M" + cx + "," + f(cy - r) + "L" + cx + "," + f(cy + r) + '" class="stroke" stroke-width="2" stroke-linecap="round"/>';
+      case "diamond": return '<path d="M' + polygon(4, r * 1.05, -90).map(function (p) { return f(p[0] + cx) + "," + f(p[1] + cy); }).join("L") + 'Z" class="ink"/>';
+      case "triangle": return '<path d="M' + polygon(3, r * 1.1, -90).map(function (p) { return f(p[0] + cx) + "," + f(p[1] + cy); }).join("L") + 'Z" class="ink"/>';
+      default: return "";
+    }
+  }
+
+  /* Utan storlek ritas ringen i full radie, som i CellView.ringRadius. */
+  function ringScale(cell) { return cell.size ? ringRadius * ringScale_[Math.max(0, Math.min(4, cell.size - 1))] : ringRadius; }
+
+  /* Sektorhjulet, speglar CellView.drawWheel. */
+  function renderWheel(cell) {
+    var r = ringScale(cell), half = 22.5 * Math.PI / 180, out = "";
+    out += '<circle cx="50" cy="50" r="' + f(r) + '" class="paper"/>';
+    var spokes = "", filled = "";
+    for (var i = 0; i < 8; i++) {
+      var a = ringAngle(i);
+      spokes += "M50,50L" + f(50 + r * Math.cos(a - half)) + "," + f(50 + r * Math.sin(a - half));
+      if (cell.sectors & (1 << i)) {
+        filled += "M50,50L" + f(50 + r * Math.cos(a - half)) + "," + f(50 + r * Math.sin(a - half)) +
+          "A" + f(r) + "," + f(r) + " 0 0,1 " + f(50 + r * Math.cos(a + half)) + "," + f(50 + r * Math.sin(a + half)) + "Z";
+      }
+    }
+    out += '<path d="' + filled + '" class="ink"/>';
+    out += '<path d="' + spokes + '" class="stroke" stroke-width="1.2"/>';
+    out += '<circle cx="50" cy="50" r="' + f(r) + '" class="stroke" stroke-width="' + f(outlineWidth(r)) + '"/>';
+    return out;
+  }
+
+  /* Pilarna, speglar CellView.drawSpokes. */
+  function renderSpokes(cell) {
+    var r = ringScale(cell), d = "";
+    for (var i = 0; i < 8; i++) {
+      if (!(cell.spokes & (1 << i))) continue;
+      var a = ringAngle(i), tx = 50 + r * Math.cos(a), ty = 50 + r * Math.sin(a);
+      d += "M50,50L" + f(tx) + "," + f(ty);
+      for (var s = -1; s <= 1; s += 2) {
+        var back = a + Math.PI + s * 0.55;
+        d += "M" + f(tx) + "," + f(ty) + "L" + f(tx + 8 * Math.cos(back)) + "," + f(ty + 8 * Math.sin(back));
+      }
+    }
+    return '<path d="' + d + '" class="stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<circle cx="50" cy="50" r="2.4" class="ink"/>';
+  }
+
+  /* Behållaren, speglar CellView.drawContainer. */
+  function renderContainer(cell) {
+    var vertical = cell.orientation === "vertical";
+    var w = vertical ? containerWidth : containerLength, h = vertical ? containerLength : containerWidth;
+    var out = '<rect x="' + f(50 - w / 2) + '" y="' + f(50 - h / 2) + '" width="' + w + '" height="' + h + '" rx="2" class="paper"/>';
+    out += '<rect x="' + f(50 - w / 2) + '" y="' + f(50 - h / 2) + '" width="' + w + '" height="' + h + '" rx="2" class="stroke" stroke-width="1.8"/>';
+    var centers = vertical ? [[50, 50 - glyphOffset], [50, 50 + glyphOffset]] : [[50 - glyphOffset, 50], [50 + glyphOffset, 50]];
+    out += glyph(cell.glyphA, centers[0][0], centers[0][1], glyphRadius);
+    out += glyph(cell.glyphB, centers[1][0], centers[1][1], glyphRadius);
+    return out;
+  }
+
+  /* Delningslinjen med prickar, speglar CellView.drawDivider. */
+  function renderDivider(cell) {
+    var a = cell.divider * Math.PI / 180, tx = Math.cos(a), ty = Math.sin(a), nx = Math.sin(a), ny = -Math.cos(a);
+    var out = '<path d="M' + f(50 - tx * dividerHalfLength) + "," + f(50 - ty * dividerHalfLength) + "L" + f(50 + tx * dividerHalfLength) + "," + f(50 + ty * dividerHalfLength) + '" class="stroke" stroke-width="1.8" stroke-linecap="round"/>';
+    var sides = [["countA", 1], ["countB", -1]];
+    for (var s = 0; s < sides.length; s++) {
+      var n = cell[sides[s][0]];
+      if (typeof n !== "number") continue;
+      var offset = dividerOffset * sides[s][1], along = dividerSpacing[Math.max(0, Math.min(4, n))];
+      for (var i = 0; i < along.length; i++) {
+        out += '<circle cx="' + f(50 + nx * offset + tx * along[i]) + '" cy="' + f(50 + ny * offset + ty * along[i]) + '" r="' + dividerDotRadius + '" class="ink"/>';
+      }
+    }
+    return out;
+  }
+
+  /* Banan med pricken i ena änden, speglar CellView.drawPath. */
+  function renderPath(cell) {
+    var points = pathPoints(cell.pathShape, (cell.pathTurn || 0) / 90);
+    var d = "M" + points.map(function (p) { return f(50 + p[0] * pathStep) + "," + f(50 + p[1] * pathStep); }).join("L");
+    var mark = cell.endMark === 1 ? points[points.length - 1] : points[0];
+    return '<path d="' + d + '" class="stroke" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<circle cx="' + f(50 + mark[0] * pathStep) + '" cy="' + f(50 + mark[1] * pathStep) + '" r="' + pathDotRadius + '" class="ink"/>';
+  }
+
   function renderCell(cell) {
     var out = '<svg viewBox="0 0 100 100" aria-hidden="true">';
     if (cell.lines) {
@@ -208,6 +317,20 @@
       var degrees = cell.rotation || 0;
       var fill = cell.fill || "empty";
       var radius = (baseRadius[count] || 12) * sizeScale[Math.max(0, Math.min(4, sizeLevel - 1))];
+      if (typeof cell.placement === "number") {
+        /* Figuren står på en plats i rastret: liten och ensam. */
+        var spot = gridPlaces[Math.max(0, Math.min(8, cell.placement))];
+        var small = gridRadius * sizeScale[Math.max(0, Math.min(4, sizeLevel - 1))];
+        var placed = place(cell.shape, spot, small, degrees);
+        var dp = pathData(placed);
+        out += paint(dp, fill, spot, small);
+        out += '<path d="' + dp + '" class="stroke" stroke-width="' + f(outlineWidth(small)) + '" stroke-linejoin="round"/>';
+        if (typeof cell.position === "number") {
+          var pp = slots[cell.position];
+          out += '<circle cx="' + pp[0] + '" cy="' + pp[1] + '" r="4.2" class="ink"/>';
+        }
+        return out + "</svg>";
+      }
       var room = clearance(count);
       if (room !== null) {
         var probe = place(cell.shape, [0, 0], radius, degrees).box;
@@ -231,6 +354,11 @@
         }
       }
     }
+    if (typeof cell.sectors === "number") out += renderWheel(cell);
+    if (typeof cell.spokes === "number") out += renderSpokes(cell);
+    if (cell.glyphA && cell.glyphB) out += renderContainer(cell);
+    if (typeof cell.divider === "number") out += renderDivider(cell);
+    if (cell.pathShape) out += renderPath(cell);
     if (typeof cell.position === "number") {
       var p = slots[cell.position];
       out += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="4.2" class="ink"/>';
