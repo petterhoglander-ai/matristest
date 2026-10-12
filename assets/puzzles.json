@@ -147,44 +147,44 @@
         "pathMovement"
       ],
       "seed" : 20260922001,
-      "version" : 2
+      "version" : 3
     },
     {
-      "answer" : 1,
+      "answer" : 2,
       "cells" : [
         {
-          "sectors" : 40
+          "sectors" : 12
         },
         {
-          "sectors" : 80
+          "sectors" : 56
         },
         {
-          "sectors" : 160
+          "sectors" : 6
         },
         {
-          "sectors" : 160
+          "sectors" : 194
         },
         {
-          "sectors" : 65
+          "sectors" : 102
         },
         {
-          "sectors" : 130
+          "sectors" : 104
         },
         {
-          "sectors" : 130
+          "sectors" : 88
         },
         {
-          "sectors" : 5
+          "sectors" : 53
         },
         null
       ],
       "explanations" : {
         "en" : [
-          "The pattern of filled sectors rotates 45° clockwise to the right and 90° downwards.",
+          "The third cell in every row is the first one mirrored in a horizontal axis: top and bottom swap.",
           "Everything else is the same in every cell."
         ],
         "sv" : [
-          "Mönstret av fyllda sektorer vrids 45° medurs åt höger och 90° nedåt.",
+          "Tredje rutan i varje rad är den första speglad i en vågrät axel: upp och ned byter plats.",
           "Allt annat är lika i alla rutor."
         ]
       },
@@ -192,92 +192,92 @@
       "level" : 2,
       "options" : [
         {
-          "sectors" : 58
+          "sectors" : 88
         },
         {
-          "sectors" : 10
+          "sectors" : 53
         },
         {
-          "sectors" : 8
+          "sectors" : 67
         },
         {
-          "sectors" : 20
+          "sectors" : 52
         },
         {
-          "sectors" : 4
+          "sectors" : 72
         },
         {
-          "sectors" : 80
+          "sectors" : 120
         }
       ],
       "ruleNames" : {
         "en" : [
-          "Movement along a path"
+          "Mirroring"
         ],
         "sv" : [
-          "Rörelse längs bana"
+          "Spegling"
         ]
       },
       "rules" : [
-        "pathMovement"
+        "mirror"
       ],
       "seed" : 20260922002,
-      "version" : 2
+      "version" : 3
     },
     {
-      "answer" : 4,
+      "answer" : 3,
       "cells" : [
         {
-          "countA" : 0,
-          "countB" : 0,
-          "divider" : 180
+          "endMark" : 0,
+          "pathShape" : "zigzagMirrored",
+          "pathTurn" : 0
         },
         {
-          "countA" : 1,
-          "countB" : 3,
-          "divider" : 180
+          "endMark" : 1,
+          "pathShape" : "cup",
+          "pathTurn" : 0
         },
         {
-          "countA" : 2,
-          "countB" : 2,
-          "divider" : 180
+          "endMark" : 0,
+          "pathShape" : "zigzag",
+          "pathTurn" : 0
         },
         {
-          "countA" : 1,
-          "countB" : 3,
-          "divider" : 180
+          "endMark" : 1,
+          "pathShape" : "zigzag",
+          "pathTurn" : 0
         },
         {
-          "countA" : 2,
-          "countB" : 2,
-          "divider" : 180
+          "endMark" : 0,
+          "pathShape" : "zigzagMirrored",
+          "pathTurn" : 0
         },
         {
-          "countA" : 3,
-          "countB" : 0,
-          "divider" : 180
+          "endMark" : 1,
+          "pathShape" : "cup",
+          "pathTurn" : 0
         },
         {
-          "countA" : 2,
-          "countB" : 2,
-          "divider" : 180
+          "endMark" : 0,
+          "pathShape" : "cup",
+          "pathTurn" : 0
         },
         {
-          "countA" : 3,
-          "countB" : 0,
-          "divider" : 180
+          "endMark" : 1,
+          "pathShape" : "zigzag",
+          "pathTurn" : 0
         },
         null
       ],
       "explanations" : {
         "en" : [
-          "The number of dots on the other side of the line is 0, 2 and 3, once in every row and every column.",
-          "The number of dots on one side of the line increases by 1 to the right and 1 downwards.",
+          "The path is an S shape, a Z shape and a U shape, once in every row and every column.",
+          "The dot switches end with every step to the right and every step downwards.",
           "Everything else is the same in every cell."
         ],
         "sv" : [
-          "Antalet prickar på linjens andra sida är 0, 2 och 3, en gång i varje rad och varje kolumn.",
-          "Antalet prickar på linjens ena sida ökar med 1 åt höger och 1 nedåt.",
+          "Banan är en S-form, en Z-form och en U-form, en gång i varje rad och varje kolumn.",
+          "Pricken byter ände för varje steg åt höger och varje steg nedåt.",
           "Allt annat är lika i alla rutor."
         ]
       },
@@ -285,142 +285,34 @@
       "level" : 3,
       "options" : [
         {
-          "countA" : 3,
-          "countB" : 2,
-          "divider" : 180
+          "endMark" : 0,
+          "pathShape" : "zigzag",
+          "pathTurn" : 180
         },
-        {
-          "countA" : 4,
-          "countB" : 0,
-          "divider" : 180
-        },
-        {
-          "countA" : 4,
-          "countB" : 0,
-          "divider" : 315
-        },
-        {
-          "countA" : 2,
-          "countB" : 3,
-          "divider" : 315
-        },
-        {
-          "countA" : 4,
-          "countB" : 3,
-          "divider" : 180
-        },
-        {
-          "countA" : 3,
-          "countB" : 3,
-          "divider" : 180
-        }
-      ],
-      "ruleNames" : {
-        "en" : [
-          "Three values distributed",
-          "Step by step change"
-        ],
-        "sv" : [
-          "Fördelning av tre",
-          "Stegvis förändring"
-        ]
-      },
-      "rules" : [
-        "distributionOfThree",
-        "progression"
-      ],
-      "seed" : 20260922003,
-      "version" : 2
-    },
-    {
-      "answer" : 2,
-      "cells" : [
         {
           "endMark" : 0,
-          "pathShape" : "corner",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 1,
-          "pathShape" : "zigzag",
-          "pathTurn" : 90
+          "pathShape" : "zigzagMirrored",
+          "pathTurn" : 180
         },
         {
           "endMark" : 0,
           "pathShape" : "cup",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 1,
-          "pathShape" : "cup",
-          "pathTurn" : 90
+          "pathTurn" : 0
         },
         {
           "endMark" : 0,
-          "pathShape" : "corner",
-          "pathTurn" : 90
+          "pathShape" : "zigzagMirrored",
+          "pathTurn" : 0
         },
         {
           "endMark" : 1,
           "pathShape" : "zigzag",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 0,
-          "pathShape" : "zigzag",
-          "pathTurn" : 90
+          "pathTurn" : 0
         },
         {
           "endMark" : 1,
           "pathShape" : "cup",
-          "pathTurn" : 90
-        },
-        null
-      ],
-      "explanations" : {
-        "en" : [
-          "The path is an L shape, an S shape and a U shape, once in every row and every column.",
-          "The dot switches end with every step to the right and every step downwards.",
-          "Everything else is the same in every cell."
-        ],
-        "sv" : [
-          "Banan är en L-form, en S-form och en U-form, en gång i varje rad och varje kolumn.",
-          "Pricken byter ände för varje steg åt höger och varje steg nedåt.",
-          "Allt annat är lika i alla rutor."
-        ]
-      },
-      "id" : 4,
-      "level" : 4,
-      "options" : [
-        {
-          "endMark" : 1,
-          "pathShape" : "corner",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 1,
-          "pathShape" : "zigzag",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 0,
-          "pathShape" : "corner",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 0,
-          "pathShape" : "zigzag",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 0,
-          "pathShape" : "cup",
-          "pathTurn" : 90
-        },
-        {
-          "endMark" : 1,
-          "pathShape" : "cup",
-          "pathTurn" : 90
+          "pathTurn" : 0
         }
       ],
       "ruleNames" : {
@@ -437,79 +329,215 @@
         "distributionOfThree",
         "pathMovement"
       ],
-      "seed" : 20260922004,
-      "version" : 2
+      "seed" : 20260922003,
+      "version" : 3
     },
     {
-      "answer" : 2,
+      "answer" : 5,
       "cells" : [
         {
-          "count" : 5,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 4
+          "lines" : 14,
+          "orientation" : "vertical",
+          "slot1" : "star",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "pentagon",
-          "size" : 4
+          "lines" : 248,
+          "orientation" : "vertical",
+          "slot1" : "diamond",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "square",
-          "size" : 4
+          "lines" : 254,
+          "orientation" : "vertical",
+          "slot1" : "square",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 5,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
+          "lines" : 195,
+          "orientation" : "vertical",
+          "slot1" : "square",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 4
+          "lines" : 1,
+          "orientation" : "vertical",
+          "slot1" : "star",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 4,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "pentagon",
-          "size" : 4
+          "lines" : 195,
+          "orientation" : "vertical",
+          "slot1" : "diamond",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 5,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "octagon",
-          "size" : 4
+          "lines" : 207,
+          "orientation" : "vertical",
+          "slot1" : "diamond",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
+          "lines" : 249,
+          "orientation" : "vertical",
+          "slot1" : "square",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
         },
         null
       ],
       "explanations" : {
         "en" : [
-          "The number in the third cell is the difference between the first two: 5 − 3 = 2. This holds in every row.",
-          "The number of corners decreases by 1 to the right and increases by 1 downwards.",
+          "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
+          "The first slot holds a diamond, a square and a star, once in every row and every column.",
           "Everything else is the same in every cell."
         ],
         "sv" : [
-          "Antalet i tredje rutan är skillnaden mellan de två första: 5 − 3 = 2. Gäller i varje rad.",
-          "Antalet hörn minskar med 1 åt höger och ökar med 1 nedåt.",
+          "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
+          "Första platsen har en romb, en kvadrat och en stjärna, en gång i varje rad och varje kolumn.",
+          "Allt annat är lika i alla rutor."
+        ]
+      },
+      "id" : 4,
+      "level" : 4,
+      "options" : [
+        {
+          "lines" : 255,
+          "orientation" : "vertical",
+          "slot1" : "diamond",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
+        },
+        {
+          "lines" : 54,
+          "orientation" : "vertical",
+          "slot1" : "star",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
+        },
+        {
+          "lines" : 249,
+          "orientation" : "vertical",
+          "slot1" : "square",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
+        },
+        {
+          "lines" : 195,
+          "orientation" : "vertical",
+          "slot1" : "diamond",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
+        },
+        {
+          "lines" : 255,
+          "orientation" : "vertical",
+          "slot1" : "star",
+          "slot2" : "flagLeft",
+          "slot3" : "star"
+        },
+        {
+          "lines" : 255,
+          "orientation" : "vertical",
+          "slot1" : "star",
+          "slot2" : "flagLeft",
+          "slot3" : "diamond"
+        }
+      ],
+      "ruleNames" : {
+        "en" : [
+          "Patterns combined",
+          "Three values distributed"
+        ],
+        "sv" : [
+          "Mönster som slås ihop",
+          "Fördelning av tre"
+        ]
+      },
+      "rules" : [
+        "lineUnion",
+        "distributionOfThree"
+      ],
+      "seed" : 20260922004,
+      "version" : 3
+    },
+    {
+      "answer" : 5,
+      "cells" : [
+        {
+          "count" : 1,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "hexagon",
+          "size" : 5
+        },
+        {
+          "count" : 2,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "heptagon",
+          "size" : 4
+        },
+        {
+          "count" : 3,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "octagon",
+          "size" : 3
+        },
+        {
+          "count" : 2,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "pentagon",
+          "size" : 4
+        },
+        {
+          "count" : 3,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "hexagon",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "heptagon",
+          "size" : 2
+        },
+        {
+          "count" : 3,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "square",
+          "size" : 3
+        },
+        {
+          "count" : 4,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "pentagon",
+          "size" : 2
+        },
+        null
+      ],
+      "explanations" : {
+        "en" : [
+          "The number of figures and their size are linked: the more figures, the smaller they are.",
+          "The number of corners increases by 1 to the right and decreases by 1 downwards.",
+          "Everything else is the same in every cell."
+        ],
+        "sv" : [
+          "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
+          "Antalet hörn ökar med 1 åt höger och minskar med 1 nedåt.",
           "Allt annat är lika i alla rutor."
         ]
       },
@@ -517,64 +545,64 @@
       "level" : 5,
       "options" : [
         {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "heptagon",
-          "size" : 4
-        },
-        {
-          "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
+          "count" : 4,
+          "fill" : "solid",
+          "lines" : 65,
           "shape" : "pentagon",
-          "size" : 4
+          "size" : 2
         },
         {
           "count" : 2,
-          "fill" : "empty",
-          "lines" : 0,
+          "fill" : "solid",
+          "lines" : 65,
           "shape" : "hexagon",
-          "size" : 4
+          "size" : 1
         },
         {
           "count" : 5,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 4
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "star",
+          "size" : 1
         },
         {
-          "count" : 3,
-          "fill" : "empty",
-          "lines" : 0,
-          "shape" : "hexagon",
-          "size" : 4
+          "count" : 5,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "heart",
+          "size" : 1
         },
         {
-          "count" : 1,
-          "fill" : "empty",
-          "lines" : 0,
+          "count" : 5,
+          "fill" : "solid",
+          "lines" : 193,
           "shape" : "hexagon",
-          "size" : 4
+          "size" : 1
+        },
+        {
+          "count" : 5,
+          "fill" : "solid",
+          "lines" : 65,
+          "shape" : "hexagon",
+          "size" : 1
         }
       ],
       "ruleNames" : {
         "en" : [
-          "Arithmetic on the number",
+          "Covariation",
           "Number of sides"
         ],
         "sv" : [
-          "Aritmetik på antal",
+          "Samvariation",
           "Antal sidor"
         ]
       },
       "rules" : [
-        "countArithmetic",
+        "covariation",
         "sideCount"
       ],
       "seed" : 20260922005,
-      "version" : 2
+      "version" : 3
     }
   ],
   "version" : 2

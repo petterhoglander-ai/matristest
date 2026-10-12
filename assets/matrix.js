@@ -26,6 +26,7 @@
   var gridPlaces = [[25, 25], [50, 25], [75, 25], [25, 50], [50, 50], [75, 50], [25, 75], [50, 75], [75, 75]];
   var gridRadius = 13;
   var containerLength = 56, containerWidth = 26, glyphOffset = 15, glyphRadius = 6.5;
+  var rowOffset = 24, tokenRadius = 7;
   function ringAngle(index) { return (-90 + 45 * index) * Math.PI / 180; }
   var dividerHalfLength = 30, dividerOffset = 13, dividerDotRadius = 4;
   var dividerSpacing = [[], [0], [-9, 9], [-17, 0, 17], [-21, -7, 7, 21]];
@@ -225,6 +226,31 @@
     }
   }
 
+  /* Tecknet på en plats i raden, speglar FigureGeometry.tokenPath. */
+  function token(kind, cx, cy, r) {
+    function pts(list) { return list.map(function (p) { return f(p[0] + cx) + "," + f(p[1] + cy); }).join("L"); }
+    switch (kind) {
+      case "diamond": return '<path d="M' + pts(polygon(4, r * 1.05, -90)) + 'Z" class="ink"/>';
+      case "star": return '<path d="M' + pts(star(5, r * 1.15, r * 0.5)) + 'Z" class="ink"/>';
+      case "square": return '<rect x="' + f(cx - r * 0.8) + '" y="' + f(cy - r * 0.8) + '" width="' + f(r * 1.6) + '" height="' + f(r * 1.6) + '" class="stroke" stroke-width="2" stroke-linejoin="round"/>';
+      case "circle": return '<circle cx="' + cx + '" cy="' + cy + '" r="' + f(r * 0.85) + '" class="stroke" stroke-width="2"/>';
+      case "flagLeft":
+      case "flagRight":
+        var dir = kind === "flagLeft" ? -1 : 1;
+        return '<path d="M' + cx + "," + f(cy - r) + "L" + cx + "," + f(cy + r) + "M" + cx + "," + f(cy - r) + "L" + f(cx + dir * r * 0.9) + "," + f(cy - r) + '" class="stroke" stroke-width="2" stroke-linecap="round"/>';
+      default: return "";
+    }
+  }
+
+  /* Raden med tre platser, speglar CellView.drawRow. */
+  function renderRow(cell) {
+    var vertical = cell.orientation === "vertical";
+    var centers = vertical ? [[50, 50 - rowOffset], [50, 50], [50, 50 + rowOffset]] : [[50 - rowOffset, 50], [50, 50], [50 + rowOffset, 50]];
+    return token(cell.slot1, centers[0][0], centers[0][1], tokenRadius)
+      + token(cell.slot2, centers[1][0], centers[1][1], tokenRadius)
+      + token(cell.slot3, centers[2][0], centers[2][1], tokenRadius);
+  }
+
   /* Utan storlek ritas ringen i full radie, som i CellView.ringRadius. */
   function ringScale(cell) { return cell.size ? ringRadius * ringScale_[Math.max(0, Math.min(4, cell.size - 1))] : ringRadius; }
 
@@ -357,6 +383,7 @@
     if (typeof cell.sectors === "number") out += renderWheel(cell);
     if (typeof cell.spokes === "number") out += renderSpokes(cell);
     if (cell.glyphA && cell.glyphB) out += renderContainer(cell);
+    if (cell.slot1) out += renderRow(cell);
     if (typeof cell.divider === "number") out += renderDivider(cell);
     if (cell.pathShape) out += renderPath(cell);
     if (typeof cell.position === "number") {

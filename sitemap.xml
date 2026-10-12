@@ -44,14 +44,14 @@
   </url>
   <url>
     <loc>https://matristest.se/regler/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/"/>
@@ -100,170 +100,198 @@
   </url>
   <url>
     <loc>https://matristest.se/regler/fordelning-av-tre.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/fordelning-av-tre.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/three-values-distributed.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/fordelning-av-tre.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/three-values-distributed.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/fordelning-av-tre.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/three-values-distributed.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/fordelning-av-tre.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/monster-som-slas-ihop.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/monster-som-slas-ihop.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/patterns-combined.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/monster-som-slas-ihop.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/patterns-combined.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/monster-som-slas-ihop.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/patterns-combined.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/monster-som-slas-ihop.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/monster-som-tar-ut-varandra.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/monster-som-tar-ut-varandra.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/patterns-cancelling-out.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/monster-som-tar-ut-varandra.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/patterns-cancelling-out.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/monster-som-tar-ut-varandra.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/patterns-cancelling-out.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/monster-som-tar-ut-varandra.html"/>
   </url>
   <url>
+    <loc>https://matristest.se/regler/monster-som-ar-gemensamma.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/monster-som-ar-gemensamma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/patterns-in-common.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/monster-som-ar-gemensamma.html"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/en/rules/patterns-in-common.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/monster-som-ar-gemensamma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/patterns-in-common.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/monster-som-ar-gemensamma.html"/>
+  </url>
+  <url>
     <loc>https://matristest.se/regler/aritmetik-pa-antal.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/aritmetik-pa-antal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/arithmetic-on-the-number.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/aritmetik-pa-antal.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/arithmetic-on-the-number.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/aritmetik-pa-antal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/arithmetic-on-the-number.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/aritmetik-pa-antal.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/rorelse-langs-bana.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/rorelse-langs-bana.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/movement-along-a-path.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/rorelse-langs-bana.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/movement-along-a-path.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/rorelse-langs-bana.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/movement-along-a-path.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/rorelse-langs-bana.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/spegling.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/spegling.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/mirroring.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/spegling.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/mirroring.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/spegling.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/mirroring.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/spegling.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/rotation-av-hela-rutan.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/rotation-av-hela-rutan.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/rotation-of-the-whole-cell.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/rotation-av-hela-rutan.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/rotation-of-the-whole-cell.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/rotation-av-hela-rutan.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/rotation-of-the-whole-cell.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/rotation-av-hela-rutan.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/nastlade-figurer.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/nastlade-figurer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/nested-figures.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/nastlade-figurer.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/nested-figures.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/nastlade-figurer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/nested-figures.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/nastlade-figurer.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/antal-sidor.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/antal-sidor.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/number-of-sides.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/antal-sidor.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/number-of-sides.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/antal-sidor.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/number-of-sides.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/antal-sidor.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/fyllnadsgrad.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/fyllnadsgrad.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/degree-of-fill.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/fyllnadsgrad.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/degree-of-fill.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/fyllnadsgrad.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/degree-of-fill.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/fyllnadsgrad.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/villkorad-regel.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/villkorad-regel.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/conditional-rule.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/villkorad-regel.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/conditional-rule.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/villkorad-regel.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/conditional-rule.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/villkorad-regel.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/samvariation.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/samvariation.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/covariation.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/samvariation.html"/>
   </url>
   <url>
     <loc>https://matristest.se/en/rules/covariation.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/samvariation.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/covariation.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/samvariation.html"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/regler/platsoperator.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/platsoperator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/slot-by-slot-combination.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/platsoperator.html"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/en/rules/slot-by-slot-combination.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/platsoperator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/slot-by-slot-combination.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/platsoperator.html"/>
   </url>
 </urlset>
