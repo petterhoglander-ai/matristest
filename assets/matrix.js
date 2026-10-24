@@ -27,6 +27,7 @@
   var gridRadius = 13;
   var containerLength = 56, containerWidth = 26, glyphOffset = 15, glyphRadius = 6.5;
   var rowOffset = 24, tokenRadius = 7;
+  var crossArm = 22, crossFieldOffset = 30, crossTokenRadius = 6.5;
   function ringAngle(index) { return (-90 + 45 * index) * Math.PI / 180; }
   var dividerHalfLength = 30, dividerOffset = 13, dividerDotRadius = 4;
   var dividerSpacing = [[], [0], [-9, 9], [-17, 0, 17], [-21, -7, 7, 21]];
@@ -142,8 +143,16 @@
         var top = r * 0.62, bottom = r * 1.24, hh = r * 0.96;
         return { points: [[-top, -hh], [top, -hh], [bottom, hh], [-bottom, hh]] };
       }
+      case "tetroT": return { points: tetromino([[0, 0], [3, 0], [3, 1], [2, 1], [2, 2], [1, 2], [1, 1], [0, 1]], [1.5, 1], r * 0.80) };
+      case "tetroL": return { points: tetromino([[0, 0], [1, 0], [1, 2], [2, 2], [2, 3], [0, 3]], [1, 1.5], r * 0.78) };
+      case "tetroS": return { points: tetromino([[1, 0], [3, 0], [3, 1], [2, 1], [2, 2], [0, 2], [0, 1], [1, 1]], [1.5, 1], r * 0.80) };
       default: return { circle: r };
     }
+  }
+
+  /* De sammansatta figurerna, speglar FigureGeometry.tetromino. */
+  function tetromino(cells, center, k) {
+    return cells.map(function (p) { return [(p[0] - center[0]) * k, (p[1] - center[1]) * k]; });
   }
 
   /* Formen placerad i rummet: roterad medurs och flyttad till center. */
@@ -249,6 +258,21 @@
     return token(cell.slot1, centers[0][0], centers[0][1], tokenRadius)
       + token(cell.slot2, centers[1][0], centers[1][1], tokenRadius)
       + token(cell.slot3, centers[2][0], centers[2][1], tokenRadius);
+  }
+
+  /* Korset, speglar CellView.drawCross. */
+  function renderCross(cell) {
+    var tilt = cell.tilt || 0, d = "";
+    [45, 135].forEach(function (degrees) {
+      var a = (degrees + tilt) * Math.PI / 180, dx = crossArm * Math.cos(a), dy = crossArm * Math.sin(a);
+      d += "M" + f(50 - dx) + "," + f(50 - dy) + "L" + f(50 + dx) + "," + f(50 + dy);
+    });
+    var out = '<path d="' + d + '" class="stroke" stroke-width="1.8" stroke-linecap="round"/>';
+    for (var i = 0; i < 4; i++) {
+      var angle = (-90 + 90 * i + tilt) * Math.PI / 180;
+      out += token(cell.cross[i], 50 + crossFieldOffset * Math.cos(angle), 50 + crossFieldOffset * Math.sin(angle), crossTokenRadius);
+    }
+    return out;
   }
 
   /* Utan storlek ritas ringen i full radie, som i CellView.ringRadius. */
@@ -384,6 +408,7 @@
     if (typeof cell.spokes === "number") out += renderSpokes(cell);
     if (cell.glyphA && cell.glyphB) out += renderContainer(cell);
     if (cell.slot1) out += renderRow(cell);
+    if (cell.cross) out += renderCross(cell);
     if (typeof cell.divider === "number") out += renderDivider(cell);
     if (cell.pathShape) out += renderPath(cell);
     if (typeof cell.position === "number") {

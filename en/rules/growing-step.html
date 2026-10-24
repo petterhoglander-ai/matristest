@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Growing step: how the rule works in matrix tests</title>
+<meta name="description" content="Growing step: the figure rotates 45 degrees in the first step and 90 in the next. The step is not the same, and that is the trap. Solved example with answer.">
+<link rel="canonical" href="https://matristest.se/en/rules/growing-step.html">
+<link rel="alternate" hreflang="en" href="https://matristest.se/en/rules/growing-step.html">
+<link rel="alternate" hreflang="sv" href="https://matristest.se/regler/vaxande-steg.html">
+<link rel="alternate" hreflang="x-default" href="https://matristest.se/regler/vaxande-steg.html">
+<meta name="theme-color" content="#F1F3F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0D12" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Matrix Reasoning Trainer">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Growing step: how the rule works in matrix tests">
+<meta property="og:description" content="Growing step: the figure rotates 45 degrees in the first step and 90 in the next. The step is not the same, and that is the trap. Solved example with answer.">
+<meta property="og:url" content="https://matristest.se/en/rules/growing-step.html">
+<meta property="og:image" content="https://matristest.se/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6814397251">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css?v=4">
+</head>
+<body>
+<div class="page">
+
+<nav class="nav" aria-label="Main menu">
+  <a class="wordmark" href="/en/"><img src="/icon-192.png" width="28" height="28" alt=""><span>Matrix Reasoning Trainer</span></a>
+  <div class="links"><a href="/en/#try">Try a task</a><a href="/en/rules/">The rules</a><a href="/en/matrix-reasoning-test.html">About matrix tests</a></div>
+  <div class="spacer"></div>
+  <div class="lang" aria-label="Language"><span lang="en">EN</span><a href="/regler/vaxande-steg.html" lang="sv" hreflang="sv">SV</a></div>
+  <a class="cta" href="https://apps.apple.com/app/id6814397251">Get the app</a>
+</nav>
+
+<main>
+  <header class="page-header">
+    <p class="meta">Rule type in matrix reasoning tests</p>
+    <h1>Growing step</h1>
+  </header>
+
+  <div class="narrow">
+  <article class="card prose">
+    <h2>How the rule works</h2>
+    <p>A figure, or a line, rotates from cell to cell, but not by the same amount each time: 45 degrees in the first step and 90 degrees in the next, so the directions lie at 0, 45 and 135 degrees from the start. The same holds downwards in the columns. The answer says which way, and whether the direction is the same to the right as downwards.</p>
+    <p>The rule looks like an ordinary step by step rotation until you check the second step. Whoever reads the first step and continues by the same amount ends up 45 degrees off, and that option is always among the answers. So always check the step between cells two and three, not only between one and two.</p>
+  </article>
+
+  <section class="card example" aria-labelledby="exempel">
+    <h2 id="exempel">Solved example</h2>
+    <p class="caption">The bottom right cell is the answer, marked. The explanation below the matrix is the same text the app gives.</p>
+    <div class="solved" data-matrix-json='{&quot;cells&quot;:[{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:270,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:315,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:45,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:315,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:0,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:90,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:45,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:90,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3},{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:180,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3}],&quot;revealed&quot;:8}' data-matrix-label="Solved matrix of three by three cells"></div>
+    <h3>Rules in the example</h3>
+    <ul>
+      <li>The direction rotates clockwise, 45° in the first step and 90° in the next, both to the right and downwards.</li>
+      <li>Everything else is the same in every cell.</li>
+    </ul>
+    <p class="caption">Level 2 in the app. The same example is shown in the app after a wrong answer on this rule. Rules in the example: Growing step.</p>
+  </section>
+
+  <section class="card prose">
+    <h2>How to recognise it</h2>
+    <ol>
+      <li>Measure the rotation between cells one and two in the first row, then between two and three. Is the second step twice as large?</li>
+      <li>Do the same downwards in the first column. The direction may differ from the one to the right.</li>
+      <li>Work out the empty cell from the last row: the last step is 90 degrees, not 45.</li>
+    </ol>
+    <p class="caption">More about the format: <a href="/en/matrix-reasoning-test.html">what a matrix reasoning test is</a> and <a href="/en/logical-reasoning-test.html">how logical reasoning tests are used in recruitment</a>.</p>
+  </section>
+
+  <nav class="pager" aria-label="All rules">
+    <a class="prev" href="/en/rules/slot-by-slot-combination.html"><span>Previous rule</span><strong>Slot by slot combination</strong></a>
+    <a class="all" href="/en/rules/">All rules</a>
+    <a class="next" href="/en/rules/turn-and-change-in-the-cross.html"><span>Next rule</span><strong>Turn and change in the cross</strong></a>
+  </nav>
+  </div>
+
+  <section class="block" id="get">
+    <div class="cta-panel">
+      <h2>Practise for real.</h2>
+      <p>In the app the tasks are generated on the phone and the answer explains every rule. Five tasks are free; the rest unlocks with a one-time purchase.</p>
+      <a class="button light" href="https://apps.apple.com/app/id6814397251">Get it on the App Store <span class="arrow" aria-hidden="true">→</span></a>
+      <p class="note">Requires an iPhone with iOS 17 or later.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Petter Höglander</p>
+  <nav>
+    <a href="/en/">Start</a>
+    <a href="/en/privacy.html">Privacy policy</a>
+    <a href="/en/support.html">Support</a>
+    <a href="/regler/vaxande-steg.html" hreflang="sv">Svenska</a>
+  </nav>
+</footer>
+</div>
+<script src="/assets/matrix.js?v=4" defer></script>
+</body>
+</html>

@@ -40,23 +40,23 @@
 
 <main>
   <header class="page-header">
-    <p class="meta">Femton regeltyper med lösta exempel</p>
+    <p class="meta">Sjutton regeltyper med lösta exempel</p>
     <h1>Reglerna i ett matristest.</h1>
     <p class="lead">Varje uppgift i ett matristest styrs av en eller flera regler. Det finns inte oändligt många, det finns fjorton. Den som känner igen dem slipper leta.</p>
   </header>
 
   <div class="narrow card prose">
     <p>En uppgift är ett rutnät med tre gånger tre rutor där den nionde saknas. Reglerna säger hur rutorna hänger ihop: något ökar, något fördelas, något speglas. På de lättaste uppgifterna gäller en regel. På de svåraste gäller tre eller fyra samtidigt, och alternativen skiljer sig bara i en detalj.</p>
-    <p>Nedan står de femton regler som förändrar något, med ett löst exempel var. Den sextonde, konstant, betyder att en egenskap står still i alla rutor, och den har ingen egen sida. Exemplen är desamma som appen visar när man svarat fel.</p>
+    <p>Nedan står de sjutton regler som förändrar något, med ett löst exempel var. Den artonde, konstant, betyder att en egenskap står still i alla rutor, och den har ingen egen sida. Exemplen är desamma som appen visar när man svarat fel.</p>
     <p class="caption">Mer om formatet: <a href="/vad-ar-ett-matristest.html">vad ett matristest är</a> och <a href="/begavningstest.html">hur begåvningstest används vid rekrytering</a>.</p>
   </div>
 
   <ul class="rules-grid">
     <li class="card">
       <a href="/regler/stegvis-forandring.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;star&quot;,&quot;size&quot;:5}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;hexagon&quot;,&quot;size&quot;:1}'></div>
         <h2>Stegvis förändring</h2>
-        <p>Storleken ökar 1 steg åt höger och 1 steg nedåt.</p>
+        <p>Storleken minskar 1 steg åt höger och ändras inte nedåt.</p>
       </a>
     </li>
     <li class="card">
@@ -68,16 +68,16 @@
     </li>
     <li class="card">
       <a href="/regler/monster-som-slas-ihop.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:255,&quot;shape&quot;:&quot;star&quot;,&quot;size&quot;:4}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:255,&quot;shape&quot;:&quot;arrow&quot;,&quot;size&quot;:5}'></div>
         <h2>Mönster som slås ihop</h2>
         <p>Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/monster-som-tar-ut-varandra.html">
-        <div class="glyph" data-cell-json='{&quot;sectors&quot;:225}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:237,&quot;shape&quot;:&quot;tetroS&quot;,&quot;size&quot;:3}'></div>
         <h2>Mönster som tar ut varandra</h2>
-        <p>Tredje rutan är de två första lagda ovanpå varandra, men sektorer som är fyllda i båda blir tomma. Gäller i rader och kolumner.</p>
+        <p>Tredje rutan är de två första lagda ovanpå varandra, men linjer som finns i båda försvinner. Gäller i rader och kolumner.</p>
       </a>
     </li>
     <li class="card">
@@ -89,9 +89,9 @@
     </li>
     <li class="card">
       <a href="/regler/aritmetik-pa-antal.html">
-        <div class="glyph" data-cell-json='{&quot;countA&quot;:3,&quot;countB&quot;:4,&quot;divider&quot;:225}'></div>
+        <div class="glyph" data-cell-json='{&quot;countA&quot;:2,&quot;countB&quot;:1,&quot;divider&quot;:90}'></div>
         <h2>Aritmetik på antal</h2>
-        <p>Antalet prickar på linjens ena sida i tredje rutan är de två första lagda ihop: 1 + 2 = 3. Gäller i varje rad.</p>
+        <p>Antalet prickar på linjens andra sida i tredje rutan är skillnaden mellan de två första: 3 − 2 = 1. Gäller i varje rad.</p>
       </a>
     </li>
     <li class="card">
@@ -103,58 +103,72 @@
     </li>
     <li class="card">
       <a href="/regler/spegling.html">
-        <div class="glyph" data-cell-json='{&quot;spokes&quot;:72}'></div>
+        <div class="glyph" data-cell-json='{&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;,&quot;slot1&quot;:&quot;circle&quot;,&quot;slot2&quot;:&quot;star&quot;,&quot;slot3&quot;:&quot;star&quot;}'></div>
         <h2>Spegling</h2>
-        <p>Tredje rutan i varje rad är den första speglad i en lodrät axel: vänster och höger byter plats.</p>
+        <p>Tredje rutan i varje rad är den första med tecknen i omvänd ordning.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/rotation-av-hela-rutan.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:184,&quot;position&quot;:3,&quot;rotation&quot;:225,&quot;shape&quot;:&quot;crescent&quot;,&quot;size&quot;:4}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:184,&quot;position&quot;:3,&quot;rotation&quot;:225,&quot;shape&quot;:&quot;trapezoid&quot;,&quot;size&quot;:5}'></div>
         <h2>Rotation av hela rutan</h2>
         <p>Hela rutans innehåll vrids 180 grader medurs åt höger och 90 grader nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/nastlade-figurer.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;innerFill&quot;:&quot;empty&quot;,&quot;innerShape&quot;:&quot;octagon&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;diamond&quot;,&quot;size&quot;:4}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;innerFill&quot;:&quot;empty&quot;,&quot;innerShape&quot;:&quot;octagon&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;diamond&quot;,&quot;size&quot;:5}'></div>
         <h2>Nästlade figurer</h2>
         <p>Den inre figuren är cirkel, sjuhörning och åttahörning, en gång i varje rad och varje kolumn.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/antal-sidor.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;hexagon&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;triangle&quot;,&quot;size&quot;:3}'></div>
         <h2>Antal sidor</h2>
-        <p>Antalet hörn minskar med 1 åt höger och ökar med 1 nedåt.</p>
+        <p>Antalet hörn minskar med 1 åt höger och 1 nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/fyllnadsgrad.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;fillRatio&quot;:50,&quot;lines&quot;:0,&quot;shape&quot;:&quot;circle&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;fillRatio&quot;:0,&quot;lines&quot;:0,&quot;shape&quot;:&quot;cross&quot;,&quot;size&quot;:3}'></div>
         <h2>Fyllnadsgrad</h2>
-        <p>Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 procentenheter nedåt.</p>
+        <p>Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/villkorad-regel.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:90,&quot;shape&quot;:&quot;heart&quot;,&quot;size&quot;:4}'></div>
+        <div class="glyph" data-cell-json='{&quot;glyphA&quot;:&quot;ring&quot;,&quot;glyphB&quot;:&quot;ring&quot;,&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;}'></div>
         <h2>Villkorad regel</h2>
-        <p>Fyllnaden styr riktningen: fylld ger 90°, ofylld ger 270° och prickig ger 0°.</p>
+        <p>Första symbolen styr andra symbolen: plus ger plus, prick ger prick och ring ger ring.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/samvariation.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:3,&quot;fill&quot;:&quot;dotted&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;diamond&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:3,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;cross&quot;,&quot;size&quot;:1}'></div>
         <h2>Samvariation</h2>
         <p>Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/platsoperator.html">
-        <div class="glyph" data-cell-json='{&quot;lines&quot;:0,&quot;orientation&quot;:&quot;horizontal&quot;,&quot;slot1&quot;:&quot;star&quot;,&quot;slot2&quot;:&quot;circle&quot;,&quot;slot3&quot;:&quot;star&quot;}'></div>
+        <div class="glyph" data-cell-json='{&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;,&quot;slot1&quot;:&quot;square&quot;,&quot;slot2&quot;:&quot;circle&quot;,&quot;slot3&quot;:&quot;square&quot;}'></div>
         <h2>Platsoperator</h2>
-        <p>Tredje rutan räknas fram plats för plats ur de två första: två lika tecken blir en romb, en romb ändrar ingenting, och två olika av en cirkel, en flagga åt vänster och en stjärna blir det tredje. Gäller i rader och kolumner.</p>
+        <p>Tredje rutan räknas fram plats för plats ur de två första: två lika tecken blir en flagga åt vänster, en flagga åt vänster ändrar ingenting, och två olika av en stjärna, en kvadrat och en cirkel blir det tredje. Gäller i rader och kolumner.</p>
+      </a>
+    </li>
+    <li class="card">
+      <a href="/regler/vaxande-steg.html">
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:180,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3}'></div>
+        <h2>Växande steg</h2>
+        <p>Riktningen vrids medurs, 45° i första steget och 90° i nästa, både åt höger och nedåt.</p>
+      </a>
+    </li>
+    <li class="card">
+      <a href="/regler/vaxling-i-korset.html">
+        <div class="glyph" data-cell-json='{&quot;cross&quot;:[&quot;flagRight&quot;,&quot;empty&quot;,&quot;square&quot;,&quot;flagLeft&quot;],&quot;lines&quot;:0,&quot;tilt&quot;:45}'></div>
+        <h2>Växling i korset</h2>
+        <p>Tecknen flyttar 90° moturs för varje steg åt höger och 90° medurs för varje steg nedåt, och för varje steg byter varje tecken till nästa: en flagga åt höger blir en flagga åt vänster, en flagga åt vänster blir en kvadrat och en kvadrat blir en flagga åt höger.</p>
       </a>
     </li>
   </ul>
