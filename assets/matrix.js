@@ -17,7 +17,7 @@
     2: [[35, 50], [65, 50]],
     3: [[50, 37], [37, 62], [63, 62]],
     4: [[38, 38], [62, 38], [38, 62], [62, 62]],
-    5: [[36, 36], [64, 36], [50, 50], [36, 64], [64, 64]]
+    5: [[33, 33], [67, 33], [50, 50], [33, 67], [67, 67]]
   };
   var slots = [[19, 19], [50, 15], [81, 19], [85, 50], [81, 81], [50, 85], [19, 81], [15, 50]];
   /* Ringen, rastret och behållaren, speglar samma namn i FigureGeometry. */
@@ -56,7 +56,8 @@
     for (var i = 0; i < centers.length; i++) {
       for (var j = i + 1; j < centers.length; j++) {
         var dx = centers[i][0] - centers[j][0], dy = centers[i][1] - centers[j][1];
-        nearest = Math.min(nearest, Math.sqrt(dx * dx + dy * dy));
+        // Längs axlarna, som figurens storlek mäts; se FigureGeometry.clearance.
+        nearest = Math.min(nearest, Math.max(Math.abs(dx), Math.abs(dy)));
       }
     }
     return nearest / 2 - 1.6;

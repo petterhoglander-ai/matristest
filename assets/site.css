@@ -331,13 +331,17 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
 .page-header .lead { font-size: clamp(17px, 2vw, 19px); color: var(--ink-soft); max-width: 46ch; margin: var(--space-normal) auto 0; }
 .page-header .meta + h1 { margin-top: var(--space-tight); }
 .narrow .card { margin-bottom: var(--space-wide); }
+.narrow.card { margin-bottom: var(--space-section); }
+.narrow > .card:last-child { margin-bottom: 0; }
 .prose h2 { margin-top: var(--space-tight); }
+.prose hr { border: 0; border-top: 1px solid var(--hairline); margin: var(--space-section) 0; }
+.prose hr + h2 { margin-top: 0; }
 .prose h3 { font-size: 17px; margin: var(--space-wide) 0 var(--space-tight); }
 .prose p + h2, .prose ul + h2, .prose ol + h2 { margin-top: var(--space-section); }
 .example .solved { margin: var(--space-wide) auto; max-width: 420px; }
 .example h3 { font-size: 15px; font-weight: 600; color: var(--ink-soft); margin: var(--space-wide) 0 var(--space-tight); }
 .matrix.static .cell { padding: 6px; }
-.rules-grid { list-style: none; margin: 0 0 var(--space-block); padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-normal); }
+.rules-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-normal); }
 .rules-grid .card { padding: var(--space-wide); }
 .rules-grid a { display: flex; flex-direction: column; gap: var(--space-normal); color: var(--ink); height: 100%; }
 .rules-grid a:hover { text-decoration: none; }
@@ -347,7 +351,7 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
 .rules-grid h2 { font-size: 22px; letter-spacing: -0.02em; margin: 0; }
 .rules-grid p { margin: 0; color: var(--ink-soft); font-size: 15px; }
 @media (max-width: 820px) { .rules-grid { grid-template-columns: 1fr; } }
-.pager { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--space-normal); align-items: center; margin: var(--space-section) 0; font-size: 15px; }
+.pager { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--space-normal); align-items: center; margin: var(--space-section) 0 0; font-size: 15px; }
 .pager a { color: var(--ink); }
 .pager a span { display: block; font-size: 13px; color: var(--ink-soft); }
 .pager .next { text-align: right; }
