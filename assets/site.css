@@ -18,6 +18,7 @@
   --shadow-deep: 0 24px 60px rgba(15, 20, 27, 0.18);
   --grid: rgba(15, 20, 27, 0.035);
   --glass: rgba(255, 255, 255, 0.72);
+  --star: #C08A1E;
 
   /* Startbildens övertoning. Samma i ljust och mörkt. */
   --launch-top: #2E4FB0;
@@ -59,6 +60,7 @@
     --shadow-deep: 0 24px 60px rgba(0, 0, 0, 0.5);
     --grid: rgba(233, 237, 243, 0.035);
     --glass: rgba(22, 27, 35, 0.72);
+    --star: #D9B56A;
   }
 }
 
@@ -135,6 +137,16 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
   font-weight: 600; font-size: 15px;
 }
 .nav .cta:hover { text-decoration: none; opacity: 0.9; }
+.nav .cta { gap: 8px; }
+/* Betyget i menyn: fem stjärnor och en rad text. Står still, sidan hämtar
+   inget betyg; det ändras för hand om snittet i App Store faller. */
+.rating { display: inline-flex; align-items: center; gap: 10px; color: var(--ink-soft); font-size: 14px; font-weight: 500; white-space: nowrap; }
+.stars { display: inline-flex; gap: 2px; color: var(--star); }
+.stars svg { width: 15px; height: 15px; }
+/* Apples logga på köpknapparna, i textens färg. */
+.apple { width: 1.05em; height: 1.05em; flex: 0 0 auto; margin-top: -0.12em; }
+@media (max-width: 1040px) { .nav .rating-text { display: none; } }
+@media (max-width: 480px) { .nav .rating { display: none; } }
 @media (max-width: 720px) {
   .nav { padding-left: var(--space-normal); min-height: 56px; }
   .nav .links { display: none; }
@@ -419,3 +431,22 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
   * { transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Två nivåer upp: köparnas nivå och omdömena ur App Store. Samma siffror
+   och citat som välkomstskärmen och köpväggen i appen. */
+.proof { display: grid; grid-template-columns: 1.15fr 1fr; gap: var(--space-normal); align-items: stretch; }
+.level-card { padding: var(--space-wide); display: flex; flex-direction: column; justify-content: center; gap: var(--space-wide); }
+.level-card p { margin: 0; padding-top: var(--space-normal); border-top: 1px solid var(--hairline); font-size: 17px; }
+.level-chart { width: 100%; height: auto; overflow: visible; }
+.level-chart .edge { stroke: var(--hairline); stroke-width: 1; }
+.level-chart .axis { fill: var(--ink-soft); font-size: 11px; }
+.level-chart .value { fill: var(--ink); font-size: 15px; font-weight: 700; }
+.level-chart .arc { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
+.level-chart .area { fill: var(--accent); opacity: 0.08; }
+.level-chart .dot { fill: var(--accent); }
+.quotes { display: grid; gap: var(--space-normal); }
+.quote { margin: 0; padding: var(--space-wide); display: flex; flex-direction: column; gap: var(--space-tight); }
+.quote blockquote { margin: 0; font-size: 17px; font-weight: 500; line-height: 1.4; }
+.quote figcaption { font-size: 13px; color: var(--ink-soft); }
+.block-head .stars { justify-content: center; }
+@media (max-width: 820px) { .proof { grid-template-columns: 1fr; } }
