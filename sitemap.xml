@@ -43,6 +43,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/begavningstest.html"/>
   </url>
   <url>
+    <loc>https://matristest.se/alva-labs-logiktest.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/alva-labs-logiktest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/alva-labs-logic-test.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/alva-labs-logiktest.html"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/en/alva-labs-logic-test.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/alva-labs-logiktest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/alva-labs-logic-test.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/alva-labs-logiktest.html"/>
+  </url>
+  <url>
     <loc>https://matristest.se/regler/</loc>
     <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/regler/"/>
