@@ -122,7 +122,10 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
 .nav .wordmark:hover { text-decoration: none; }
 .nav .wordmark img { width: 28px; height: 28px; border-radius: 8px; }
 .nav .links { display: flex; gap: var(--space-wide); margin-left: var(--space-normal); }
-.nav .links a { color: var(--ink); font-weight: 500; font-size: 15px; }
+.nav .links a { color: var(--ink); font-weight: 500; font-size: 15px; white-space: nowrap; }
+/* Menyn bryter aldrig ord; i stället döljs delar när platsen tar slut.
+   Engelskan är längre än svenskan, så gränserna är satta efter den. */
+.nav .wordmark span, .nav .cta { white-space: nowrap; }
 .nav .spacer { flex: 1; }
 .nav .lang { display: inline-flex; gap: 2px; }
 .nav .lang a, .nav .lang span {
@@ -145,7 +148,10 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
 .stars svg { width: 15px; height: 15px; }
 /* Apples logga på köpknapparna, i textens färg. */
 .apple { width: 1.05em; height: 1.05em; flex: 0 0 auto; margin-top: -0.12em; }
-@media (max-width: 1040px) { .nav .rating-text { display: none; } }
+@media (max-width: 1180px) { .nav .rating-text { display: none; } }
+@media (max-width: 900px) { .nav .links { display: none; } }
+/* Den engelska menyn är för lång för betygstexten också; stjärnorna räcker. */
+html[lang="en"] .nav .rating-text { display: none; }
 @media (max-width: 480px) { .nav .rating { display: none; } }
 @media (max-width: 720px) {
   .nav { padding-left: var(--space-normal); min-height: 56px; }
