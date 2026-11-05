@@ -450,3 +450,17 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 
 .quote figcaption { font-size: 13px; color: var(--ink-soft); }
 .block-head .stars { justify-content: center; }
 @media (max-width: 820px) { .proof { grid-template-columns: 1fr; } }
+
+/* Jämförelse på konkurrentsidorna: två kolumner, vår app till höger. */
+.compare { width: 100%; border-collapse: collapse; font-size: 16px; table-layout: fixed; }
+.compare th, .compare td { overflow-wrap: break-word; hyphens: auto; }
+.compare th, .compare td { text-align: left; vertical-align: top; padding: var(--space-snug) var(--space-tight); border-bottom: 1px solid var(--hairline); }
+.compare tr:last-child th, .compare tr:last-child td { border-bottom: 0; }
+.compare thead th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); font-weight: 600; }
+.compare tbody th { font-weight: 600; }
+.compare thead th:first-child { width: 30%; }
+.compare td.ours { font-weight: 600; }
+@media (max-width: 560px) { .compare { font-size: 15px; } .compare th, .compare td { padding: var(--space-tight) var(--space-hair); } }
+.footer .footer-links { margin: 0 0 var(--space-snug); line-height: 2; }
+.footer .footer-links span { margin-right: var(--space-hair); }
+.footer .footer-links a { margin: 0 var(--space-hair); white-space: nowrap; }
