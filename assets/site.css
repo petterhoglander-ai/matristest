@@ -470,3 +470,37 @@ html[lang="en"] .nav .rating-text { display: none; }
 .footer .footer-links { margin: 0 0 var(--space-snug); line-height: 2; }
 .footer .footer-links span { margin-right: var(--space-hair); }
 .footer .footer-links a { margin: 0 var(--space-hair); white-space: nowrap; }
+
+/* Jämförelsesidan (jamfor.html), klassen .services (.matrix är uppgiftens rutnät): alla tjänster i en matris, vår kolumn först
+   och tonad. Bred tabell i en rullbar ruta; radrubriken står still. */
+.services-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--card); border-radius: var(--radius-card); box-shadow: var(--shadow); border: 1px solid var(--hairline); }
+.services-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.services { width: 100%; min-width: 860px; border-collapse: separate; border-spacing: 0; font-size: 15px; line-height: 1.4; }
+.services th, .services td { text-align: left; vertical-align: top; padding: var(--space-normal); border-bottom: 1px solid var(--hairline); }
+.services tbody tr:last-child th, .services tbody tr:last-child td { border-bottom: 0; }
+.services thead th { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; vertical-align: bottom; }
+.services thead th a { color: var(--ink); }
+.services thead th a:hover { color: var(--accent); }
+.services tbody th { font-weight: 600; color: var(--ink-soft); width: 132px; }
+.services thead td, .services tbody th { position: sticky; left: 0; z-index: 1; background: var(--card); }
+.services .ours { background: color-mix(in srgb, var(--accent) 9%, var(--card)); font-weight: 600; width: 19%; }
+.services thead .ours a { color: var(--accent); }
+.services-note { text-align: center; margin-top: var(--space-normal); }
+.services-note .swipe { display: none; }
+@media (max-width: 900px) { .services-note .swipe { display: inline; } .services tbody th { width: 108px; } }
+
+.bars { max-width: 760px; margin: 0 auto; padding: var(--space-section) var(--space-wide); display: grid; gap: var(--space-normal); }
+.bar-row { display: grid; grid-template-columns: 200px 1fr; gap: var(--space-normal); align-items: center; }
+.bar-name { font-weight: 600; line-height: 1.25; }
+.bar-name span { display: block; font-size: 14px; font-weight: 400; color: var(--ink-soft); }
+.bar-track { display: flex; align-items: center; gap: var(--space-snug); }
+.bar { display: block; height: 36px; border-radius: 10px; background: color-mix(in srgb, var(--ink) 14%, transparent); }
+.bar-row.ours .bar { background: var(--accent); }
+.bar-row.ours .bar-name, .bar-row.ours .bar-value { color: var(--accent); }
+.bar-value { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bars .caption { margin: var(--space-tight) 0 0; }
+@media (max-width: 560px) {
+  .bars { padding: var(--space-wide) var(--space-normal); }
+  .bar-row { grid-template-columns: 1fr; gap: var(--space-tight); }
+  .bar-track { max-width: calc(100% - 72px); }
+}
