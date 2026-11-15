@@ -55,93 +55,93 @@
   <ul class="rules-grid">
     <li class="card">
       <a href="/regler/stegvis-forandring.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;hexagon&quot;,&quot;size&quot;:1}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;tetroL&quot;,&quot;size&quot;:1}'></div>
         <h2>Stegvis förändring</h2>
         <p>Storleken minskar 1 steg åt höger och ändras inte nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/fordelning-av-tre.html">
-        <div class="glyph" data-cell-json='{&quot;spokes&quot;:72}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;dotted&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;diamond&quot;,&quot;size&quot;:3}'></div>
         <h2>Fördelning av tre</h2>
-        <p>Tre uppsättningar pilar förekommer en gång i varje rad och varje kolumn.</p>
+        <p>Ofylld, fylld och prickig förekommer en gång i varje rad och varje kolumn.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/monster-som-slas-ihop.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:255,&quot;shape&quot;:&quot;arrow&quot;,&quot;size&quot;:5}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:255,&quot;shape&quot;:&quot;pentagon&quot;,&quot;size&quot;:5}'></div>
         <h2>Mönster som slås ihop</h2>
-        <p>Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.</p>
+        <p>Antalet hörn ökar med 1 åt höger och minskar med 1 nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/monster-som-tar-ut-varandra.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:237,&quot;shape&quot;:&quot;tetroS&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;glyphA&quot;:&quot;plus&quot;,&quot;glyphB&quot;:&quot;dot&quot;,&quot;lines&quot;:77,&quot;orientation&quot;:&quot;horizontal&quot;}'></div>
         <h2>Mönster som tar ut varandra</h2>
-        <p>Tredje rutan är de två första lagda ovanpå varandra, men linjer som finns i båda försvinner. Gäller i rader och kolumner.</p>
+        <p>Tredje rutan i varje rad är den första med symbolerna i omvänd ordning.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/monster-som-ar-gemensamma.html">
-        <div class="glyph" data-cell-json='{&quot;sectors&quot;:128}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:2,&quot;fill&quot;:&quot;dotted&quot;,&quot;lines&quot;:68,&quot;shape&quot;:&quot;heptagon&quot;,&quot;size&quot;:5}'></div>
         <h2>Mönster som är gemensamma</h2>
-        <p>Tredje rutan är det de två första har gemensamt: bara sektorer som är fyllda i båda behålls. Gäller i rader och kolumner.</p>
+        <p>Antalet i tredje rutan är skillnaden mellan de två första: 5 − 3 = 2. Gäller i varje rad.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/aritmetik-pa-antal.html">
-        <div class="glyph" data-cell-json='{&quot;countA&quot;:2,&quot;countB&quot;:1,&quot;divider&quot;:90}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;dotted&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;square&quot;,&quot;size&quot;:5}'></div>
         <h2>Aritmetik på antal</h2>
-        <p>Antalet prickar på linjens andra sida i tredje rutan är skillnaden mellan de två första: 3 − 2 = 1. Gäller i varje rad.</p>
+        <p>Antalet i tredje rutan är skillnaden mellan de två första: 2 − 1 = 1. Gäller i varje rad.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/rorelse-langs-bana.html">
-        <div class="glyph" data-cell-json='{&quot;glyphA&quot;:&quot;triangle&quot;,&quot;glyphB&quot;:&quot;triangle&quot;,&quot;lines&quot;:0,&quot;orientation&quot;:&quot;horizontal&quot;}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;placement&quot;:4,&quot;shape&quot;:&quot;trapezoid&quot;,&quot;size&quot;:5}'></div>
         <h2>Rörelse längs bana</h2>
-        <p>Figuren växlar mellan stående och liggande för varje steg åt höger och varje steg nedåt.</p>
+        <p>Figuren vandrar genom rastret radvis, från övre vänster och om igen från början: flyttar 2 steg framåt åt höger och 1 steg nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/spegling.html">
-        <div class="glyph" data-cell-json='{&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;,&quot;slot1&quot;:&quot;circle&quot;,&quot;slot2&quot;:&quot;star&quot;,&quot;slot3&quot;:&quot;star&quot;}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;lines&quot;:135,&quot;position&quot;:3,&quot;rotation&quot;:270,&quot;shape&quot;:&quot;tetroL&quot;,&quot;size&quot;:5}'></div>
         <h2>Spegling</h2>
-        <p>Tredje rutan i varje rad är den första med tecknen i omvänd ordning.</p>
+        <p>Riktningen vrids 90° medurs åt höger och 45° nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/rotation-av-hela-rutan.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:184,&quot;position&quot;:3,&quot;rotation&quot;:225,&quot;shape&quot;:&quot;trapezoid&quot;,&quot;size&quot;:5}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:87,&quot;position&quot;:6,&quot;rotation&quot;:90,&quot;shape&quot;:&quot;tetroL&quot;,&quot;size&quot;:1}'></div>
         <h2>Rotation av hela rutan</h2>
-        <p>Hela rutans innehåll vrids 180 grader medurs åt höger och 90 grader nedåt.</p>
+        <p>Hela rutans innehåll vrids 90 grader medurs åt höger och 90 grader nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/nastlade-figurer.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;innerFill&quot;:&quot;empty&quot;,&quot;innerShape&quot;:&quot;octagon&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;diamond&quot;,&quot;size&quot;:5}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;innerFill&quot;:&quot;solid&quot;,&quot;innerShape&quot;:&quot;diamond&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;arrow&quot;,&quot;size&quot;:5}'></div>
         <h2>Nästlade figurer</h2>
-        <p>Den inre figuren är cirkel, sjuhörning och åttahörning, en gång i varje rad och varje kolumn.</p>
+        <p>Den inre figuren är cirkel, triangel och romb, en gång i varje rad och varje kolumn.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/antal-sidor.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;shape&quot;:&quot;triangle&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;placement&quot;:0,&quot;shape&quot;:&quot;triangle&quot;,&quot;size&quot;:5}'></div>
         <h2>Antal sidor</h2>
-        <p>Antalet hörn minskar med 1 åt höger och 1 nedåt.</p>
+        <p>Figurens plats är övre vänster, övre höger och mitten vänster, en gång i varje rad och varje kolumn.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/fyllnadsgrad.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;fillRatio&quot;:0,&quot;lines&quot;:0,&quot;shape&quot;:&quot;cross&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;empty&quot;,&quot;fillRatio&quot;:50,&quot;lines&quot;:0,&quot;position&quot;:2,&quot;shape&quot;:&quot;heptagon&quot;,&quot;size&quot;:5}'></div>
         <h2>Fyllnadsgrad</h2>
-        <p>Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 nedåt.</p>
+        <p>Pricken står i övre högra hörnet, mitt till höger och mitt nedtill, en gång i varje rad och varje kolumn.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/villkorad-regel.html">
-        <div class="glyph" data-cell-json='{&quot;glyphA&quot;:&quot;ring&quot;,&quot;glyphB&quot;:&quot;ring&quot;,&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:0,&quot;shape&quot;:&quot;heart&quot;,&quot;size&quot;:3}'></div>
         <h2>Villkorad regel</h2>
-        <p>Första symbolen styr andra symbolen: plus ger plus, prick ger prick och ring ger ring.</p>
+        <p>Storleken är mycket liten, mellan och mycket stor, en gång i varje rad och varje kolumn.</p>
       </a>
     </li>
     <li class="card">
@@ -153,23 +153,23 @@
     </li>
     <li class="card">
       <a href="/regler/platsoperator.html">
-        <div class="glyph" data-cell-json='{&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;,&quot;slot1&quot;:&quot;square&quot;,&quot;slot2&quot;:&quot;circle&quot;,&quot;slot3&quot;:&quot;square&quot;}'></div>
+        <div class="glyph" data-cell-json='{&quot;lines&quot;:0,&quot;orientation&quot;:&quot;vertical&quot;,&quot;slot1&quot;:&quot;square&quot;,&quot;slot2&quot;:&quot;flagRight&quot;,&quot;slot3&quot;:&quot;square&quot;}'></div>
         <h2>Platsoperator</h2>
-        <p>Tredje rutan räknas fram plats för plats ur de två första: två lika tecken blir en flagga åt vänster, en flagga åt vänster ändrar ingenting, och två olika av en stjärna, en kvadrat och en cirkel blir det tredje. Gäller i rader och kolumner.</p>
+        <p>Figuren växlar mellan stående och liggande för varje steg åt höger och varje steg nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/vaxande-steg.html">
-        <div class="glyph" data-cell-json='{&quot;count&quot;:1,&quot;fill&quot;:&quot;solid&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:180,&quot;shape&quot;:&quot;tetroT&quot;,&quot;size&quot;:3}'></div>
+        <div class="glyph" data-cell-json='{&quot;count&quot;:5,&quot;fill&quot;:&quot;striped&quot;,&quot;lines&quot;:0,&quot;rotation&quot;:90,&quot;shape&quot;:&quot;heart&quot;,&quot;size&quot;:5}'></div>
         <h2>Växande steg</h2>
-        <p>Riktningen vrids medurs, 45° i första steget och 90° i nästa, både åt höger och nedåt.</p>
+        <p>Riktningen vrids 45° i första steget och 90° i nästa: moturs åt höger och medurs nedåt.</p>
       </a>
     </li>
     <li class="card">
       <a href="/regler/vaxling-i-korset.html">
-        <div class="glyph" data-cell-json='{&quot;cross&quot;:[&quot;flagRight&quot;,&quot;empty&quot;,&quot;square&quot;,&quot;flagLeft&quot;],&quot;lines&quot;:0,&quot;tilt&quot;:45}'></div>
+        <div class="glyph" data-cell-json='{&quot;cross&quot;:[&quot;square&quot;,&quot;diamond&quot;,&quot;circle&quot;,&quot;empty&quot;],&quot;tilt&quot;:45}'></div>
         <h2>Växling i korset</h2>
-        <p>Tecknen flyttar 90° moturs för varje steg åt höger och 90° medurs för varje steg nedåt, och för varje steg byter varje tecken till nästa: en flagga åt höger blir en flagga åt vänster, en flagga åt vänster blir en kvadrat och en kvadrat blir en flagga åt höger.</p>
+        <p>Tecknen flyttar 90° medurs för varje steg åt höger och 90° moturs för varje steg nedåt, och för varje steg byter varje tecken till nästa: en kvadrat blir en romb, en romb blir en cirkel och en cirkel blir en kvadrat.</p>
       </a>
     </li>
   </ul>

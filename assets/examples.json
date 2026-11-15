@@ -11,58 +11,58 @@
         "cells" : [
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 3
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 1
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 3
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 1
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 3
           },
           null
@@ -82,45 +82,45 @@
         "options" : [
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
             "shape" : "tetroL",
             "size" : 3
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "triangle",
-            "size" : 3
+            "shape" : "heart",
+            "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
-            "size" : 3
+            "shape" : "square",
+            "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
+            "shape" : "tetroL",
             "size" : 1
           },
           {
-            "count" : 5,
-            "fill" : "striped",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
-            "size" : 3
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "count" : 1,
-            "fill" : "empty",
+            "count" : 3,
+            "fill" : "solid",
             "lines" : 0,
-            "shape" : "hexagon",
-            "size" : 5
+            "shape" : "tetroL",
+            "size" : 1
           }
         ],
         "ruleNames" : {
@@ -134,8 +134,8 @@
         "rules" : [
           "progression"
         ],
-        "seed" : 7100000,
-        "version" : 5
+        "seed" : 7100005,
+        "version" : 8
       }
     },
     {
@@ -145,41 +145,73 @@
         "sv" : "Fördelning av tre"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 3,
         "cells" : [
           {
-            "spokes" : 34
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 72
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 64
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 72
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 64
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 34
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 64
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 34
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "Three sets of arrows each appear once in every row and every column.",
+            "Unfilled, filled and dotted each appear once in every row and every column.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Tre uppsättningar pilar förekommer en gång i varje rad och varje kolumn.",
+            "Ofylld, fylld och prickig förekommer en gång i varje rad och varje kolumn.",
             "Allt annat är lika i alla rutor."
           ]
         },
@@ -187,22 +219,46 @@
         "level" : 1,
         "options" : [
           {
-            "spokes" : 34
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 5
           },
           {
-            "spokes" : 80
+            "count" : 3,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 72
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "star",
+            "size" : 3
           },
           {
-            "spokes" : 32
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 2
+            "count" : 2,
+            "fill" : "solid",
+            "lines" : 0,
+            "shape" : "diamond",
+            "size" : 3
           },
           {
-            "spokes" : 64
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "tetroL",
+            "size" : 3
           }
         ],
         "ruleNames" : {
@@ -216,8 +272,8 @@
         "rules" : [
           "distributionOfThree"
         ],
-        "seed" : 7100002,
-        "version" : 5
+        "seed" : 7100000,
+        "version" : 8
       }
     },
     {
@@ -227,135 +283,140 @@
         "sv" : "Mönster som slås ihop"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 3,
         "cells" : [
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 242,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 67,
+            "shape" : "pentagon",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 222,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 172,
+            "shape" : "hexagon",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 254,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 239,
+            "shape" : "heptagon",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 22,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 217,
+            "shape" : "square",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 51,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 117,
+            "shape" : "pentagon",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 55,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 253,
+            "shape" : "hexagon",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 246,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 219,
+            "shape" : "triangle",
             "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 255,
-            "shape" : "arrow",
+            "fill" : "empty",
+            "lines" : 253,
+            "shape" : "square",
             "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
+            "The number of corners increases by 1 to the right and decreases by 1 downwards.",
             "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
+            "Antalet hörn ökar med 1 åt höger och minskar med 1 nedåt.",
             "Tredje rutan är de två första lagda ovanpå varandra. Alla linjer behålls. Gäller i rader och kolumner.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 3,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
             "count" : 1,
-            "fill" : "striped",
-            "lines" : 191,
-            "shape" : "pentagon",
-            "size" : 5
-          },
-          {
-            "count" : 5,
-            "fill" : "striped",
-            "lines" : 127,
-            "shape" : "arrow",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
+            "fill" : "empty",
             "lines" : 255,
-            "shape" : "arrow",
-            "size" : 5
-          },
-          {
-            "count" : 3,
-            "fill" : "striped",
-            "lines" : 247,
-            "shape" : "arrow",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 9,
-            "shape" : "cross",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 247,
             "shape" : "pentagon",
+            "size" : 1
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 255,
+            "shape" : "tetroS",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 38,
+            "shape" : "pentagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 255,
+            "shape" : "pentagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 253,
+            "shape" : "hexagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 253,
+            "shape" : "square",
             "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Number of sides",
             "Patterns combined"
           ],
           "sv" : [
+            "Antal sidor",
             "Mönster som slås ihop"
           ]
         },
         "rules" : [
+          "sideCount",
           "lineUnion"
         ],
-        "seed" : 7200001,
-        "version" : 5
+        "seed" : 7400025,
+        "version" : 8
       }
     },
     {
@@ -365,135 +426,126 @@
         "sv" : "Mönster som tar ut varandra"
       },
       "puzzle" : {
-        "answer" : 3,
+        "answer" : 4,
         "cells" : [
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 122,
-            "shape" : "tetroS",
-            "size" : 3
+            "glyphA" : "triangle",
+            "glyphB" : "dot",
+            "lines" : 186,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 34,
-            "shape" : "tetroS",
-            "size" : 3
+            "glyphA" : "ring",
+            "glyphB" : "plus",
+            "lines" : 35,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
+            "glyphA" : "dot",
+            "glyphB" : "triangle",
+            "lines" : 153,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "ring",
+            "lines" : 226,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "triangle",
+            "glyphB" : "ring",
+            "lines" : 54,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "ring",
+            "glyphB" : "triangle",
+            "lines" : 212,
+            "orientation" : "horizontal"
+          },
+          {
+            "glyphA" : "dot",
+            "glyphB" : "plus",
             "lines" : 88,
-            "shape" : "tetroS",
-            "size" : 3
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 246,
-            "shape" : "tetroS",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 67,
-            "shape" : "tetroS",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 181,
-            "shape" : "tetroS",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 140,
-            "shape" : "tetroS",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 97,
-            "shape" : "tetroS",
-            "size" : 3
+            "glyphA" : "dot",
+            "glyphB" : "dot",
+            "lines" : 21,
+            "orientation" : "horizontal"
           },
           null
         ],
         "explanations" : {
           "en" : [
+            "The third cell in every row is the first one with the symbols in reverse order.",
             "The third cell is the first two laid on top of each other, but lines present in both disappear. This holds in rows and columns.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
+            "Tredje rutan i varje rad är den första med symbolerna i omvänd ordning.",
             "Tredje rutan är de två första lagda ovanpå varandra, men linjer som finns i båda försvinner. Gäller i rader och kolumner.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 4,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 233,
-            "shape" : "tetroS",
-            "size" : 3
+            "glyphA" : "dot",
+            "glyphB" : "dot",
+            "lines" : 21,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 205,
-            "shape" : "tetroS",
-            "size" : 1
+            "glyphA" : "ring",
+            "glyphB" : "triangle",
+            "lines" : 212,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 2,
-            "fill" : "empty",
-            "lines" : 109,
-            "shape" : "tetroS",
-            "size" : 3
+            "glyphA" : "plus",
+            "glyphB" : "dot",
+            "lines" : 93,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 237,
-            "shape" : "tetroS",
-            "size" : 3
+            "glyphA" : "dot",
+            "glyphB" : "plus",
+            "lines" : 77,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 236,
-            "shape" : "heptagon",
-            "size" : 3
+            "glyphA" : "plus",
+            "glyphB" : "dot",
+            "lines" : 77,
+            "orientation" : "horizontal"
           },
           {
-            "count" : 1,
-            "fill" : "empty",
-            "lines" : 236,
-            "shape" : "tetroS",
-            "size" : 5
+            "glyphA" : "plus",
+            "glyphB" : "ring",
+            "lines" : 77,
+            "orientation" : "horizontal"
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Mirroring",
             "Patterns cancelling out"
           ],
           "sv" : [
+            "Spegling",
             "Mönster som tar ut varandra"
           ]
         },
         "rules" : [
+          "mirror",
           "lineXor"
         ],
-        "seed" : 7200100,
-        "version" : 5
+        "seed" : 7400021,
+        "version" : 8
       }
     },
     {
@@ -503,79 +555,140 @@
         "sv" : "Mönster som är gemensamma"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 4,
         "cells" : [
           {
-            "sectors" : 200
+            "count" : 4,
+            "fill" : "dotted",
+            "lines" : 213,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 185
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 246,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 136
+            "count" : 3,
+            "fill" : "dotted",
+            "lines" : 212,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 151
+            "count" : 3,
+            "fill" : "dotted",
+            "lines" : 110,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 206
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 223,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 134
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 78,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 128
+            "count" : 5,
+            "fill" : "dotted",
+            "lines" : 68,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 136
+            "count" : 3,
+            "fill" : "dotted",
+            "lines" : 214,
+            "shape" : "heptagon",
+            "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The third cell is what the first two have in common: only sectors filled in both are kept. This holds in rows and columns.",
+            "The number in the third cell is the difference between the first two: 5 − 3 = 2. This holds in every row.",
+            "The third cell is what the first two have in common: only lines present in both are kept. This holds in rows and columns.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Tredje rutan är det de två första har gemensamt: bara sektorer som är fyllda i båda behålls. Gäller i rader och kolumner.",
+            "Antalet i tredje rutan är skillnaden mellan de två första: 5 − 3 = 2. Gäller i varje rad.",
+            "Tredje rutan är det de två första har gemensamt: bara linjer som finns i båda behålls. Gäller i rader och kolumner.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 5,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "sectors" : 200
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 68,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 32
+            "count" : 5,
+            "fill" : "dotted",
+            "lines" : 68,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 128
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 214,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 136
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 84,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 96
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 68,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
-            "sectors" : 5
+            "count" : 3,
+            "fill" : "dotted",
+            "lines" : 214,
+            "shape" : "heptagon",
+            "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Arithmetic on the number",
             "Patterns in common"
           ],
           "sv" : [
+            "Aritmetik på antal",
             "Mönster som är gemensamma"
           ]
         },
         "rules" : [
+          "countArithmetic",
           "lineIntersection"
         ],
-        "seed" : 7200000,
-        "version" : 5
+        "seed" : 7400011,
+        "version" : 8
       }
     },
     {
@@ -585,107 +698,140 @@
         "sv" : "Aritmetik på antal"
       },
       "puzzle" : {
-        "answer" : 5,
+        "answer" : 3,
         "cells" : [
           {
-            "countA" : 2,
-            "countB" : 1,
-            "divider" : 90
+            "count" : 5,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 1,
-            "divider" : 90
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "cross",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 0,
-            "divider" : 90
+            "count" : 4,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "triangle",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 4,
-            "divider" : 90
+            "count" : 4,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "triangle",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 2,
-            "divider" : 90
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 2,
-            "divider" : 90
+            "count" : 3,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "cross",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 3,
-            "divider" : 90
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "cross",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 2,
-            "divider" : 90
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "triangle",
+            "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The number of dots on the other side of the line in the third cell is the difference between the first two: 3 − 2 = 1. This holds in every row.",
+            "The number in the third cell is the difference between the first two: 2 − 1 = 1. This holds in every row.",
+            "Square, triangle and cross each appear once in every row and every column.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Antalet prickar på linjens andra sida i tredje rutan är skillnaden mellan de två första: 3 − 2 = 1. Gäller i varje rad.",
+            "Antalet i tredje rutan är skillnaden mellan de två första: 2 − 1 = 1. Gäller i varje rad.",
+            "Kvadrat, triangel och kors förekommer en gång i varje rad och varje kolumn.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 6,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "countA" : 2,
-            "countB" : 1,
-            "divider" : 180
+            "count" : 5,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 5
           },
           {
-            "countA" : 1,
-            "countB" : 1,
-            "divider" : 180
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "cross",
+            "size" : 5
           },
           {
-            "countA" : 1,
-            "countB" : 3,
-            "divider" : 90
+            "count" : 3,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "cross",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 2,
-            "divider" : 0
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 5
           },
           {
-            "countA" : 1,
-            "countB" : 2,
-            "divider" : 90
+            "count" : 2,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "square",
+            "size" : 5
           },
           {
-            "countA" : 2,
-            "countB" : 1,
-            "divider" : 90
+            "count" : 1,
+            "fill" : "dotted",
+            "lines" : 0,
+            "shape" : "triangle",
+            "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
-            "Arithmetic on the number"
+            "Arithmetic on the number",
+            "Three values distributed"
           ],
           "sv" : [
-            "Aritmetik på antal"
+            "Aritmetik på antal",
+            "Fördelning av tre"
           ]
         },
         "rules" : [
-          "countArithmetic"
+          "countArithmetic",
+          "distributionOfThree"
         ],
-        "seed" : 7200037,
-        "version" : 5
+        "seed" : 7400001,
+        "version" : 8
       }
     },
     {
@@ -695,65 +841,81 @@
         "sv" : "Rörelse längs bana"
       },
       "puzzle" : {
-        "answer" : 0,
+        "answer" : 5,
         "cells" : [
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "horizontal"
+            "placement" : 7,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "vertical"
+            "placement" : 0,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "horizontal"
+            "placement" : 2,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "vertical"
+            "placement" : 8,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "horizontal"
+            "placement" : 1,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "vertical"
+            "placement" : 3,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "horizontal"
+            "placement" : 0,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "vertical"
+            "placement" : 2,
+            "shape" : "trapezoid",
+            "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The figure alternates between standing and lying with every step to the right and every step downwards.",
+            "The figure walks through the grid row by row, from the top left and around again: moves 2 steps forward to the right and 1 downwards.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Figuren växlar mellan stående och liggande för varje steg åt höger och varje steg nedåt.",
+            "Figuren vandrar genom rastret radvis, från övre vänster och om igen från början: flyttar 2 steg framåt åt höger och 1 steg nedåt.",
             "Allt annat är lika i alla rutor."
           ]
         },
@@ -761,40 +923,52 @@
         "level" : 1,
         "options" : [
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "horizontal"
+            "placement" : 6,
+            "shape" : "trapezoid",
+            "size" : 3
           },
           {
-            "glyphA" : "plus",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "vertical"
+            "placement" : 3,
+            "shape" : "crescent",
+            "size" : 5
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
-            "lines" : 8,
-            "orientation" : "vertical"
-          },
-          {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
-            "lines" : 128,
-            "orientation" : "vertical"
-          },
-          {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
-            "lines" : 2,
-            "orientation" : "vertical"
-          },
-          {
-            "glyphA" : "triangle",
-            "glyphB" : "plus",
+            "count" : 1,
+            "fill" : "empty",
             "lines" : 0,
-            "orientation" : "vertical"
+            "placement" : 3,
+            "shape" : "trapezoid",
+            "size" : 5
+          },
+          {
+            "count" : 4,
+            "fill" : "solid",
+            "lines" : 0,
+            "placement" : 5,
+            "shape" : "trapezoid",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "placement" : 3,
+            "shape" : "trapezoid",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "placement" : 4,
+            "shape" : "trapezoid",
+            "size" : 5
           }
         ],
         "ruleNames" : {
@@ -809,7 +983,7 @@
           "pathMovement"
         ],
         "seed" : 7100001,
-        "version" : 5
+        "version" : 8
       }
     },
     {
@@ -822,132 +996,165 @@
         "answer" : 4,
         "cells" : [
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "flagRight",
-            "slot2" : "star",
-            "slot3" : "square"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 145,
+            "position" : 4,
+            "rotation" : 0,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "square",
-            "slot2" : "star",
-            "slot3" : "diamond"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 34,
+            "position" : 3,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "square",
-            "slot2" : "star",
-            "slot3" : "flagRight"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 148,
+            "position" : 2,
+            "rotation" : 180,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "flagLeft",
-            "slot2" : "flagLeft",
-            "slot3" : "flagRight"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 214,
+            "position" : 2,
+            "rotation" : 45,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "diamond",
-            "slot2" : "diamond",
-            "slot3" : "star"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 179,
+            "position" : 7,
+            "rotation" : 135,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "flagRight",
-            "slot2" : "flagLeft",
-            "slot3" : "flagLeft"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 179,
+            "position" : 4,
+            "rotation" : 225,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "star",
-            "slot2" : "star",
-            "slot3" : "circle"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 23,
+            "position" : 3,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "flagRight",
-            "slot2" : "circle",
-            "slot3" : "flagLeft"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 108,
+            "position" : 3,
+            "rotation" : 180,
+            "shape" : "tetroL",
+            "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The third cell in every row is the first one with the symbols in reverse order.",
+            "The direction rotates 90° clockwise to the right and 45° downwards.",
+            "The third cell in every row is the first one mirrored in a horizontal axis: top and bottom swap.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Tredje rutan i varje rad är den första med tecknen i omvänd ordning.",
+            "Riktningen vrids 90° medurs åt höger och 45° nedåt.",
+            "Tredje rutan i varje rad är den första speglad i en vågrät axel: upp och ned byter plats.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 8,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "lines" : 64,
-            "orientation" : "vertical",
-            "slot1" : "flagRight",
-            "slot2" : "star",
-            "slot3" : "star"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 179,
+            "position" : 4,
+            "rotation" : 225,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "square",
-            "slot2" : "flagRight",
-            "slot3" : "star"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 135,
+            "position" : 3,
+            "rotation" : 0,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "star",
-            "slot2" : "star",
-            "slot3" : "circle"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 108,
+            "position" : 3,
+            "rotation" : 180,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 1,
-            "orientation" : "vertical",
-            "slot1" : "circle",
-            "slot2" : "star",
-            "slot3" : "diamond"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 135,
+            "position" : 6,
+            "rotation" : 270,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "circle",
-            "slot2" : "star",
-            "slot3" : "star"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 135,
+            "position" : 3,
+            "rotation" : 270,
+            "shape" : "tetroL",
+            "size" : 5
           },
           {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "flagLeft",
-            "slot2" : "star",
-            "slot3" : "diamond"
+            "count" : 1,
+            "fill" : "empty",
+            "lines" : 135,
+            "position" : 0,
+            "rotation" : 270,
+            "shape" : "tetroL",
+            "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Step by step change",
             "Mirroring"
           ],
           "sv" : [
+            "Stegvis förändring",
             "Spegling"
           ]
         },
         "rules" : [
+          "progression",
           "mirror"
         ],
-        "seed" : 7200005,
-        "version" : 5
+        "seed" : 7400004,
+        "version" : 8
       }
     },
     {
@@ -957,163 +1164,168 @@
         "sv" : "Rotation av hela rutan"
       },
       "puzzle" : {
-        "answer" : 4,
+        "answer" : 1,
         "cells" : [
           {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 226,
-            "position" : 7,
-            "rotation" : 45,
-            "shape" : "trapezoid",
+            "lines" : 87,
+            "position" : 6,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 1
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 174,
+            "position" : 0,
+            "rotation" : 180,
+            "shape" : "tetroL",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 93,
+            "position" : 2,
+            "rotation" : 270,
+            "shape" : "tetroL",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 184,
-            "position" : 3,
-            "rotation" : 225,
-            "shape" : "trapezoid",
+            "lines" : 174,
+            "position" : 0,
+            "rotation" : 180,
+            "shape" : "tetroL",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 226,
-            "position" : 7,
-            "rotation" : 45,
-            "shape" : "trapezoid",
-            "size" : 5
+            "lines" : 93,
+            "position" : 2,
+            "rotation" : 270,
+            "shape" : "tetroL",
+            "size" : 1
           },
           {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 212,
-            "position" : 1,
-            "rotation" : 135,
-            "shape" : "trapezoid",
-            "size" : 5
+            "lines" : 171,
+            "position" : 4,
+            "rotation" : 0,
+            "shape" : "tetroL",
+            "size" : 3
           },
           {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 113,
-            "position" : 5,
-            "rotation" : 315,
-            "shape" : "trapezoid",
-            "size" : 5
+            "lines" : 93,
+            "position" : 2,
+            "rotation" : 270,
+            "shape" : "tetroL",
+            "size" : 3
           },
           {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 212,
-            "position" : 1,
-            "rotation" : 135,
-            "shape" : "trapezoid",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 184,
-            "position" : 3,
-            "rotation" : 225,
-            "shape" : "trapezoid",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 226,
-            "position" : 7,
-            "rotation" : 45,
-            "shape" : "trapezoid",
+            "lines" : 171,
+            "position" : 4,
+            "rotation" : 0,
+            "shape" : "tetroL",
             "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The whole content of the cell rotates 180 degrees clockwise to the right and 90 degrees downwards.",
+            "The whole content of the cell rotates 90 degrees clockwise to the right and 90 degrees downwards.",
+            "The size is very small, medium and very large, once in every row and every column.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Hela rutans innehåll vrids 180 grader medurs åt höger och 90 grader nedåt.",
+            "Hela rutans innehåll vrids 90 grader medurs åt höger och 90 grader nedåt.",
+            "Storleken är mycket liten, mellan och mycket stor, en gång i varje rad och varje kolumn.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 9,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "count" : 4,
-            "fill" : "striped",
-            "lines" : 184,
-            "position" : 3,
-            "rotation" : 270,
-            "shape" : "trapezoid",
-            "size" : 5
-          },
-          {
             "count" : 1,
             "fill" : "striped",
-            "lines" : 56,
-            "position" : 3,
-            "rotation" : 225,
-            "shape" : "heart",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 184,
-            "position" : 6,
-            "rotation" : 315,
-            "shape" : "trapezoid",
-            "size" : 5
-          },
-          {
-            "count" : 4,
-            "fill" : "striped",
-            "lines" : 168,
-            "position" : 3,
-            "rotation" : 225,
-            "shape" : "trapezoid",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 184,
-            "position" : 3,
-            "rotation" : 225,
-            "shape" : "trapezoid",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "striped",
-            "lines" : 184,
+            "lines" : 171,
             "position" : 4,
-            "rotation" : 225,
-            "shape" : "cross",
+            "rotation" : 0,
+            "shape" : "tetroL",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 87,
+            "position" : 6,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 1
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 171,
+            "position" : 4,
+            "rotation" : 0,
+            "shape" : "tetroL",
             "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 87,
+            "position" : 6,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 87,
+            "position" : 6,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 85,
+            "position" : 6,
+            "rotation" : 90,
+            "shape" : "tetroL",
+            "size" : 1
           }
         ],
         "ruleNames" : {
           "en" : [
-            "Rotation of the whole cell"
+            "Rotation of the whole cell",
+            "Three values distributed"
           ],
           "sv" : [
-            "Rotation av hela rutan"
+            "Rotation av hela rutan",
+            "Fördelning av tre"
           ]
         },
         "rules" : [
-          "rotationOfCell"
+          "rotationOfCell",
+          "distributionOfThree"
         ],
-        "seed" : 7200027,
-        "version" : 5
+        "seed" : 7400132,
+        "version" : 8
       }
     },
     {
@@ -1123,163 +1335,168 @@
         "sv" : "Nästlade figurer"
       },
       "puzzle" : {
-        "answer" : 4,
+        "answer" : 3,
         "cells" : [
           {
             "count" : 1,
             "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "octagon",
-            "lines" : 0,
-            "shape" : "diamond",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "innerFill" : "empty",
+            "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "tetroT",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "heptagon",
+            "innerFill" : "solid",
+            "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "arrow",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "heptagon",
+            "innerFill" : "solid",
+            "innerShape" : "triangle",
             "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "octagon",
+            "innerFill" : "solid",
+            "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "arrow",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
-            "innerFill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "triangle",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "tetroT",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
-            "innerFill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "triangle",
+            "lines" : 0,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "diamond",
-            "size" : 5
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "heptagon",
-            "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "tetroT",
             "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The inner figure is circle, heptagon and octagon, once in every row and every column.",
+            "The inner figure is circle, triangle and diamond, once in every row and every column.",
+            "Arrow, heptagon and T shape each appear once in every row and every column.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Den inre figuren är cirkel, sjuhörning och åttahörning, en gång i varje rad och varje kolumn.",
+            "Den inre figuren är cirkel, triangel och romb, en gång i varje rad och varje kolumn.",
+            "Pil, sjuhörning och T-form förekommer en gång i varje rad och varje kolumn.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 10,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
             "count" : 1,
             "fill" : "empty",
+            "innerFill" : "empty",
+            "innerShape" : "diamond",
+            "lines" : 0,
+            "shape" : "arrow",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "circle",
+            "lines" : 0,
+            "shape" : "tetroT",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
             "innerFill" : "dotted",
-            "innerShape" : "octagon",
+            "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "diamond",
-            "size" : 3
-          },
-          {
-            "count" : 3,
-            "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "triangle",
-            "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "arrow",
             "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
             "innerFill" : "solid",
-            "innerShape" : "octagon",
+            "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "diamond",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "triangle",
-            "lines" : 0,
-            "shape" : "diamond",
-            "size" : 1
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "innerFill" : "empty",
-            "innerShape" : "octagon",
-            "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "arrow",
             "size" : 5
           },
           {
-            "count" : 3,
+            "count" : 1,
             "fill" : "empty",
             "innerFill" : "solid",
-            "innerShape" : "octagon",
+            "innerShape" : "triangle",
             "lines" : 0,
-            "shape" : "diamond",
+            "shape" : "arrow",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "innerFill" : "solid",
+            "innerShape" : "diamond",
+            "lines" : 0,
+            "shape" : "tetroT",
             "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
-            "Nested figures"
+            "Nested figures",
+            "Three values distributed"
           ],
           "sv" : [
-            "Nästlade figurer"
+            "Nästlade figurer",
+            "Fördelning av tre"
           ]
         },
         "rules" : [
-          "nestedFigures"
+          "nestedFigures",
+          "distributionOfThree"
         ],
-        "seed" : 7200004,
-        "version" : 5
+        "seed" : 7400019,
+        "version" : 8
       }
     },
     {
@@ -1289,135 +1506,154 @@
         "sv" : "Antal sidor"
       },
       "puzzle" : {
-        "answer" : 1,
+        "answer" : 3,
         "cells" : [
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 0,
             "shape" : "heptagon",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 3,
             "shape" : "hexagon",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 2,
             "shape" : "pentagon",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 2,
             "shape" : "hexagon",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 0,
             "shape" : "pentagon",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 3,
             "shape" : "square",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 3,
             "shape" : "pentagon",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
+            "placement" : 2,
             "shape" : "square",
-            "size" : 3
+            "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
+            "The figure's place is top left, top right and middle left, once in every row and every column.",
             "The number of corners decreases by 1 to the right and 1 downwards.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
+            "Figurens plats är övre vänster, övre höger och mitten vänster, en gång i varje rad och varje kolumn.",
             "Antalet hörn minskar med 1 åt höger och 1 nedåt.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 11,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
-            "shape" : "diamond",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "solid",
-            "lines" : 0,
+            "placement" : 3,
             "shape" : "triangle",
-            "size" : 3
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
-            "shape" : "star",
-            "size" : 3
+            "placement" : 0,
+            "shape" : "octagon",
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "solid",
             "lines" : 0,
-            "shape" : "tetroT",
-            "size" : 3
-          },
-          {
-            "count" : 5,
-            "fill" : "solid",
-            "lines" : 0,
-            "shape" : "crescent",
-            "size" : 3
+            "placement" : 2,
+            "shape" : "triangle",
+            "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "solid",
             "lines" : 0,
+            "placement" : 0,
+            "shape" : "triangle",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "placement" : 2,
+            "shape" : "square",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "solid",
+            "lines" : 0,
+            "placement" : 0,
             "shape" : "heart",
-            "size" : 3
+            "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Three values distributed",
             "Number of sides"
           ],
           "sv" : [
+            "Fördelning av tre",
             "Antal sidor"
           ]
         },
         "rules" : [
+          "distributionOfThree",
           "sideCount"
         ],
-        "seed" : 7200111,
-        "version" : 5
+        "seed" : 7400013,
+        "version" : 8
       }
     },
     {
@@ -1427,149 +1663,168 @@
         "sv" : "Fyllnadsgrad"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 0,
         "cells" : [
           {
             "count" : 1,
             "fill" : "empty",
-            "fillRatio" : 100,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 75,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
             "fillRatio" : 50,
             "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 75,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 50,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
+            "position" : 3,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
             "fillRatio" : 25,
             "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 50,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 25,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          null
-        ],
-        "explanations" : {
-          "en" : [
-            "The filled share decreases by 25 percentage points to the right and 25 downwards.",
-            "Everything else is the same in every cell."
-          ],
-          "sv" : [
-            "Fyllnadsgraden minskar med 25 procentenheter åt höger och 25 nedåt.",
-            "Allt annat är lika i alla rutor."
-          ]
-        },
-        "id" : 12,
-        "level" : 2,
-        "options" : [
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 50,
-            "lines" : 0,
-            "shape" : "pentagon",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "empty",
-            "fillRatio" : 75,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
+            "position" : 2,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
             "fillRatio" : 0,
             "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
-          },
-          {
-            "count" : 3,
-            "fill" : "empty",
-            "fillRatio" : 100,
-            "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
+            "position" : 5,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
             "count" : 1,
             "fill" : "empty",
             "fillRatio" : 75,
-            "lines" : 1,
-            "shape" : "cross",
-            "size" : 3
+            "lines" : 0,
+            "position" : 2,
+            "shape" : "heptagon",
+            "size" : 5
           },
           {
             "count" : 1,
-            "fill" : "striped",
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "position" : 5,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 25,
+            "lines" : 0,
+            "position" : 3,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
             "fillRatio" : 100,
             "lines" : 0,
-            "shape" : "cross",
-            "size" : 3
+            "position" : 5,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "position" : 3,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          null
+        ],
+        "explanations" : {
+          "en" : [
+            "The dot sits in the top right corner, the middle right and the bottom middle, once in every row and every column.",
+            "The filled share decreases by 25 percentage points to the right and increases by 25 percentage points downwards.",
+            "Everything else is the same in every cell."
+          ],
+          "sv" : [
+            "Pricken står i övre högra hörnet, mitt till höger och mitt nedtill, en gång i varje rad och varje kolumn.",
+            "Fyllnadsgraden minskar med 25 procentenheter åt höger och ökar med 25 procentenheter nedåt.",
+            "Allt annat är lika i alla rutor."
+          ]
+        },
+        "id" : 12,
+        "level" : 4,
+        "options" : [
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "position" : 2,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "position" : 5,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 50,
+            "lines" : 0,
+            "position" : 2,
+            "shape" : "triangle",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "position" : 2,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 75,
+            "lines" : 0,
+            "position" : 3,
+            "shape" : "heptagon",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "empty",
+            "fillRatio" : 25,
+            "lines" : 0,
+            "position" : 3,
+            "shape" : "heptagon",
+            "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Three values distributed",
             "Degree of fill"
           ],
           "sv" : [
+            "Fördelning av tre",
             "Fyllnadsgrad"
           ]
         },
         "rules" : [
+          "distributionOfThree",
           "fillDegree"
         ],
-        "seed" : 7200020,
-        "version" : 5
+        "seed" : 7400003,
+        "version" : 8
       }
     },
     {
@@ -1579,121 +1834,154 @@
         "sv" : "Villkorad regel"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 4,
         "cells" : [
           {
-            "glyphA" : "ring",
-            "glyphB" : "ring",
+            "count" : 1,
+            "fill" : "striped",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 0,
+            "shape" : "heart",
+            "size" : 1
           },
           {
-            "glyphA" : "plus",
-            "glyphB" : "plus",
+            "count" : 1,
+            "fill" : "empty",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 3
           },
           {
-            "glyphA" : "dot",
-            "glyphB" : "dot",
+            "count" : 1,
+            "fill" : "dotted",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 270,
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "glyphA" : "dot",
-            "glyphB" : "dot",
+            "count" : 1,
+            "fill" : "dotted",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 270,
+            "shape" : "heart",
+            "size" : 3
           },
           {
-            "glyphA" : "ring",
-            "glyphB" : "ring",
+            "count" : 1,
+            "fill" : "striped",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 0,
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "glyphA" : "plus",
-            "glyphB" : "plus",
+            "count" : 1,
+            "fill" : "empty",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 1
           },
           {
-            "glyphA" : "plus",
-            "glyphB" : "plus",
+            "count" : 1,
+            "fill" : "empty",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "glyphA" : "dot",
-            "glyphB" : "dot",
+            "count" : 1,
+            "fill" : "dotted",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 270,
+            "shape" : "heart",
+            "size" : 1
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The first symbol determines the second symbol: plus means plus, dot means dot and ring means ring.",
+            "The size is very small, medium and very large, once in every row and every column.",
+            "The fill determines the direction: unfilled means 90°, dotted means 270° and striped means 0°. Each pair appears once in every row and every column.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Första symbolen styr andra symbolen: plus ger plus, prick ger prick och ring ger ring.",
+            "Storleken är mycket liten, mellan och mycket stor, en gång i varje rad och varje kolumn.",
+            "Fyllnaden styr riktningen: ofylld ger 90°, prickig ger 270° och streckad ger 0°. Varje par förekommer en gång i varje rad och varje kolumn.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 13,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "glyphA" : "ring",
-            "glyphB" : "dot",
-            "lines" : 1,
-            "orientation" : "vertical"
-          },
-          {
-            "glyphA" : "plus",
-            "glyphB" : "ring",
-            "lines" : 4,
-            "orientation" : "vertical"
-          },
-          {
-            "glyphA" : "ring",
-            "glyphB" : "ring",
+            "count" : 1,
+            "fill" : "dotted",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 270,
+            "shape" : "heart",
+            "size" : 1
           },
           {
-            "glyphA" : "dot",
-            "glyphB" : "plus",
+            "count" : 1,
+            "fill" : "solid",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 0,
+            "shape" : "heart",
+            "size" : 3
           },
           {
-            "glyphA" : "plus",
-            "glyphB" : "dot",
+            "count" : 1,
+            "fill" : "empty",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 1
           },
           {
-            "glyphA" : "triangle",
-            "glyphB" : "triangle",
+            "count" : 1,
+            "fill" : "striped",
             "lines" : 0,
-            "orientation" : "vertical"
+            "rotation" : 0,
+            "shape" : "heart",
+            "size" : 5
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 0,
+            "shape" : "heart",
+            "size" : 3
+          },
+          {
+            "count" : 1,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 270,
+            "shape" : "heart",
+            "size" : 3
           }
         ],
         "ruleNames" : {
           "en" : [
+            "Three values distributed",
             "Conditional rule"
           ],
           "sv" : [
+            "Fördelning av tre",
             "Villkorad regel"
           ]
         },
         "rules" : [
+          "distributionOfThree",
           "conditional"
         ],
-        "seed" : 7200002,
-        "version" : 5
+        "seed" : 7400007,
+        "version" : 8
       }
     },
     {
@@ -1841,46 +2129,46 @@
         "sv" : "Platsoperator"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 4,
         "cells" : [
           {
             "lines" : 0,
             "orientation" : "vertical",
-            "slot1" : "star",
-            "slot2" : "circle",
-            "slot3" : "star"
+            "slot1" : "flagLeft",
+            "slot2" : "flagRight",
+            "slot3" : "square"
           },
           {
             "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "circle",
+            "orientation" : "horizontal",
+            "slot1" : "square",
             "slot2" : "square",
-            "slot3" : "star"
+            "slot3" : "square"
           },
           {
             "lines" : 0,
             "orientation" : "vertical",
             "slot1" : "square",
-            "slot2" : "star",
+            "slot2" : "diamond",
             "slot3" : "flagLeft"
           },
           {
             "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "star",
-            "slot2" : "square",
-            "slot3" : "star"
-          },
-          {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "star",
+            "orientation" : "horizontal",
+            "slot1" : "flagLeft",
             "slot2" : "flagLeft",
-            "slot3" : "circle"
+            "slot3" : "flagRight"
           },
           {
             "lines" : 0,
             "orientation" : "vertical",
+            "slot1" : "flagLeft",
+            "slot2" : "square",
+            "slot3" : "diamond"
+          },
+          {
+            "lines" : 0,
+            "orientation" : "horizontal",
             "slot1" : "flagLeft",
             "slot2" : "square",
             "slot3" : "square"
@@ -1889,64 +2177,66 @@
             "lines" : 0,
             "orientation" : "vertical",
             "slot1" : "flagLeft",
-            "slot2" : "star",
-            "slot3" : "flagLeft"
+            "slot2" : "flagRight",
+            "slot3" : "diamond"
           },
           {
             "lines" : 0,
-            "orientation" : "vertical",
+            "orientation" : "horizontal",
             "slot1" : "square",
-            "slot2" : "square",
-            "slot3" : "square"
+            "slot2" : "flagLeft",
+            "slot3" : "flagRight"
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The third cell is worked out slot by slot from the first two: two equal symbols become a flag pointing left, a flag pointing left changes nothing, and two different ones among a star, a square and a circle become the third. This holds in rows and columns.",
+            "The figure alternates between standing and lying with every step to the right and every step downwards.",
+            "The third cell is worked out slot by slot from the first two: two equal symbols become a flag pointing left, a flag pointing left changes nothing, and two different ones among a square, a diamond and a flag pointing right become the third. This holds in rows and columns.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Tredje rutan räknas fram plats för plats ur de två första: två lika tecken blir en flagga åt vänster, en flagga åt vänster ändrar ingenting, och två olika av en stjärna, en kvadrat och en cirkel blir det tredje. Gäller i rader och kolumner.",
+            "Figuren växlar mellan stående och liggande för varje steg åt höger och varje steg nedåt.",
+            "Tredje rutan räknas fram plats för plats ur de två första: två lika tecken blir en flagga åt vänster, en flagga åt vänster ändrar ingenting, och två olika av en kvadrat, en romb och en flagga åt höger blir det tredje. Gäller i rader och kolumner.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 15,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
             "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "circle",
-            "slot2" : "flagLeft",
-            "slot3" : "square"
-          },
-          {
-            "lines" : 0,
-            "orientation" : "vertical",
+            "orientation" : "horizontal",
             "slot1" : "flagLeft",
-            "slot2" : "circle",
-            "slot3" : "flagLeft"
-          },
-          {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "square",
-            "slot2" : "circle",
-            "slot3" : "square"
-          },
-          {
-            "lines" : 0,
-            "orientation" : "vertical",
-            "slot1" : "flagLeft",
-            "slot2" : "star",
-            "slot3" : "flagLeft"
-          },
-          {
-            "lines" : 128,
-            "orientation" : "vertical",
-            "slot1" : "square",
             "slot2" : "square",
+            "slot3" : "square"
+          },
+          {
+            "lines" : 0,
+            "orientation" : "horizontal",
+            "slot1" : "square",
+            "slot2" : "flagRight",
+            "slot3" : "square"
+          },
+          {
+            "lines" : 0,
+            "orientation" : "horizontal",
+            "slot1" : "square",
+            "slot2" : "flagLeft",
+            "slot3" : "flagRight"
+          },
+          {
+            "lines" : 0,
+            "orientation" : "vertical",
+            "slot1" : "flagLeft",
+            "slot2" : "flagRight",
+            "slot3" : "diamond"
+          },
+          {
+            "lines" : 0,
+            "orientation" : "vertical",
+            "slot1" : "square",
+            "slot2" : "flagRight",
             "slot3" : "square"
           },
           {
@@ -1959,17 +2249,20 @@
         ],
         "ruleNames" : {
           "en" : [
+            "Movement along a path",
             "Slot by slot combination"
           ],
           "sv" : [
+            "Rörelse längs bana",
             "Platsoperator"
           ]
         },
         "rules" : [
+          "pathMovement",
           "slotOperator"
         ],
-        "seed" : 7200007,
-        "version" : 5
+        "seed" : 7400052,
+        "version" : 8
       }
     },
     {
@@ -1979,149 +2272,154 @@
         "sv" : "Växande steg"
       },
       "puzzle" : {
-        "answer" : 4,
+        "answer" : 5,
         "cells" : [
           {
             "count" : 1,
-            "fill" : "solid",
+            "fill" : "striped",
             "lines" : 0,
-            "rotation" : 270,
-            "shape" : "tetroT",
-            "size" : 3
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 1,
-            "fill" : "solid",
-            "lines" : 0,
-            "rotation" : 315,
-            "shape" : "tetroT",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "solid",
+            "count" : 2,
+            "fill" : "striped",
             "lines" : 0,
             "rotation" : 45,
-            "shape" : "tetroT",
-            "size" : 3
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 1,
-            "fill" : "solid",
+            "count" : 3,
+            "fill" : "striped",
             "lines" : 0,
             "rotation" : 315,
-            "shape" : "tetroT",
-            "size" : 3
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 1,
-            "fill" : "solid",
+            "count" : 2,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 135,
+            "shape" : "heart",
+            "size" : 5
+          },
+          {
+            "count" : 3,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
+          },
+          {
+            "count" : 4,
+            "fill" : "striped",
             "lines" : 0,
             "rotation" : 0,
-            "shape" : "tetroT",
-            "size" : 3
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 1,
-            "fill" : "solid",
+            "count" : 3,
+            "fill" : "striped",
             "lines" : 0,
-            "rotation" : 90,
-            "shape" : "tetroT",
-            "size" : 3
+            "rotation" : 225,
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 1,
-            "fill" : "solid",
+            "count" : 4,
+            "fill" : "striped",
             "lines" : 0,
-            "rotation" : 45,
-            "shape" : "tetroT",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "solid",
-            "lines" : 0,
-            "rotation" : 90,
-            "shape" : "tetroT",
-            "size" : 3
+            "rotation" : 180,
+            "shape" : "heart",
+            "size" : 5
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The direction rotates clockwise, 45° in the first step and 90° in the next, both to the right and downwards.",
+            "The direction rotates 45° in the first step and 90° in the next: counterclockwise to the right and clockwise downwards.",
+            "The number of figures increases by 1 to the right and 1 downwards.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Riktningen vrids medurs, 45° i första steget och 90° i nästa, både åt höger och nedåt.",
+            "Riktningen vrids 45° i första steget och 90° i nästa: moturs åt höger och medurs nedåt.",
+            "Antalet figurer ökar med 1 åt höger och 1 nedåt.",
             "Allt annat är lika i alla rutor."
           ]
         },
         "id" : 16,
-        "level" : 2,
+        "level" : 4,
         "options" : [
           {
-            "count" : 5,
-            "fill" : "solid",
-            "lines" : 0,
-            "rotation" : 180,
-            "shape" : "square",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "solid",
-            "lines" : 0,
-            "rotation" : 135,
-            "shape" : "tetroT",
-            "size" : 3
-          },
-          {
-            "count" : 1,
+            "count" : 4,
             "fill" : "striped",
             "lines" : 0,
-            "rotation" : 135,
-            "shape" : "tetroT",
-            "size" : 3
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 2,
-            "fill" : "solid",
-            "lines" : 0,
-            "rotation" : 135,
-            "shape" : "tetroT",
-            "size" : 3
-          },
-          {
-            "count" : 1,
-            "fill" : "solid",
+            "count" : 5,
+            "fill" : "striped",
             "lines" : 0,
             "rotation" : 180,
-            "shape" : "tetroT",
-            "size" : 3
+            "shape" : "heart",
+            "size" : 5
           },
           {
-            "count" : 1,
+            "count" : 3,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
+          },
+          {
+            "count" : 5,
             "fill" : "dotted",
             "lines" : 0,
-            "rotation" : 270,
-            "shape" : "tetroT",
-            "size" : 3
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
+          },
+          {
+            "count" : 4,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 180,
+            "shape" : "heart",
+            "size" : 5
+          },
+          {
+            "count" : 5,
+            "fill" : "striped",
+            "lines" : 0,
+            "rotation" : 90,
+            "shape" : "heart",
+            "size" : 5
           }
         ],
         "ruleNames" : {
           "en" : [
-            "Growing step"
+            "Growing step",
+            "Step by step change"
           ],
           "sv" : [
-            "Växande steg"
+            "Växande steg",
+            "Stegvis förändring"
           ]
         },
         "rules" : [
-          "growingStep"
+          "growingStep",
+          "progression"
         ],
-        "seed" : 7200094,
-        "version" : 5
+        "seed" : 7400017,
+        "version" : 8
       }
     },
     {
@@ -2131,97 +2429,89 @@
         "sv" : "Växling i korset"
       },
       "puzzle" : {
-        "answer" : 2,
+        "answer" : 0,
         "cells" : [
           {
             "cross" : [
+              "circle",
               "square",
-              "empty",
-              "flagLeft",
-              "flagRight"
-            ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "empty",
-              "square",
-              "flagLeft",
-              "flagRight"
-            ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "flagRight",
-              "square",
-              "flagLeft",
+              "diamond",
               "empty"
             ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "flagLeft",
-              "flagRight",
-              "empty",
-              "square"
-            ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "flagLeft",
-              "empty",
-              "flagRight",
-              "square"
-            ],
-            "lines" : 0,
             "tilt" : 45
           },
           {
             "cross" : [
               "empty",
-              "flagLeft",
-              "flagRight",
-              "square"
-            ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "flagRight",
               "square",
-              "flagLeft",
+              "diamond",
+              "circle"
+            ],
+            "tilt" : 45
+          },
+          {
+            "cross" : [
+              "square",
+              "empty",
+              "diamond",
+              "circle"
+            ],
+            "tilt" : 45
+          },
+          {
+            "cross" : [
+              "diamond",
+              "circle",
+              "empty",
+              "square"
+            ],
+            "tilt" : 45
+          },
+          {
+            "cross" : [
+              "diamond",
+              "circle",
+              "square",
               "empty"
             ],
-            "lines" : 0,
             "tilt" : 45
           },
           {
             "cross" : [
-              "flagRight",
+              "empty",
+              "circle",
+              "square",
+              "diamond"
+            ],
+            "tilt" : 45
+          },
+          {
+            "cross" : [
               "square",
               "empty",
-              "flagLeft"
+              "diamond",
+              "circle"
             ],
-            "lines" : 0,
+            "tilt" : 45
+          },
+          {
+            "cross" : [
+              "square",
+              "diamond",
+              "empty",
+              "circle"
+            ],
             "tilt" : 45
           },
           null
         ],
         "explanations" : {
           "en" : [
-            "The symbols move 90° counterclockwise with every step to the right and 90° clockwise with every step downwards, and with every step each symbol changes to the next: a flag pointing right becomes a flag pointing left, a flag pointing left becomes a square and a square becomes a flag pointing right.",
+            "The symbols move 90° clockwise with every step to the right and 90° counterclockwise with every step downwards, and with every step each symbol changes to the next: a square becomes a diamond, a diamond becomes a circle and a circle becomes a square.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
-            "Tecknen flyttar 90° moturs för varje steg åt höger och 90° medurs för varje steg nedåt, och för varje steg byter varje tecken till nästa: en flagga åt höger blir en flagga åt vänster, en flagga åt vänster blir en kvadrat och en kvadrat blir en flagga åt höger.",
+            "Tecknen flyttar 90° medurs för varje steg åt höger och 90° moturs för varje steg nedåt, och för varje steg byter varje tecken till nästa: en kvadrat blir en romb, en romb blir en cirkel och en cirkel blir en kvadrat.",
             "Allt annat är lika i alla rutor."
           ]
         },
@@ -2230,62 +2520,56 @@
         "options" : [
           {
             "cross" : [
-              "flagLeft",
-              "flagRight",
+              "square",
+              "diamond",
+              "circle",
+              "empty"
+            ],
+            "tilt" : 45
+          },
+          {
+            "cross" : [
+              "diamond",
+              "circle",
               "empty",
               "square"
             ],
-            "lines" : 8,
-            "tilt" : 45
+            "tilt" : 0
           },
           {
             "cross" : [
               "square",
               "empty",
-              "flagLeft",
-              "flagRight"
+              "circle",
+              "diamond"
             ],
-            "lines" : 0,
+            "tilt" : 0
+          },
+          {
+            "cross" : [
+              "empty",
+              "circle",
+              "square",
+              "diamond"
+            ],
             "tilt" : 45
           },
           {
             "cross" : [
-              "flagRight",
               "empty",
               "square",
-              "flagLeft"
+              "diamond",
+              "circle"
             ],
-            "lines" : 0,
-            "tilt" : 45
+            "tilt" : 0
           },
           {
             "cross" : [
-              "flagLeft",
+              "circle",
               "square",
-              "empty",
-              "flagRight"
+              "diamond",
+              "empty"
             ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "flagRight",
-              "square",
-              "empty",
-              "flagLeft"
-            ],
-            "lines" : 0,
-            "tilt" : 45
-          },
-          {
-            "cross" : [
-              "square",
-              "empty",
-              "flagLeft",
-              "flagRight"
-            ],
-            "lines" : 32,
             "tilt" : 45
           }
         ],
@@ -2300,8 +2584,8 @@
         "rules" : [
           "crossCycle"
         ],
-        "seed" : 7200055,
-        "version" : 5
+        "seed" : 7200091,
+        "version" : 7
       }
     }
   ],
