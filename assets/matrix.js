@@ -444,31 +444,43 @@
     document.head.appendChild(style);
   }
 
-  /* ---- Smakprovet ------------------------------------------------------ */
+  /* ---- Testet ----------------------------------------------------------
+     Fem frågor utan facit emellan, sedan ett resultat med vägen till appen
+     (Petters beslut 2026-11-15). Facit finns kvar, hopfällt under
+     resultatet. Modulen är byggd för att rymmas på skärmen: måtten står i
+     site.css under .sample. */
 
   var texts = {
     sv: {
-      task: "Uppgift {n} av {total}", level: "Nivå {l}",
-      correct: "Rätt", wrong: "Fel. Rätt svar är {letter}",
-      next: "Nästa uppgift", restart: "Börja om",
-      rulesLabel: "Regler i uppgiften:",
-      optionsLabel: "Vilken figur passar i den tomma rutan?",
+      task: "Fråga {n} av {total}",
+      prompt: "Vilken figur passar i den tomma rutan?",
       optionLabel: "Alternativ {letter}",
-      doneTitle: "Det var smakprovet",
-      doneBody: "{correct} av {total} rätt. I appen tar uppgifterna aldrig slut, och nivån följer dig.",
+      progressLabel: "Fråga {n} av {total}",
+      resultLabel: "Ditt resultat",
+      score: "{correct} av {total} rätt",
+      pitchTitle: "Träna i appen och gå upp två nivåer.",
+      pitchBody: "Det visar vår data: så mycket höjer sig användarna i snitt mellan sitt första och sitt senaste test. Facit förklarar varje regel du missar.",
       getApp: "Hämta i App Store",
+      note: "Fem uppgifter gratis. Engångsköp, ingen prenumeration.",
+      review: "Visa facit",
+      right: "Rätt", wrongAnswer: "Fel, rätt svar är {letter}",
+      restart: "Gör om testet",
       loadError: "Uppgifterna kunde inte läsas in."
     },
     en: {
-      task: "Task {n} of {total}", level: "Level {l}",
-      correct: "Correct", wrong: "Wrong. The correct answer is {letter}",
-      next: "Next task", restart: "Start over",
-      rulesLabel: "Rules in this task:",
-      optionsLabel: "Which figure fits the empty cell?",
+      task: "Question {n} of {total}",
+      prompt: "Which figure fits the empty cell?",
       optionLabel: "Option {letter}",
-      doneTitle: "That was the sample",
-      doneBody: "{correct} of {total} correct. In the app the tasks never run out, and the level follows you.",
+      progressLabel: "Question {n} of {total}",
+      resultLabel: "Your result",
+      score: "{correct} of {total} correct",
+      pitchTitle: "Practise in the app and move up two levels.",
+      pitchBody: "That is what our data shows: the average user rises that much between their first and their latest test. The answers explain every rule you miss.",
       getApp: "Get it on the App Store",
+      note: "Five tasks free. One-time purchase, no subscription.",
+      review: "Show the answers",
+      right: "Correct", wrongAnswer: "Wrong, the correct answer is {letter}",
+      restart: "Take the test again",
       loadError: "The tasks could not be loaded."
     }
   };
@@ -484,8 +496,9 @@
     this.root = root;
     this.lang = lang;
     this.index = 0;
-    this.score = 0;
+    this.answers = [];
     this.puzzles = [];
+    this.locked = false;
   }
 
   Sample.prototype.load = function (url) {
@@ -493,6 +506,8 @@
     fetch(url).then(function (r) { return r.json(); }).then(function (data) {
       self.puzzles = data.puzzles;
       self.render();
+      self.alignToHash();
+      window.addEventListener("hashchange", function () { self.alignToHash(); });
     }).catch(function () {
       self.root.querySelector(".sample-body").innerHTML = '<p class="caption">' + t(self.lang, "loadError") + "</p>";
     });
@@ -501,87 +516,118 @@
   // Apples logga på köpknappen, samma som på sidornas knappar.
   var APPLE_LOGO = '<svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>';
 
+  // Stegen överst: ett streck per fråga. Under testet fylls de besvarade,
+  // i resultatet blir de gröna och röda.
+  Sample.prototype.steps = function (result) {
+    var total = this.puzzles.length;
+    var html = '<div class="steps" role="img" aria-label="' +
+      (result ? t(this.lang, "score", { correct: this.score(), total: total })
+              : t(this.lang, "progressLabel", { n: this.index + 1, total: total })) + '">';
+    for (var i = 0; i < total; i++) {
+      var state = result ? (this.answers[i] === this.puzzles[i].answer ? "right" : "wrong")
+        : (i < this.index ? "done" : (i === this.index ? "now" : ""));
+      html += '<span class="' + state + '"></span>';
+    }
+    return html + "</div>";
+  };
+
+  Sample.prototype.score = function () {
+    var n = 0;
+    for (var i = 0; i < this.puzzles.length; i++) if (this.answers[i] === this.puzzles[i].answer) n += 1;
+    return n;
+  };
+
+  // Håller modulen i bild när innehållet byts, utan att flytta sidan för
+  // den som redan ser hela.
+  Sample.prototype.keepInView = function () {
+    var box = this.root.getBoundingClientRect();
+    var view = window.innerHeight || document.documentElement.clientHeight;
+    if (box.top >= 72 && box.bottom <= view) return;
+    var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    this.root.scrollIntoView({ block: "start", behavior: calm ? "auto" : "smooth" });
+  };
+
+  // En länk till sektionen (#prova, #try) ska visa hela testet. Ryms inte
+  // rubriken och testet tillsammans går sidan till testet.
+  Sample.prototype.alignToHash = function () {
+    var target = location.hash && document.querySelector(location.hash);
+    if (!target || !target.contains(this.root) || target === this.root) return;
+    var view = window.innerHeight || document.documentElement.clientHeight;
+    var top = target.getBoundingClientRect().top, bottom = this.root.getBoundingClientRect().bottom;
+    if (bottom - top > view) this.root.scrollIntoView({ block: "start", behavior: "auto" });
+  };
+
   Sample.prototype.render = function () {
+    if (this.index >= this.puzzles.length) return this.renderResult();
     var self = this;
     var body = this.root.querySelector(".sample-body");
-    if (this.index >= this.puzzles.length) {
-      var appUrl = this.root.getAttribute("data-sample-app");
-      var getApp = appUrl
-        ? '<a class="button primary wide" href="' + escapeHtml(appUrl) + '">' + APPLE_LOGO + t(this.lang, "getApp") + "</a>"
-        : "";
-      body.innerHTML =
-        '<div class="verdict"><h3>' + t(this.lang, "doneTitle") + "</h3><p>" +
-        t(this.lang, "doneBody", { correct: this.score, total: this.puzzles.length }) + "</p></div>" +
-        '<div class="sample-actions">' + getApp +
-        '<button type="button" class="button secondary wide" data-action="restart">' + t(this.lang, "restart") + "</button></div>";
-      body.querySelector("[data-action=restart]").addEventListener("click", function () {
-        self.index = 0; self.score = 0; self.render();
-      });
-      return;
-    }
     var puzzle = this.puzzles[this.index];
-    var html = '<div class="sample-head"><strong>' + t(this.lang, "task", { n: this.index + 1, total: this.puzzles.length }) +
-      "</strong><span>" + t(this.lang, "level", { l: puzzle.level }) + "</span></div>";
-    html += '<div class="matrix" role="img">';
+    var total = this.puzzles.length;
+    var html = this.steps(false) +
+      '<div class="sample-head"><strong>' + t(this.lang, "task", { n: this.index + 1, total: total }) +
+      "</strong><span>" + t(this.lang, "prompt") + "</span></div>";
+    html += '<div class="stage"><div class="matrix" role="img" aria-label="' + t(this.lang, "prompt") + '">';
     for (var i = 0; i < 9; i++) {
-      html += '<div class="cell" data-cell="' + i + '">' + (puzzle.cells[i] ? renderCell(puzzle.cells[i]) : renderMissing()) + "</div>";
+      html += '<div class="cell">' + (puzzle.cells[i] ? renderCell(puzzle.cells[i]) : renderMissing()) + "</div>";
     }
-    html += "</div>";
-    html += '<p class="options-label">' + t(this.lang, "optionsLabel") + "</p>";
-    html += '<ul class="options">';
+    html += '</div><ul class="options">';
     for (var o = 0; o < puzzle.options.length; o++) {
       html += '<li><button type="button" class="option" data-option="' + o + '" aria-label="' + t(this.lang, "optionLabel", { letter: letters[o] }) + '">' +
         '<span class="letter">' + letters[o] + "</span>" + renderCell(puzzle.options[o]) + "</button></li>";
     }
-    html += "</ul>";
-    html += '<div class="verdict hidden"></div><div class="sample-actions hidden"></div>';
+    html += "</ul></div>";
     body.innerHTML = html;
+    this.locked = false;
     var buttons = body.querySelectorAll(".option");
     for (var b = 0; b < buttons.length; b++) {
       buttons[b].addEventListener("click", function (event) {
-        self.answer(parseInt(event.currentTarget.getAttribute("data-option"), 10));
+        self.answer(event.currentTarget);
       });
     }
   };
 
-  Sample.prototype.answer = function (chosen) {
+  // Ett tryck är svaret. Valet syns en kort stund, sedan kommer nästa fråga.
+  Sample.prototype.answer = function (button) {
+    if (this.locked) return;
+    this.locked = true;
     var self = this;
-    var puzzle = this.puzzles[this.index];
-    var body = this.root.querySelector(".sample-body");
-    var correct = chosen === puzzle.answer;
-    if (correct) this.score += 1;
-    var buttons = body.querySelectorAll(".option");
-    for (var b = 0; b < buttons.length; b++) {
-      buttons[b].disabled = true;
-      var index = parseInt(buttons[b].getAttribute("data-option"), 10);
-      if (index === puzzle.answer) {
-        buttons[b].classList.add("correct");
-        buttons[b].insertAdjacentHTML("beforeend", '<span class="mark" aria-hidden="true">✓</span>');
-      } else if (index === chosen) {
-        buttons[b].classList.add("wrong");
-        buttons[b].insertAdjacentHTML("beforeend", '<span class="mark" aria-hidden="true">✕</span>');
-      }
-    }
-    var hole = body.querySelector('[data-cell="8"]');
-    hole.innerHTML = renderCell(puzzle.options[puzzle.answer]);
-    hole.classList.add("revealed");
-
-    var lines = puzzle.explanations[this.lang] || puzzle.explanations.sv;
-    var names = puzzle.ruleNames[this.lang] || puzzle.ruleNames.sv;
-    var verdict = body.querySelector(".verdict");
-    verdict.classList.remove("hidden");
-    verdict.classList.add(correct ? "correct" : "wrong");
-    verdict.innerHTML = "<h3><span class=\"badge\" aria-hidden=\"true\">" + (correct ? "✓" : "✕") + "</span>" +
-      (correct ? t(this.lang, "correct") : t(this.lang, "wrong", { letter: letters[puzzle.answer] })) + "</h3>" +
-      "<ul>" + lines.map(function (l) { return "<li>" + escapeHtml(l) + "</li>"; }).join("") + "</ul>" +
-      '<p class="caption rules">' + t(this.lang, "rulesLabel") + " " + names.map(escapeHtml).join(", ") + "</p>";
-    var actions = body.querySelector(".sample-actions");
-    actions.classList.remove("hidden");
-    actions.innerHTML = '<button type="button" class="button primary wide" data-action="next">' + t(this.lang, "next") + "</button>";
-    actions.querySelector("[data-action=next]").addEventListener("click", function () {
+    this.answers[this.index] = parseInt(button.getAttribute("data-option"), 10);
+    button.classList.add("chosen");
+    var buttons = this.root.querySelectorAll(".option");
+    for (var b = 0; b < buttons.length; b++) buttons[b].disabled = true;
+    setTimeout(function () {
       self.index += 1;
       self.render();
-      self.root.scrollIntoView({ block: "start", behavior: "smooth" });
+      self.keepInView();
+    }, 380);
+  };
+
+  Sample.prototype.renderResult = function () {
+    var self = this;
+    var body = this.root.querySelector(".sample-body");
+    var total = this.puzzles.length;
+    var appUrl = this.root.getAttribute("data-sample-app");
+    var html = this.steps(true) +
+      '<div class="result"><p class="result-label">' + t(this.lang, "resultLabel") + "</p>" +
+      '<p class="result-score">' + t(this.lang, "score", { correct: this.score(), total: total }) + "</p>" +
+      "<h3>" + t(this.lang, "pitchTitle") + "</h3><p>" + t(this.lang, "pitchBody") + "</p></div>" +
+      '<div class="sample-actions">' +
+      (appUrl ? '<a class="button primary wide" href="' + escapeHtml(appUrl) + '">' + APPLE_LOGO + t(this.lang, "getApp") + "</a>" +
+        '<p class="result-note">' + t(this.lang, "note") + "</p>" : "") +
+      "</div>";
+    html += '<details class="review"><summary>' + t(this.lang, "review") + "</summary><ol>";
+    for (var i = 0; i < total; i++) {
+      var puzzle = this.puzzles[i];
+      var right = this.answers[i] === puzzle.answer;
+      var lines = puzzle.explanations[this.lang] || puzzle.explanations.sv;
+      html += '<li class="' + (right ? "right" : "wrong") + '"><div class="review-figure">' + renderCell(puzzle.options[puzzle.answer]) + "</div><div><strong>" +
+        (right ? t(this.lang, "right") : t(this.lang, "wrongAnswer", { letter: letters[puzzle.answer] })) + "</strong>" +
+        lines.map(function (l) { return "<span>" + escapeHtml(l) + "</span>"; }).join("") + "</div></li>";
+    }
+    html += '</ol></details><button type="button" class="restart" data-action="restart">' + t(this.lang, "restart") + "</button>";
+    body.innerHTML = html;
+    body.querySelector("[data-action=restart]").addEventListener("click", function () {
+      self.index = 0; self.answers = []; self.render(); self.keepInView();
     });
   };
 
