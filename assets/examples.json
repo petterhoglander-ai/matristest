@@ -135,7 +135,7 @@
           "progression"
         ],
         "seed" : 7100005,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -273,7 +273,7 @@
           "distributionOfThree"
         ],
         "seed" : 7100000,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -416,7 +416,7 @@
           "lineUnion"
         ],
         "seed" : 7400025,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -545,7 +545,7 @@
           "lineXor"
         ],
         "seed" : 7400021,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -688,7 +688,7 @@
           "lineIntersection"
         ],
         "seed" : 7400011,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -831,7 +831,7 @@
           "distributionOfThree"
         ],
         "seed" : 7400001,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -983,7 +983,7 @@
           "pathMovement"
         ],
         "seed" : 7100001,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -1154,7 +1154,7 @@
           "mirror"
         ],
         "seed" : 7400004,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -1325,7 +1325,7 @@
           "distributionOfThree"
         ],
         "seed" : 7400132,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -1343,7 +1343,7 @@
             "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "tetroT",
+            "shape" : "triangle",
             "size" : 5
           },
           {
@@ -1352,7 +1352,7 @@
             "innerFill" : "solid",
             "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "arrow",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
@@ -1361,7 +1361,7 @@
             "innerFill" : "solid",
             "innerShape" : "triangle",
             "lines" : 0,
-            "shape" : "heptagon",
+            "shape" : "pentagon",
             "size" : 5
           },
           {
@@ -1370,7 +1370,7 @@
             "innerFill" : "solid",
             "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "arrow",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
@@ -1379,7 +1379,7 @@
             "innerFill" : "solid",
             "innerShape" : "triangle",
             "lines" : 0,
-            "shape" : "heptagon",
+            "shape" : "pentagon",
             "size" : 5
           },
           {
@@ -1388,7 +1388,7 @@
             "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "tetroT",
+            "shape" : "triangle",
             "size" : 5
           },
           {
@@ -1397,7 +1397,7 @@
             "innerFill" : "solid",
             "innerShape" : "triangle",
             "lines" : 0,
-            "shape" : "heptagon",
+            "shape" : "pentagon",
             "size" : 5
           },
           {
@@ -1406,7 +1406,7 @@
             "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "tetroT",
+            "shape" : "triangle",
             "size" : 5
           },
           null
@@ -1414,12 +1414,12 @@
         "explanations" : {
           "en" : [
             "The inner figure is circle, triangle and diamond, once in every row and every column.",
-            "Arrow, heptagon and T shape each appear once in every row and every column.",
+            "Triangle, pentagon and heptagon each appear once in every row and every column.",
             "Everything else is the same in every cell."
           ],
           "sv" : [
             "Den inre figuren är cirkel, triangel och romb, en gång i varje rad och varje kolumn.",
-            "Pil, sjuhörning och T-form förekommer en gång i varje rad och varje kolumn.",
+            "Triangel, femhörning och sjuhörning förekommer en gång i varje rad och varje kolumn.",
             "Allt annat är lika i alla rutor."
           ]
         },
@@ -1432,7 +1432,7 @@
             "innerFill" : "empty",
             "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "arrow",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
@@ -1441,7 +1441,7 @@
             "innerFill" : "solid",
             "innerShape" : "circle",
             "lines" : 0,
-            "shape" : "tetroT",
+            "shape" : "triangle",
             "size" : 5
           },
           {
@@ -1450,7 +1450,7 @@
             "innerFill" : "dotted",
             "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "arrow",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
@@ -1459,7 +1459,7 @@
             "innerFill" : "solid",
             "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "arrow",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
@@ -1468,7 +1468,7 @@
             "innerFill" : "solid",
             "innerShape" : "triangle",
             "lines" : 0,
-            "shape" : "arrow",
+            "shape" : "heptagon",
             "size" : 5
           },
           {
@@ -1477,7 +1477,7 @@
             "innerFill" : "solid",
             "innerShape" : "diamond",
             "lines" : 0,
-            "shape" : "tetroT",
+            "shape" : "triangle",
             "size" : 5
           }
         ],
@@ -1496,7 +1496,7 @@
           "distributionOfThree"
         ],
         "seed" : 7400019,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -1653,7 +1653,7 @@
           "sideCount"
         ],
         "seed" : 7400013,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -1824,7 +1824,7 @@
           "fillDegree"
         ],
         "seed" : 7400003,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -1981,7 +1981,7 @@
           "conditional"
         ],
         "seed" : 7400007,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -2262,7 +2262,7 @@
           "slotOperator"
         ],
         "seed" : 7400052,
-        "version" : 8
+        "version" : 9
       }
     },
     {
@@ -2419,7 +2419,7 @@
           "progression"
         ],
         "seed" : 7400017,
-        "version" : 8
+        "version" : 9
       }
     },
     {

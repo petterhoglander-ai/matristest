@@ -358,7 +358,7 @@ html[lang="en"] .nav .rating-text { display: none; }
 .prose p + h2, .prose ul + h2, .prose ol + h2 { margin-top: var(--space-section); }
 .example .solved { margin: var(--space-wide) auto; max-width: 420px; }
 .example h3 { font-size: 15px; font-weight: 600; color: var(--ink-soft); margin: var(--space-wide) 0 var(--space-tight); }
-.matrix.static .cell { padding: 6px; }
+.matrix.static .cell { --pad: 6px; }
 .rules-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-normal); }
 .rules-grid .card { padding: var(--space-wide); }
 .rules-grid a { display: flex; flex-direction: column; gap: var(--space-normal); color: var(--ink); height: 100%; }
@@ -410,12 +410,16 @@ html[lang="en"] .nav .rating-text { display: none; }
 .sample-head { display: flex; flex-direction: column; gap: 2px; margin-bottom: var(--space-snug); font-size: 14px; line-height: 1.3; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 .sample-head strong { color: var(--ink); font-size: 16px; font-weight: 600; }
 .stage { width: min(100%, var(--side)); margin: 0 auto; }
-.matrix { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--card); border: 1px solid var(--hairline); border-radius: 20px; overflow: hidden; max-width: 420px; margin: 0 auto; }
-.matrix .cell { position: relative; aspect-ratio: 1; padding: 4px; border-right: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); transition: background-color 0.32s ease; }
+.matrix { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: var(--card); border: 1px solid var(--hairline); border-radius: 20px; overflow: hidden; max-width: 420px; margin: 0 auto; }
+.matrix .cell { --pad: 4px; position: relative; aspect-ratio: 1; min-width: 0; padding: var(--pad); border-right: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); transition: background-color 0.32s ease; }
 .matrix .cell:nth-child(3n) { border-right: 0; }
 .matrix .cell:nth-child(n+7) { border-bottom: 0; }
 .matrix .cell.revealed { background: var(--correct-tint); }
 .cell svg, .option svg { width: 100%; height: 100%; display: block; color: var(--ink); }
+/* Rutans bild ligger utanför flödet. I Safari gav en bild med höjden 100 %
+   i en ruta utan egen höjd rutan bildens egen storlek, och sista raden och
+   sista kolumnen skars av. */
+.matrix .cell svg { position: absolute; top: var(--pad); left: var(--pad); width: calc(100% - 2 * var(--pad)); height: calc(100% - 2 * var(--pad)); }
 .sample .matrix { max-width: none; border-radius: 18px; }
 .matrix.static { max-width: 420px; }
 .sample .options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: var(--space-snug) 0 0; padding: 0; list-style: none; }
