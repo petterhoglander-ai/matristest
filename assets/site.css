@@ -395,12 +395,16 @@ html[lang="en"] .nav .rating-text { display: none; }
 /* Testet: fem frågor som ryms på skärmen. --side är matrisens sida: aldrig
    bredare än kortet, och så låg att stegen, rubriken, matrisen och de två
    raderna alternativ (tillsammans 1,64 sidor och drygt 200 punkter med
-   navigationsfältet) får plats i fönstret utan att rulla. */
+   navigationsfältet) får plats i fönstret utan att rulla, med en dryg
+   rads luft ovanför Safaris adressfält på telefon. */
 .sample.card {
-  --side: clamp(190px, calc((100svh - 236px) * 0.6), 380px);
+  --side: clamp(190px, calc((100svh - 252px) * 0.6), 380px);
   max-width: 480px; margin: 0 auto; padding: var(--space-wide) var(--space-wide) var(--space-wide);
-  scroll-margin-top: 84px; text-align: center;
+  text-align: center;
 }
+/* Ingen egen rullningsmarginal på kortet: den lades ovanpå sidans
+   scroll-padding-top, och kortet hamnade 88 punkter för lågt, med andra
+   raden alternativ bakom Safaris adressfält. */
 .steps { display: flex; gap: 6px; justify-content: center; margin: 0 auto var(--space-snug); max-width: 220px; }
 .steps span { flex: 1; height: 4px; border-radius: 2px; background: var(--hairline); transition: background-color 0.3s ease; }
 .steps .done, .steps .now { background: var(--accent); }
