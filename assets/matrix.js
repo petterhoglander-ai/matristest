@@ -482,6 +482,57 @@
       right: "Correct", wrongAnswer: "Wrong, the correct answer is {letter}",
       restart: "Take the test again",
       loadError: "The tasks could not be loaded."
+    },
+    de: {
+      task: "Frage {n} von {total}",
+      prompt: "Welche Figur passt in das leere Feld?",
+      optionLabel: "Option {letter}",
+      progressLabel: "Frage {n} von {total}",
+      resultLabel: "Dein Ergebnis",
+      score: "{correct} von {total} richtig",
+      pitchTitle: "Übe in der App und steigere dich um zwei Niveaus.",
+      pitchBody: "Das zeigen unsere Daten: So stark steigern sich Nutzer im Schnitt zwischen ihrem ersten und ihrem letzten Test. Die Lösungen erklären jede Regel, die dir entgeht.",
+      getApp: "Im App Store laden",
+      note: "Fünf Aufgaben kostenlos. Einmalkauf, kein Abo.",
+      review: "Lösungen anzeigen",
+      right: "Richtig",
+      wrongAnswer: "Falsch, die richtige Antwort ist {letter}",
+      restart: "Test wiederholen",
+      loadError: "Die Aufgaben konnten nicht geladen werden."
+    },
+    nb: {
+      task: "Spørsmål {n} av {total}",
+      prompt: "Hvilken figur passer i den tomme ruten?",
+      optionLabel: "Alternativ {letter}",
+      progressLabel: "Spørsmål {n} av {total}",
+      resultLabel: "Resultatet ditt",
+      score: "{correct} av {total} riktige",
+      pitchTitle: "Tren i appen og gå opp to nivåer.",
+      pitchBody: "Det viser dataene våre: Så mye løfter brukerne seg i snitt fra sin første til sin siste test. Fasiten forklarer hver regel du går glipp av.",
+      getApp: "Last ned fra App Store",
+      note: "Fem oppgaver gratis. Engangskjøp, ikke abonnement.",
+      review: "Vis fasit",
+      right: "Riktig",
+      wrongAnswer: "Feil, riktig svar er {letter}",
+      restart: "Ta testen på nytt",
+      loadError: "Oppgavene kunne ikke lastes inn."
+    },
+    da: {
+      task: "Spørgsmål {n} af {total}",
+      prompt: "Hvilken figur passer i det tomme felt?",
+      optionLabel: "Mulighed {letter}",
+      progressLabel: "Spørgsmål {n} af {total}",
+      resultLabel: "Dit resultat",
+      score: "{correct} af {total} rigtige",
+      pitchTitle: "Træn i appen, og gå to niveauer op.",
+      pitchBody: "Det viser vores data: så meget stiger brugerne i snit fra deres første til deres seneste test. Facit forklarer hver regel, du misser.",
+      getApp: "Hent i App Store",
+      note: "Fem opgaver gratis. Engangskøb, intet abonnement.",
+      review: "Vis facit",
+      right: "Rigtigt",
+      wrongAnswer: "Forkert, det rigtige svar er {letter}",
+      restart: "Tag testen igen",
+      loadError: "Opgaverne kunne ikke indlæses."
     }
   };
 

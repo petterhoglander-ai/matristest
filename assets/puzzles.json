@@ -1,7 +1,10 @@
 {
   "languages" : [
     "sv",
-    "en"
+    "en",
+    "de",
+    "nb",
+    "da"
   ],
   "puzzles" : [
     {
@@ -74,9 +77,21 @@
         null
       ],
       "explanations" : {
+        "da" : [
+          "Figuren vandrer gennem gitteret række for række, fra øverst til venstre og forfra igen: flytter sig 1 trin tilbage mod højre og 1 nedad.",
+          "Alt andet er ens i alle felter."
+        ],
+        "de" : [
+          "Die Figur wandert Zeile für Zeile durch das Raster, von oben links und dann wieder von vorn: nach rechts 1 Schritt rückwärts und nach unten 1, ebenfalls rückwärts.",
+          "Alles andere ist in allen Feldern gleich."
+        ],
         "en" : [
           "The figure walks through the grid row by row, from the top left and around again: moves 1 step backwards to the right and 1 downwards.",
           "Everything else is the same in every cell."
+        ],
+        "nb" : [
+          "Figuren vandrer gjennom rutenettet rad for rad, fra øverst til venstre og rundt igjen fra begynnelsen, og den flytter seg 1 steg bakover for hvert steg mot høyre og 1 steg for hvert steg nedover.",
+          "Alt annet er likt i alle rutene."
         ],
         "sv" : [
           "Figuren vandrar genom rastret radvis, från övre vänster och om igen från början: flyttar 1 steg bakåt åt höger och 1 steg nedåt.",
@@ -136,8 +151,17 @@
         }
       ],
       "ruleNames" : {
+        "da" : [
+          "Bevægelse langs en bane"
+        ],
+        "de" : [
+          "Bewegung entlang einer Bahn"
+        ],
         "en" : [
           "Movement along a path"
+        ],
+        "nb" : [
+          "Bevegelse langs bane"
         ],
         "sv" : [
           "Rörelse längs bana"
@@ -147,7 +171,7 @@
         "pathMovement"
       ],
       "seed" : 20260922001,
-      "version" : 8
+      "version" : 9
     },
     {
       "answer" : 3,
@@ -211,9 +235,21 @@
         null
       ],
       "explanations" : {
+        "da" : [
+          "Størrelsen ændres ikke mod højre og bliver 1 trin mindre nedad.",
+          "Alt andet er ens i alle felter."
+        ],
+        "de" : [
+          "Die Größe ändert sich nach rechts nicht und nimmt nach unten um 1 Stufe ab.",
+          "Alles andere ist in allen Feldern gleich."
+        ],
         "en" : [
           "The size does not change to the right and decreases by 1 step downwards.",
           "Everything else is the same in every cell."
+        ],
+        "nb" : [
+          "Størrelsen endres ikke mot høyre og minker med 1 steg nedover.",
+          "Alt annet er likt i alle rutene."
         ],
         "sv" : [
           "Storleken ändras inte åt höger och minskar 1 steg nedåt.",
@@ -267,8 +303,17 @@
         }
       ],
       "ruleNames" : {
+        "da" : [
+          "Trinvis ændring"
+        ],
+        "de" : [
+          "Schrittweise Änderung"
+        ],
         "en" : [
           "Step by step change"
+        ],
+        "nb" : [
+          "Trinnvis endring"
         ],
         "sv" : [
           "Stegvis förändring"
@@ -278,7 +323,7 @@
         "progression"
       ],
       "seed" : 20260922002,
-      "version" : 8
+      "version" : 9
     },
     {
       "answer" : 2,
@@ -342,10 +387,25 @@
         null
       ],
       "explanations" : {
+        "da" : [
+          "Tomt, udfyldt og prikket optræder hver én gang i hver række og hver kolonne.",
+          "Størrelsen ændres ikke mod højre og bliver 1 trin mindre nedad.",
+          "Alt andet er ens i alle felter."
+        ],
+        "de" : [
+          "Leer, voll und gepunktet: Jedes davon kommt einmal in jeder Zeile und jeder Spalte vor.",
+          "Die Größe ändert sich nach rechts nicht und nimmt nach unten um 1 Stufe ab.",
+          "Alles andere ist in allen Feldern gleich."
+        ],
         "en" : [
           "Unfilled, filled and dotted each appear once in every row and every column.",
           "The size does not change to the right and decreases by 1 step downwards.",
           "Everything else is the same in every cell."
+        ],
+        "nb" : [
+          "Disse forekommer én gang i hver rad og hver kolonne: ufylt, fylt og prikkete.",
+          "Størrelsen endres ikke mot høyre og minker med 1 steg nedover.",
+          "Alt annet er likt i alle rutene."
         ],
         "sv" : [
           "Ofylld, fylld och prickig förekommer en gång i varje rad och varje kolumn.",
@@ -400,9 +460,21 @@
         }
       ],
       "ruleNames" : {
+        "da" : [
+          "Fordeling af tre",
+          "Trinvis ændring"
+        ],
+        "de" : [
+          "Verteilung von drei Werten",
+          "Schrittweise Änderung"
+        ],
         "en" : [
           "Three values distributed",
           "Step by step change"
+        ],
+        "nb" : [
+          "Fordeling av tre",
+          "Trinnvis endring"
         ],
         "sv" : [
           "Fördelning av tre",
@@ -414,7 +486,7 @@
         "progression"
       ],
       "seed" : 20260922005,
-      "version" : 8
+      "version" : 9
     },
     {
       "answer" : 4,
@@ -478,10 +550,25 @@
         null
       ],
       "explanations" : {
+        "da" : [
+          "Tomt, udfyldt og stribet optræder hver én gang i hver række og hver kolonne.",
+          "Størrelsen ændres ikke mod højre og bliver 1 trin større nedad.",
+          "Alt andet er ens i alle felter."
+        ],
+        "de" : [
+          "Leer, voll und gestreift: Jedes davon kommt einmal in jeder Zeile und jeder Spalte vor.",
+          "Die Größe ändert sich nach rechts nicht und nimmt nach unten um 1 Stufe zu.",
+          "Alles andere ist in allen Feldern gleich."
+        ],
         "en" : [
           "Unfilled, filled and striped each appear once in every row and every column.",
           "The size does not change to the right and increases by 1 step downwards.",
           "Everything else is the same in every cell."
+        ],
+        "nb" : [
+          "Disse forekommer én gang i hver rad og hver kolonne: ufylt, fylt og stripete.",
+          "Størrelsen endres ikke mot høyre og øker med 1 steg nedover.",
+          "Alt annet er likt i alle rutene."
         ],
         "sv" : [
           "Ofylld, fylld och streckad förekommer en gång i varje rad och varje kolumn.",
@@ -536,9 +623,21 @@
         }
       ],
       "ruleNames" : {
+        "da" : [
+          "Fordeling af tre",
+          "Trinvis ændring"
+        ],
+        "de" : [
+          "Verteilung von drei Werten",
+          "Schrittweise Änderung"
+        ],
         "en" : [
           "Three values distributed",
           "Step by step change"
+        ],
+        "nb" : [
+          "Fordeling av tre",
+          "Trinnvis endring"
         ],
         "sv" : [
           "Fördelning av tre",
@@ -550,7 +649,7 @@
         "progression"
       ],
       "seed" : 20260922008,
-      "version" : 8
+      "version" : 9
     },
     {
       "answer" : 1,
@@ -622,10 +721,25 @@
         null
       ],
       "explanations" : {
+        "da" : [
+          "Prikken står i midten til højre, i nederste venstre hjørne og i midten til venstre, én gang i hver række og hver kolonne.",
+          "Antallet i det tredje felt er summen af de to første: 2 + 2 = 4. Det gælder i hver række.",
+          "Alt andet er ens i alle felter."
+        ],
+        "de" : [
+          "Der Punkt sitzt rechts in der Mitte, in der Ecke unten links und links in der Mitte, jeweils einmal in jeder Zeile und jeder Spalte.",
+          "Die Anzahl im dritten Feld ist die Summe der ersten beiden: 2 + 2 = 4. Das gilt in jeder Zeile.",
+          "Alles andere ist in allen Feldern gleich."
+        ],
         "en" : [
           "The dot sits in the middle right, the bottom left corner and the middle left, once in every row and every column.",
           "The number in the third cell is the first two added: 2 + 2 = 4. This holds in every row.",
           "Everything else is the same in every cell."
+        ],
+        "nb" : [
+          "Prikken står midt til høyre, i nedre venstre hjørne og midt til venstre, én gang i hver rad og hver kolonne.",
+          "Antallet i den tredje ruten er de to første lagt sammen: 2 + 2 = 4. Gjelder i hver rad.",
+          "Alt annet er likt i alle rutene."
         ],
         "sv" : [
           "Pricken står i mitt till höger, nedre vänstra hörnet och mitt till vänster, en gång i varje rad och varje kolumn.",
@@ -686,9 +800,21 @@
         }
       ],
       "ruleNames" : {
+        "da" : [
+          "Fordeling af tre",
+          "Regning med antal"
+        ],
+        "de" : [
+          "Verteilung von drei Werten",
+          "Rechnen mit der Anzahl"
+        ],
         "en" : [
           "Three values distributed",
           "Arithmetic on the number"
+        ],
+        "nb" : [
+          "Fordeling av tre",
+          "Regning med antall"
         ],
         "sv" : [
           "Fördelning av tre",
@@ -700,7 +826,7 @@
         "countArithmetic"
       ],
       "seed" : 20260922009,
-      "version" : 8
+      "version" : 9
     }
   ],
   "version" : 2

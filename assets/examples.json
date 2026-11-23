@@ -3,7 +3,10 @@
     {
       "kind" : "progression",
       "name" : {
+        "da" : "Trinvis ændring",
+        "de" : "Schrittweise Änderung",
         "en" : "Step by step change",
+        "nb" : "Trinnvis endring",
         "sv" : "Stegvis förändring"
       },
       "puzzle" : {
@@ -68,9 +71,21 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Størrelsen bliver 1 trin mindre mod højre og ændres ikke nedad.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Größe nimmt nach rechts um 1 Stufe ab und ändert sich nach unten nicht.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The size decreases by 1 step to the right and does not change downwards.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Størrelsen minker med 1 steg mot høyre og endres ikke nedover.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Storleken minskar 1 steg åt höger och ändras inte nedåt.",
@@ -124,8 +139,17 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Trinvis ændring"
+          ],
+          "de" : [
+            "Schrittweise Änderung"
+          ],
           "en" : [
             "Step by step change"
+          ],
+          "nb" : [
+            "Trinnvis endring"
           ],
           "sv" : [
             "Stegvis förändring"
@@ -141,7 +165,10 @@
     {
       "kind" : "distributionOfThree",
       "name" : {
+        "da" : "Fordeling af tre",
+        "de" : "Verteilung von drei Werten",
         "en" : "Three values distributed",
+        "nb" : "Fordeling av tre",
         "sv" : "Fördelning av tre"
       },
       "puzzle" : {
@@ -206,9 +233,21 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Tomt, udfyldt og prikket optræder hver én gang i hver række og hver kolonne.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Leer, voll und gepunktet: Jedes davon kommt einmal in jeder Zeile und jeder Spalte vor.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "Unfilled, filled and dotted each appear once in every row and every column.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Disse forekommer én gang i hver rad og hver kolonne: ufylt, fylt og prikkete.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Ofylld, fylld och prickig förekommer en gång i varje rad och varje kolumn.",
@@ -262,8 +301,17 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Fordeling af tre"
+          ],
+          "de" : [
+            "Verteilung von drei Werten"
+          ],
           "en" : [
             "Three values distributed"
+          ],
+          "nb" : [
+            "Fordeling av tre"
           ],
           "sv" : [
             "Fördelning av tre"
@@ -279,7 +327,10 @@
     {
       "kind" : "lineUnion",
       "name" : {
+        "da" : "Mønstre lagt sammen",
+        "de" : "Kombinierte Muster",
         "en" : "Patterns combined",
+        "nb" : "Mønstre slått sammen",
         "sv" : "Mönster som slås ihop"
       },
       "puzzle" : {
@@ -344,10 +395,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Antallet af hjørner stiger med 1 mod højre og falder med 1 nedad.",
+            "Det tredje felt er de to første lagt oven på hinanden. Alle linjer bliver stående. Det gælder i rækker og kolonner.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Anzahl der Ecken nimmt nach rechts um 1 zu und nimmt nach unten um 1 ab.",
+            "Das dritte Feld besteht aus den ersten beiden, übereinandergelegt. Jede Linie bleibt erhalten. Das gilt in Zeilen und Spalten.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The number of corners increases by 1 to the right and decreases by 1 downwards.",
             "The third cell is the first two laid on top of each other. Every line is kept. This holds in rows and columns.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Antallet hjørner øker med 1 mot høyre og minker med 1 nedover.",
+            "Den tredje ruten er de to første lagt oppå hverandre. Alle linjer blir stående. Gjelder i rader og kolonner.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Antalet hörn ökar med 1 åt höger och minskar med 1 nedåt.",
@@ -402,9 +468,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Antal sider",
+            "Mønstre lagt sammen"
+          ],
+          "de" : [
+            "Anzahl der Ecken",
+            "Kombinierte Muster"
+          ],
           "en" : [
             "Number of sides",
             "Patterns combined"
+          ],
+          "nb" : [
+            "Antall sider",
+            "Mønstre slått sammen"
           ],
           "sv" : [
             "Antal sidor",
@@ -422,7 +500,10 @@
     {
       "kind" : "lineXor",
       "name" : {
+        "da" : "Mønstre, der ophæver hinanden",
+        "de" : "Sich aufhebende Muster",
         "en" : "Patterns cancelling out",
+        "nb" : "Mønstre som opphever hverandre",
         "sv" : "Mönster som tar ut varandra"
       },
       "puzzle" : {
@@ -479,10 +560,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Det tredje felt i hver række er det første med symbolerne i omvendt rækkefølge.",
+            "Det tredje felt er de to første lagt oven på hinanden, men linjer, der findes i begge, forsvinder. Det gælder i rækker og kolonner.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Das dritte Feld jeder Zeile ist das erste mit den Symbolen in umgekehrter Reihenfolge.",
+            "Das dritte Feld besteht aus den ersten beiden, übereinandergelegt, aber Linien, die in beiden vorkommen, verschwinden. Das gilt in Zeilen und Spalten.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The third cell in every row is the first one with the symbols in reverse order.",
             "The third cell is the first two laid on top of each other, but lines present in both disappear. This holds in rows and columns.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Den tredje ruten i hver rad er den første med symbolene i omvendt rekkefølge.",
+            "Den tredje ruten er de to første lagt oppå hverandre, men linjer som finnes i begge, forsvinner. Gjelder i rader og kolonner.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Tredje rutan i varje rad är den första med symbolerna i omvänd ordning.",
@@ -531,9 +627,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Spejling",
+            "Mønstre, der ophæver hinanden"
+          ],
+          "de" : [
+            "Spiegelung",
+            "Sich aufhebende Muster"
+          ],
           "en" : [
             "Mirroring",
             "Patterns cancelling out"
+          ],
+          "nb" : [
+            "Speiling",
+            "Mønstre som opphever hverandre"
           ],
           "sv" : [
             "Spegling",
@@ -551,7 +659,10 @@
     {
       "kind" : "lineIntersection",
       "name" : {
+        "da" : "Fælles mønstre",
+        "de" : "Gemeinsame Muster",
         "en" : "Patterns in common",
+        "nb" : "Felles mønster",
         "sv" : "Mönster som är gemensamma"
       },
       "puzzle" : {
@@ -616,10 +727,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Antallet i det tredje felt er forskellen mellem de to første: 5 − 3 = 2. Det gælder i hver række.",
+            "Det tredje felt er det, de to første har til fælles: kun linjer, der findes i begge, bliver stående. Det gælder i rækker og kolonner.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Anzahl im dritten Feld ist die Differenz der ersten beiden: 5 − 3 = 2. Das gilt in jeder Zeile.",
+            "Das dritte Feld ist das, was die ersten beiden gemeinsam haben: Nur Linien, die in beiden vorkommen, bleiben erhalten. Das gilt in Zeilen und Spalten.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The number in the third cell is the difference between the first two: 5 − 3 = 2. This holds in every row.",
             "The third cell is what the first two have in common: only lines present in both are kept. This holds in rows and columns.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Antallet i den tredje ruten er differansen mellom de to første: 5 − 3 = 2. Gjelder i hver rad.",
+            "Den tredje ruten er det de to første har felles: bare linjer som finnes i begge, blir stående. Gjelder i rader og kolonner.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Antalet i tredje rutan är skillnaden mellan de två första: 5 − 3 = 2. Gäller i varje rad.",
@@ -674,9 +800,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Regning med antal",
+            "Fælles mønstre"
+          ],
+          "de" : [
+            "Rechnen mit der Anzahl",
+            "Gemeinsame Muster"
+          ],
           "en" : [
             "Arithmetic on the number",
             "Patterns in common"
+          ],
+          "nb" : [
+            "Regning med antall",
+            "Felles mønster"
           ],
           "sv" : [
             "Aritmetik på antal",
@@ -694,7 +832,10 @@
     {
       "kind" : "countArithmetic",
       "name" : {
+        "da" : "Regning med antal",
+        "de" : "Rechnen mit der Anzahl",
         "en" : "Arithmetic on the number",
+        "nb" : "Regning med antall",
         "sv" : "Aritmetik på antal"
       },
       "puzzle" : {
@@ -759,10 +900,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Antallet i det tredje felt er forskellen mellem de to første: 2 − 1 = 1. Det gælder i hver række.",
+            "Kvadrat, trekant og kors optræder hver én gang i hver række og hver kolonne.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Anzahl im dritten Feld ist die Differenz der ersten beiden: 2 − 1 = 1. Das gilt in jeder Zeile.",
+            "Quadrat, Dreieck und Kreuz: Jedes davon kommt einmal in jeder Zeile und jeder Spalte vor.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The number in the third cell is the difference between the first two: 2 − 1 = 1. This holds in every row.",
             "Square, triangle and cross each appear once in every row and every column.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Antallet i den tredje ruten er differansen mellom de to første: 2 − 1 = 1. Gjelder i hver rad.",
+            "Disse forekommer én gang i hver rad og hver kolonne: kvadrat, trekant og kors.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Antalet i tredje rutan är skillnaden mellan de två första: 2 − 1 = 1. Gäller i varje rad.",
@@ -817,9 +973,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Regning med antal",
+            "Fordeling af tre"
+          ],
+          "de" : [
+            "Rechnen mit der Anzahl",
+            "Verteilung von drei Werten"
+          ],
           "en" : [
             "Arithmetic on the number",
             "Three values distributed"
+          ],
+          "nb" : [
+            "Regning med antall",
+            "Fordeling av tre"
           ],
           "sv" : [
             "Aritmetik på antal",
@@ -837,7 +1005,10 @@
     {
       "kind" : "pathMovement",
       "name" : {
+        "da" : "Bevægelse langs en bane",
+        "de" : "Bewegung entlang einer Bahn",
         "en" : "Movement along a path",
+        "nb" : "Bevegelse langs bane",
         "sv" : "Rörelse längs bana"
       },
       "puzzle" : {
@@ -910,9 +1081,21 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Figuren vandrer gennem gitteret række for række, fra øverst til venstre og forfra igen: flytter sig 2 trin frem mod højre og 1 nedad.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Figur wandert Zeile für Zeile durch das Raster, von oben links und dann wieder von vorn: nach rechts 2 Schritte vorwärts und nach unten 1, ebenfalls vorwärts.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The figure walks through the grid row by row, from the top left and around again: moves 2 steps forward to the right and 1 downwards.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Figuren vandrer gjennom rutenettet rad for rad, fra øverst til venstre og rundt igjen fra begynnelsen, og den flytter seg 2 steg framover for hvert steg mot høyre og 1 steg for hvert steg nedover.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Figuren vandrar genom rastret radvis, från övre vänster och om igen från början: flyttar 2 steg framåt åt höger och 1 steg nedåt.",
@@ -972,8 +1155,17 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Bevægelse langs en bane"
+          ],
+          "de" : [
+            "Bewegung entlang einer Bahn"
+          ],
           "en" : [
             "Movement along a path"
+          ],
+          "nb" : [
+            "Bevegelse langs bane"
           ],
           "sv" : [
             "Rörelse längs bana"
@@ -989,7 +1181,10 @@
     {
       "kind" : "mirror",
       "name" : {
+        "da" : "Spejling",
+        "de" : "Spiegelung",
         "en" : "Mirroring",
+        "nb" : "Speiling",
         "sv" : "Spegling"
       },
       "puzzle" : {
@@ -1070,10 +1265,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Retningen drejer 90° med uret mod højre og 45° nedad.",
+            "Det tredje felt i hver række er det første spejlvendt om en vandret akse: top og bund bytter plads.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Richtung dreht sich nach rechts um 90° im Uhrzeigersinn und nach unten um 45°.",
+            "Das dritte Feld jeder Zeile ist das erste, an einer waagerechten Achse gespiegelt: Oben und unten tauschen die Plätze.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The direction rotates 90° clockwise to the right and 45° downwards.",
             "The third cell in every row is the first one mirrored in a horizontal axis: top and bottom swap.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Retningen dreies 90° med klokken mot høyre og 45° nedover.",
+            "Den tredje ruten i hver rad er den første speilvendt om en vannrett akse: oppe og nede bytter plass.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Riktningen vrids 90° medurs åt höger och 45° nedåt.",
@@ -1140,9 +1350,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Trinvis ændring",
+            "Spejling"
+          ],
+          "de" : [
+            "Schrittweise Änderung",
+            "Spiegelung"
+          ],
           "en" : [
             "Step by step change",
             "Mirroring"
+          ],
+          "nb" : [
+            "Trinnvis endring",
+            "Speiling"
           ],
           "sv" : [
             "Stegvis förändring",
@@ -1160,7 +1382,10 @@
     {
       "kind" : "rotationOfCell",
       "name" : {
+        "da" : "Rotation af hele feltet",
+        "de" : "Drehung des ganzen Feldes",
         "en" : "Rotation of the whole cell",
+        "nb" : "Rotasjon av hele ruten",
         "sv" : "Rotation av hela rutan"
       },
       "puzzle" : {
@@ -1241,10 +1466,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Hele feltets indhold drejer 90 grader med uret mod højre og 90 grader nedad.",
+            "Størrelsen er meget lille, mellem og meget stor, én gang i hver række og hver kolonne.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Der gesamte Inhalt des Feldes dreht sich nach rechts um 90 Grad im Uhrzeigersinn und nach unten um 90 Grad.",
+            "Die Größe ist sehr klein, mittel und sehr groß, jeweils einmal in jeder Zeile und jeder Spalte.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The whole content of the cell rotates 90 degrees clockwise to the right and 90 degrees downwards.",
             "The size is very small, medium and very large, once in every row and every column.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Hele innholdet i ruten dreies 90 grader med klokken mot høyre og 90 grader nedover.",
+            "Størrelsen er svært liten, middels og svært stor, én gang i hver rad og hver kolonne.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Hela rutans innehåll vrids 90 grader medurs åt höger och 90 grader nedåt.",
@@ -1311,9 +1551,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Rotation af hele feltet",
+            "Fordeling af tre"
+          ],
+          "de" : [
+            "Drehung des ganzen Feldes",
+            "Verteilung von drei Werten"
+          ],
           "en" : [
             "Rotation of the whole cell",
             "Three values distributed"
+          ],
+          "nb" : [
+            "Rotasjon av hele ruten",
+            "Fordeling av tre"
           ],
           "sv" : [
             "Rotation av hela rutan",
@@ -1331,7 +1583,10 @@
     {
       "kind" : "nestedFigures",
       "name" : {
+        "da" : "Figurer i figurer",
+        "de" : "Verschachtelte Figuren",
         "en" : "Nested figures",
+        "nb" : "Figurer inni hverandre",
         "sv" : "Nästlade figurer"
       },
       "puzzle" : {
@@ -1412,10 +1667,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Den indre figur er cirkel, trekant og rombe, én gang i hver række og hver kolonne.",
+            "Trekant, femkant og syvkant optræder hver én gang i hver række og hver kolonne.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Als innere Figur kommen Kreis, Dreieck und Raute jeweils einmal in jeder Zeile und jeder Spalte vor.",
+            "Dreieck, Fünfeck und Siebeneck: Jedes davon kommt einmal in jeder Zeile und jeder Spalte vor.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The inner figure is circle, triangle and diamond, once in every row and every column.",
             "Triangle, pentagon and heptagon each appear once in every row and every column.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Den indre figuren er sirkel, trekant og rombe, én gang i hver rad og hver kolonne.",
+            "Disse forekommer én gang i hver rad og hver kolonne: trekant, femkant og sjukant.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Den inre figuren är cirkel, triangel och romb, en gång i varje rad och varje kolumn.",
@@ -1482,9 +1752,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Figurer i figurer",
+            "Fordeling af tre"
+          ],
+          "de" : [
+            "Verschachtelte Figuren",
+            "Verteilung von drei Werten"
+          ],
           "en" : [
             "Nested figures",
             "Three values distributed"
+          ],
+          "nb" : [
+            "Figurer inni hverandre",
+            "Fordeling av tre"
           ],
           "sv" : [
             "Nästlade figurer",
@@ -1502,7 +1784,10 @@
     {
       "kind" : "sideCount",
       "name" : {
+        "da" : "Antal sider",
+        "de" : "Anzahl der Ecken",
         "en" : "Number of sides",
+        "nb" : "Antall sider",
         "sv" : "Antal sidor"
       },
       "puzzle" : {
@@ -1575,10 +1860,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Figuren står øverst til venstre, øverst til højre og i midten til venstre, én gang i hver række og hver kolonne.",
+            "Antallet af hjørner falder med 1 mod højre og 1 nedad.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Figur steht oben links, oben rechts und links in der Mitte, jeweils einmal in jeder Zeile und jeder Spalte.",
+            "Die Anzahl der Ecken nimmt nach rechts um 1 und nach unten um 1 ab.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The figure's place is top left, top right and middle left, once in every row and every column.",
             "The number of corners decreases by 1 to the right and 1 downwards.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Figuren står øverst til venstre, øverst til høyre og midt til venstre, én gang i hver rad og hver kolonne.",
+            "Antallet hjørner minker med 1 mot høyre og 1 nedover.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Figurens plats är övre vänster, övre höger och mitten vänster, en gång i varje rad och varje kolumn.",
@@ -1639,9 +1939,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Fordeling af tre",
+            "Antal sider"
+          ],
+          "de" : [
+            "Verteilung von drei Werten",
+            "Anzahl der Ecken"
+          ],
           "en" : [
             "Three values distributed",
             "Number of sides"
+          ],
+          "nb" : [
+            "Fordeling av tre",
+            "Antall sider"
           ],
           "sv" : [
             "Fördelning av tre",
@@ -1659,7 +1971,10 @@
     {
       "kind" : "fillDegree",
       "name" : {
+        "da" : "Fyldningsgrad",
+        "de" : "Füllgrad",
         "en" : "Degree of fill",
+        "nb" : "Fyllingsgrad",
         "sv" : "Fyllnadsgrad"
       },
       "puzzle" : {
@@ -1740,10 +2055,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Prikken står i øverste højre hjørne, i midten til højre og nederst i midten, én gang i hver række og hver kolonne.",
+            "Fyldningsgraden falder med 25 procentpoint mod højre og stiger med 25 procentpoint nedad.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Der Punkt sitzt in der Ecke oben rechts, rechts in der Mitte und unten in der Mitte, jeweils einmal in jeder Zeile und jeder Spalte.",
+            "Der Füllgrad nimmt nach rechts um 25 Prozentpunkte ab und nimmt nach unten um 25 Prozentpunkte zu.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The dot sits in the top right corner, the middle right and the bottom middle, once in every row and every column.",
             "The filled share decreases by 25 percentage points to the right and increases by 25 percentage points downwards.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Prikken står i øvre høyre hjørne, midt til høyre og midt nederst, én gang i hver rad og hver kolonne.",
+            "Fyllingsgraden minker med 25 prosentpoeng mot høyre og øker med 25 prosentpoeng nedover.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Pricken står i övre högra hörnet, mitt till höger och mitt nedtill, en gång i varje rad och varje kolumn.",
@@ -1810,9 +2140,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Fordeling af tre",
+            "Fyldningsgrad"
+          ],
+          "de" : [
+            "Verteilung von drei Werten",
+            "Füllgrad"
+          ],
           "en" : [
             "Three values distributed",
             "Degree of fill"
+          ],
+          "nb" : [
+            "Fordeling av tre",
+            "Fyllingsgrad"
           ],
           "sv" : [
             "Fördelning av tre",
@@ -1830,7 +2172,10 @@
     {
       "kind" : "conditional",
       "name" : {
+        "da" : "Betinget regel",
+        "de" : "Bedingte Regel",
         "en" : "Conditional rule",
+        "nb" : "Betinget regel",
         "sv" : "Villkorad regel"
       },
       "puzzle" : {
@@ -1903,10 +2248,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Størrelsen er meget lille, mellem og meget stor, én gang i hver række og hver kolonne.",
+            "Fyldet bestemmer retningen: tomt giver 90°, prikket giver 270° og stribet giver 0°. Hvert par optræder én gang i hver række og hver kolonne.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Größe ist sehr klein, mittel und sehr groß, jeweils einmal in jeder Zeile und jeder Spalte.",
+            "Die Füllung bestimmt, wie die Richtung ausfällt: leer ergibt 90°, gepunktet ergibt 270° und gestreift ergibt 0°. Jedes Paar kommt einmal in jeder Zeile und jeder Spalte vor.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The size is very small, medium and very large, once in every row and every column.",
             "The fill determines the direction: unfilled means 90°, dotted means 270° and striped means 0°. Each pair appears once in every row and every column.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Størrelsen er svært liten, middels og svært stor, én gang i hver rad og hver kolonne.",
+            "Fyllet bestemmer retningen: ufylt gir 90°, prikkete gir 270° og stripete gir 0°. Hvert par forekommer én gang i hver rad og hver kolonne.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Storleken är mycket liten, mellan och mycket stor, en gång i varje rad och varje kolumn.",
@@ -1967,9 +2327,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Fordeling af tre",
+            "Betinget regel"
+          ],
+          "de" : [
+            "Verteilung von drei Werten",
+            "Bedingte Regel"
+          ],
           "en" : [
             "Three values distributed",
             "Conditional rule"
+          ],
+          "nb" : [
+            "Fordeling av tre",
+            "Betinget regel"
           ],
           "sv" : [
             "Fördelning av tre",
@@ -1987,7 +2359,10 @@
     {
       "kind" : "covariation",
       "name" : {
+        "da" : "Samvariation",
+        "de" : "Gemeinsame Änderung",
         "en" : "Covariation",
+        "nb" : "Samvariasjon",
         "sv" : "Samvariation"
       },
       "puzzle" : {
@@ -2052,9 +2427,21 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Antallet af figurer og deres størrelse hænger sammen: jo flere figurer, jo mindre er de.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Anzahl der Figuren und ihre Größe hängen zusammen: Je mehr Figuren, desto kleiner sind sie.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The number of figures and their size are linked: the more figures, the smaller they are.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Antallet figurer og størrelsen henger sammen: jo flere figurer, desto mindre er de.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Antalet figurer och storleken hänger ihop: ju fler figurer, desto mindre är de.",
@@ -2108,8 +2495,17 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Samvariation"
+          ],
+          "de" : [
+            "Gemeinsame Änderung"
+          ],
           "en" : [
             "Covariation"
+          ],
+          "nb" : [
+            "Samvariasjon"
           ],
           "sv" : [
             "Samvariation"
@@ -2125,7 +2521,10 @@
     {
       "kind" : "slotOperator",
       "name" : {
+        "da" : "Plads for plads",
+        "de" : "Platzweise Verknüpfung",
         "en" : "Slot by slot combination",
+        "nb" : "Plass for plass",
         "sv" : "Platsoperator"
       },
       "puzzle" : {
@@ -2190,10 +2589,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Figuren skifter mellem stående og liggende for hvert trin mod højre og hvert trin nedad.",
+            "Det tredje felt regnes ud plads for plads fra de to første: to ens tegn giver et flag mod venstre, et flag mod venstre ændrer ingenting, og to forskellige blandt et kvadrat, en rombe og et flag mod højre giver det tredje. Det gælder i rækker og kolonner.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Figur wechselt mit jedem Schritt nach rechts und jedem Schritt nach unten zwischen stehend und liegend.",
+            "Das dritte Feld ergibt sich Platz für Platz aus den ersten beiden: Zwei gleiche Symbole werden eine Flagge nach links, eine Flagge nach links ändert nichts, und von den übrigen drei – ein Quadrat, eine Raute und eine Flagge nach rechts – werden zwei verschiedene zum dritten. Das gilt in Zeilen und Spalten.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The figure alternates between standing and lying with every step to the right and every step downwards.",
             "The third cell is worked out slot by slot from the first two: two equal symbols become a flag pointing left, a flag pointing left changes nothing, and two different ones among a square, a diamond and a flag pointing right become the third. This holds in rows and columns.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Figuren veksler mellom stående og liggende for hvert steg mot høyre og hvert steg nedover.",
+            "Den tredje ruten regnes ut plass for plass fra de to første: to like tegn blir et flagg mot venstre, et flagg mot venstre endrer ingenting, og to ulike av et kvadrat, en rombe og et flagg mot høyre blir det tredje. Gjelder i rader og kolonner.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Figuren växlar mellan stående och liggande för varje steg åt höger och varje steg nedåt.",
@@ -2248,9 +2662,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Bevægelse langs en bane",
+            "Plads for plads"
+          ],
+          "de" : [
+            "Bewegung entlang einer Bahn",
+            "Platzweise Verknüpfung"
+          ],
           "en" : [
             "Movement along a path",
             "Slot by slot combination"
+          ],
+          "nb" : [
+            "Bevegelse langs bane",
+            "Plass for plass"
           ],
           "sv" : [
             "Rörelse längs bana",
@@ -2268,7 +2694,10 @@
     {
       "kind" : "growingStep",
       "name" : {
+        "da" : "Voksende trin",
+        "de" : "Wachsender Schritt",
         "en" : "Growing step",
+        "nb" : "Voksende steg",
         "sv" : "Växande steg"
       },
       "puzzle" : {
@@ -2341,10 +2770,25 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Retningen drejer 45° i det første trin og 90° i det næste: mod uret mod højre og med uret nedad.",
+            "Antallet af figurer stiger med 1 mod højre og 1 nedad.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Richtung dreht sich im ersten Schritt um 45° und im nächsten um 90°: nach rechts gegen den Uhrzeigersinn und nach unten im Uhrzeigersinn.",
+            "Die Anzahl der Figuren nimmt nach rechts um 1 und nach unten um 1 zu.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The direction rotates 45° in the first step and 90° in the next: counterclockwise to the right and clockwise downwards.",
             "The number of figures increases by 1 to the right and 1 downwards.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Retningen dreies 45° i det første steget og 90° i det neste: mot klokken mot høyre og med klokken nedover.",
+            "Antallet figurer øker med 1 mot høyre og 1 nedover.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Riktningen vrids 45° i första steget och 90° i nästa: moturs åt höger och medurs nedåt.",
@@ -2405,9 +2849,21 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Voksende trin",
+            "Trinvis ændring"
+          ],
+          "de" : [
+            "Wachsender Schritt",
+            "Schrittweise Änderung"
+          ],
           "en" : [
             "Growing step",
             "Step by step change"
+          ],
+          "nb" : [
+            "Voksende steg",
+            "Trinnvis endring"
           ],
           "sv" : [
             "Växande steg",
@@ -2425,7 +2881,10 @@
     {
       "kind" : "crossCycle",
       "name" : {
+        "da" : "Skift i korset",
+        "de" : "Drehen und Wechseln im Kreuz",
         "en" : "Turn and change in the cross",
+        "nb" : "Veksling i korset",
         "sv" : "Växling i korset"
       },
       "puzzle" : {
@@ -2506,9 +2965,21 @@
           null
         ],
         "explanations" : {
+          "da" : [
+            "Tegnene flytter sig 90° med uret for hvert trin mod højre og 90° mod uret for hvert trin nedad, og for hvert trin skifter hvert tegn til det næste: et kvadrat bliver til en rombe, en rombe bliver til en cirkel, og en cirkel bliver til et kvadrat.",
+            "Alt andet er ens i alle felter."
+          ],
+          "de" : [
+            "Die Symbole drehen sich mit jedem Schritt nach rechts um 90° im Uhrzeigersinn und mit jedem Schritt nach unten um 90° gegen den Uhrzeigersinn, und mit jedem Schritt wird jedes Symbol zum nächsten: ein Quadrat wird eine Raute, eine Raute wird ein Kreis und ein Kreis wird ein Quadrat.",
+            "Alles andere ist in allen Feldern gleich."
+          ],
           "en" : [
             "The symbols move 90° clockwise with every step to the right and 90° counterclockwise with every step downwards, and with every step each symbol changes to the next: a square becomes a diamond, a diamond becomes a circle and a circle becomes a square.",
             "Everything else is the same in every cell."
+          ],
+          "nb" : [
+            "Tegnene flytter seg 90° med klokken for hvert steg mot høyre og 90° mot klokken for hvert steg nedover, og for hvert steg bytter hvert tegn til det neste: et kvadrat blir en rombe, en rombe blir en sirkel og en sirkel blir et kvadrat.",
+            "Alt annet er likt i alle rutene."
           ],
           "sv" : [
             "Tecknen flyttar 90° medurs för varje steg åt höger och 90° moturs för varje steg nedåt, och för varje steg byter varje tecken till nästa: en kvadrat blir en romb, en romb blir en cirkel och en cirkel blir en kvadrat.",
@@ -2574,8 +3045,17 @@
           }
         ],
         "ruleNames" : {
+          "da" : [
+            "Skift i korset"
+          ],
+          "de" : [
+            "Drehen und Wechseln im Kreuz"
+          ],
           "en" : [
             "Turn and change in the cross"
+          ],
+          "nb" : [
+            "Veksling i korset"
           ],
           "sv" : [
             "Växling i korset"
@@ -2591,7 +3071,10 @@
   ],
   "languages" : [
     "sv",
-    "en"
+    "en",
+    "de",
+    "nb",
+    "da"
   ],
   "version" : 2
 }
