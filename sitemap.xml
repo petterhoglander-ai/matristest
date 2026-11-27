@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://matristest.se/de/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://matristest.se/de/"/>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://matristest.se/no/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://matristest.se/de/"/>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://matristest.se/da/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://matristest.se/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://matristest.se/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://matristest.se/de/"/>
@@ -683,6 +683,18 @@
     <xhtml:link rel="alternate" hreflang="nb" href="https://matristest.se/no/vilkar.html"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://matristest.se/da/vilkaar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/villkor.html"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/de/testas.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://matristest.se/de/testas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/de/testas.html"/>
+  </url>
+  <url>
+    <loc>https://matristest.se/no/forsvaret-sesjon.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://matristest.se/no/forsvaret-sesjon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://matristest.se/no/forsvaret-sesjon.html"/>
   </url>
   <url>
     <loc>https://matristest.se/regler/stegvis-forandring.html</loc>
